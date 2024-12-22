@@ -9,6 +9,7 @@ const Projects = () => {
         { href: "https://acls-algorithm.vercel.app/", text: "ACLS Algorithm" },
         { href: "https://dwm-ecommerce.vercel.app/", text: "E-Commerce Frontend" },
         { href: "https://dwm-weatherapp.vercel.app/", text: "Weather App" },
+        { href: "https://dwm-supabase-todolist.vercel.app/", text: "Supabase To-Do List" },
         { href: "https://dwm-todolist.vercel.app/", text: "To-Do List" },
         { href: "https://dwm-todolist-api.vercel.app/tasks/", text: "To-Do List API" },
     ];
