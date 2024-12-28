@@ -162,7 +162,7 @@ p.p {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   #name {
     font-size: calc(var(--font-size-large) - 0.25rem);
   }
