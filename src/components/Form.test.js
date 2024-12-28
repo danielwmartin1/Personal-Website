@@ -6,15 +6,15 @@ import Form from './Form.js';
 describe('Form Component', () => {
     test('renders form correctly', () => {
         render(<Form />);
-        expect(screen.getByPlaceholderText('you@example.com')).toBeInTheDocument();
-        expect(screen.getByPlaceholderText('Your message here')).toBeInTheDocument();
-        expect(screen.getByText('Send')).toBeInTheDocument();
+        expect(screen.getByPlaceholderText('youremail@example.com')).toBeInTheDocument();
+        expect(screen.getByPlaceholderText('Type your message here...')).toBeInTheDocument();
+        expect(screen.getByText('Submit')).toBeInTheDocument();
     });
 
     test('shows alert when fields are empty', () => {
         render(<Form />);
         window.alert = jest.fn();
-        fireEvent.click(screen.getByText('Send'));
+        fireEvent.click(screen.getByText('Submit'));
         expect(window.alert).toHaveBeenCalledWith('Please fill out both fields.');
     });
 
@@ -27,9 +27,9 @@ describe('Form Component', () => {
             })
         );
 
-        fireEvent.change(screen.getByPlaceholderText('you@example.com'), { target: { value: 'test@example.com' } });
-        fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
-        fireEvent.click(screen.getByText('Send'));
+        fireEvent.change(screen.getByPlaceholderText('youremail@example.com'), { target: { value: 'test@example.com' } });
+        fireEvent.change(screen.getByPlaceholderText('Type your message here...'), { target: { value: 'Test message' } });
+        fireEvent.click(screen.getByText('Submit'));
 
         await waitFor(() => expect(global.fetch).toHaveBeenCalledWith(
             'https://formspree.io/f/mrbgkbky',
@@ -50,21 +50,21 @@ describe('Form Component', () => {
             })
         );
 
-        fireEvent.change(screen.getByPlaceholderText('you@example.com'), { target: { value: 'test@example.com' } });
-        fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
-        fireEvent.click(screen.getByText('Send'));
+        fireEvent.change(screen.getByPlaceholderText('youremail@example.com'), { target: { value: 'test@example.com' } });
+        fireEvent.change(screen.getByPlaceholderText('Type your message here...'), { target: { value: 'Test message' } });
+        fireEvent.click(screen.getByText('Submit'));
 
-        expect(await screen.findByText((content, element) => content.includes('Form submitted successfully!'))).toBeInTheDocument();
+        expect(await screen.findByText('Message sent successfully!')).toBeInTheDocument();
     });
 
     test('shows error popup on failed submission', async () => {
         render(<Form />);
         global.fetch = jest.fn(() => Promise.reject('API is down'));
 
-        fireEvent.change(screen.getByPlaceholderText('you@example.com'), { target: { value: 'test@example.com' } });
-        fireEvent.change(screen.getByPlaceholderText('Your message here'), { target: { value: 'Test message' } });
-        fireEvent.click(screen.getByText('Send'));
+        fireEvent.change(screen.getByPlaceholderText('youremail@example.com'), { target: { value: 'test@example.com' } });
+        fireEvent.change(screen.getByPlaceholderText('Type your message here...'), { target: { value: 'Test message' } });
+        fireEvent.click(screen.getByText('Submit'));
 
-        expect(await screen.findByText((content, element) => content.includes('There was an error submitting the form.'))).toBeInTheDocument();
+        expect(await screen.findByText('There was an error sending your message.')).toBeInTheDocument();
     });
 });
