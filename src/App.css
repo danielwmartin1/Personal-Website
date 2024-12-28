@@ -181,6 +181,7 @@ form {
   align-items: center;
   width: 70% !important;
   margin-top: 2rem;
+  border: 3px ridge var(--primary-color) !important;
 }
 
 .form-container {
