@@ -1,4 +1,4 @@
-/* Variables */
+/* Imports */
 @import url('./global.css');
 @import url('./header.css');
 @import url('./footer.css');
@@ -12,6 +12,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body, html {
+  font-family: var(--font-family);
+  font-size: 16px; /* Base font size */
+  background-image: url('./images/bluegradient.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -28,39 +43,24 @@ a:hover {
   color: var(--secondary-color);
 }
 
-.about-me-email,
-.anchor,
-#anchor {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 1rem; /* 16px */
-  text-align: center;
-  margin: 0.5rem;
-  padding: 0.5rem;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: var(--text-color);
+  font-size: 0.875rem; /* 14px */
 }
 
-.about-me-email:hover,
-.anchor:hover,
-#anchor:hover {
-  color: var(--secondary-color);
+p {
+  text-indent: 1.5rem;
+  text-align: left !important;
+  font-size: 1.1rem!important; /* 16px */
 }
 
-.about-me-email:active,
-.anchor:active,
-#anchor:active {
-  color: yellowgreen;
+img {
+  width: 60px;
+  margin: var(--margin);
 }
 
-.about-me-email:visited {
-  color: var(--primary-color);
-}
-
-.about-me-email:focus {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-
+/* Classes */
 .App {
   display: flex;
   flex-direction: column;
@@ -117,11 +117,12 @@ a:hover {
   border-radius: 5px;
 }
 
-#githubRepo {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 1.25rem; /* 16px */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem; /* 16px */
 }
 
 .section p {
@@ -145,12 +146,6 @@ a:hover {
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  color: var(--text-color);
-  font-size: 0.875rem; /* 14px */
 }
 
 p.contact {
@@ -198,9 +193,49 @@ form {
   width: 100%;
 }
 
-img {
-  width: 60px;
-  margin: var(--margin);
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  margin-bottom: 1rem;
+}
+
+.divProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem; /* 16px */
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border: 3.5px ridge var(--primary-color) !important;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem !important;
+  width: auto;
+  border: 3.5px ridge var(--primary-color) !important;
+}
+
+.indented-list {
+  margin-left: 2rem;
+  font-size: 1rem; /* 16px */
+}
+
+/* IDs */
+#githubRepo {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.25rem; /* 16px */
 }
 
 #anchor {
@@ -233,19 +268,6 @@ img {
   height: auto;
 }
 
-p {
-  text-indent: 1.5rem;
-  text-align: left !important;
-  font-size: 1.1rem!important; /* 16px */
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #project-link {
   color: var(--primary-color);
   text-decoration: none;
@@ -261,56 +283,38 @@ p {
   border-radius: 1rem;
 }
 
-.project-link {
-  margin-bottom: 1rem;
-}
-
-.divProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Classes with multiple selectors */
+.about-me-email,
+.anchor,
+#anchor {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
-  background-color: var(--background-color);
-  border-radius: 5px;
-  border: 2px solid var(--primary-color);
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
-.logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem !important;
-  width: auto;
+.about-me-email:hover,
+.anchor:hover,
+#anchor:hover {
+  color: var(--secondary-color);
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem; /* 16px */
+.about-me-email:active,
+.anchor:active,
+#anchor:active {
+  color: yellowgreen;
 }
 
-.indented-list {
-  margin-left: 2rem;
-  font-size: 1rem; /* 16px */
+.about-me-email:visited {
+  color: var(--primary-color);
 }
 
-body, html {
-  font-family: var(--font-family);
-  font-size: 16px; /* Base font size */
-  background-image: url('./images/bluegradient.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.about-me-email:focus {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
 }
 
 /* Responsive Styles */

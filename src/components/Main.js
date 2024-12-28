@@ -28,7 +28,8 @@ import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import supabaseLogo from '../images/supabaseLogo.png';
 import viteLogo from '../images/Vitejs-logo.svg';
-import vercelLogo from '../images/vercel.svg'
+import vercelLogo from '../images/vercel.svg';
+import jestLogo from '../images/jest.svg';
 
 /**
  * An array of logo objects representing various IDEs, tools, frontend technologies,
@@ -70,6 +71,9 @@ const logos = [
   { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
+  
+  // Unit-Testing
+  { src: jestLogo, name: 'Jest' },
 
   // Programming Languages
   { src: cLogo, name: 'C' },

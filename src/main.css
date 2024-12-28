@@ -26,6 +26,10 @@
   color: var(--text-color);
 }
 
+.logo-container {
+  gap: 1.5rem;
+}
+
 .logo {
   max-width: 100%;
   height: auto;
@@ -35,13 +39,9 @@
   align-items: center;
 }
 
-.logo-container {
-  gap: 1.5rem;
-}
-
 .logos {
   background-color: var(--background-color);
-  border: 2px solid var(--primary-color);
+  border: 3.5px ridge var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -79,6 +79,38 @@
   border-radius: 50%;
 }
 
+#Flask {
+  background-color: white;
+  padding: var(--padding-small);
+  border-radius: 8px;
+}
+
+#profile {
+  width: 150px !important;
+  border: 2px solid var(--primary-color); 
+}
+
+#name {
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+}
+
+#experience, #tech {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+}
+
+#contact {
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+  margin: var(--margin-small);
+}
+
+#name, #experience, #tech {
+  font-family: var(--font-family);
+  margin-top: var(--margin-small);
+}
+
 .main p {
   font-size: 1em; /* 9px */
 }
@@ -91,38 +123,6 @@ p.p {
   width: 80%;
   font-family: var(--font-family);
   font-size: var(--font-size-small);
-}
-
-#contact {
-  font-size: var(--font-size-small);
-  color: var(--text-color);
-  margin: var(--margin-small);
-}
-
-#experience, #tech {
-  font-size: var(--font-size-medium);
-  color: var(--text-color);
-}
-
-#name {
-  font-size: var(--font-size-large);
-  color: var(--text-color);
-}
-
-#name, #experience, #tech {
-  font-family: var(--font-family);
-  margin-top: var(--margin-small);
-}
-
-#profile {
-  width: 150px !important;
-  border: 2px solid var(--primary-color); 
-}
-
-#Flask {
-  background-color: white;
-  padding: var(--padding-small);
-  border-radius: 8px;
 }
 
 .small-logo {
