@@ -101,6 +101,12 @@ p.p {
   width: 130px;
 }
 
+#Flask {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 .small-logo {
   width: 50px;
   -webkit-transition: transform 0.3s, box-shadow 0.3s;

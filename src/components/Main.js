@@ -16,9 +16,11 @@ import jsLogo from '../images/JS.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import nodeLogo from '../images/node.png';
+import npmLogo from '../images/npm.png';
 import expressLogo from '../images/express.png';
 import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '../images/django-python-logo.png';
+import flaskLogo from '../images/flask.svg';
 import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
@@ -39,9 +41,11 @@ const logos = [
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nodeLogo, name: 'Node.js' },
+  { src: npmLogo, name: 'NPM' },
   { src: expressLogo, name: 'Express.JS' },
   { src: nextjsLogo, name: 'Next.JS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
+  { src: flaskLogo, name: 'Flask' },
   { src: csharpLogo, name: 'C#' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
