@@ -88,7 +88,7 @@ a:hover {
   padding: 2rem;
   border-radius: 5px;
   background-color: var(--secondary-color);
-  background-color: rgb(0, 67, 165); /* Replace with actual rgba value */
+  background-color: #006191; /* Replace with actual rgba value */
 }
 
 .portfolio {
@@ -115,7 +115,7 @@ a:hover {
   font-size: 1rem; /* 16px */
   margin: 0 !important;
   width: auto !important;
-  background-color: #358eba8a !important;
+  background-color: var(--background-color) !important;
 }
 
 #githubRepo {
@@ -126,7 +126,6 @@ a:hover {
 }
 
 .section p {
-  margin: 1rem;
   font-size: 1.5rem; /* 24px */
 }
 
@@ -136,17 +135,21 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 4rem;
-  background-color: var(--background-color);
+  background-color: #006191;
   border-radius: 5px;
   border: 2px solid var(--primary-color);
 }
 
 .center-text {
+  border-radius: 5px;
+  background-color: var(--background-color);
   text-align: center;
+  padding: 1rem;
   margin: 1rem;
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 code {
