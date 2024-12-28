@@ -30,6 +30,21 @@ import supabaseLogo from '../images/supabaseLogo.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg'
 
+/**
+ * An array of logo objects representing various IDEs, tools, frontend technologies,
+ * backend technologies, programming languages, and databases.
+ * Each object contains the source path of the logo image and the name of the technology.
+ *
+ * @type {Array<{src: string, name: string}>}
+ * @property {string} src - The source path of the logo image.
+ * @property {string} name - The name of the technology.
+ *
+ * @example
+ * // Accessing the first logo object
+ * const firstLogo = logos[0];
+ * console.log(firstLogo.src); // Output: visualStudioLogo
+ * console.log(firstLogo.name); // Output: 'VisualStudio'
+ */
 const logos = [
   // IDEs and Tools
   { src: visualStudioLogo, name: 'VisualStudio' },

@@ -13,6 +13,30 @@ const NavItems = ({ closeMenu }) => (
   </ul>
 );
 
+/**
+ * NavBar component that renders a navigation bar with responsive behavior.
+ * 
+ * @component
+ * 
+ * @example
+ * return (
+ *   <NavBar />
+ * )
+ * 
+ * @returns {JSX.Element} The rendered navigation bar component.
+ * 
+ * @description
+ * - Uses `useState` to manage the state of whether the view is mobile (`isMobile`) and whether the menu is open (`isOpen`).
+ * - Uses `useEffect` to add event listeners for window resize and mouse click outside the menu.
+ * - Renders a button to toggle the menu on mobile view and the navigation items.
+ * 
+ * @notes
+ * - `isMobile` state is initially set based on the window width.
+ * - `handleResize` updates `isMobile` state on window resize.
+ * - `toggleMenu` toggles the `isOpen` state.
+ * - `closeMenu` sets `isOpen` to false.
+ * - `handleClickOutside` closes the menu if a click is detected outside the menu container and button.
+ */
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,26 @@
 import React from "react";
 import "../App.css";
 
+/**
+ * Projects component renders a list of project links and a link to the user's GitHub repositories.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Projects />
+ * )
+ *
+ * @returns {JSX.Element} The rendered component.
+ *
+ * @description
+ * The Projects component displays a portfolio section containing links to various projects and a link to the user's GitHub repositories.
+ * Each project link is rendered as an anchor element with the project name and URL.
+ *
+ * @notes
+ * - The project links are stored in an array of objects, each containing `href` and `text` properties.
+ * - The GitHub repositories link is styled with an underline and padding at the bottom.
+ * - The component uses the `map` function to iterate over the `projectLinks` array and render each project link.
+ */
 const Projects = () => {
     const projectLinks = [
         { href: "https://pro1construction.vercel.app/", text: "My First Website" },

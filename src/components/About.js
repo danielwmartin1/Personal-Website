@@ -1,21 +1,41 @@
 import React from 'react';
 import '../App.css';
-import udemyLogo from '../images/udemy.jpg'; // Import the image directly
-import cs50Logo from '../images/cs50.png'; // Import the image directly
-import codecademyLogo from '../images/codecademy.jpg'; // Import the image directly
-import freecodecampLogo from '../images/freeCodeCamp.png'; // Import the image directly
-import W3SchoolsLogo from '../images/W3Schools.svg'; // Import the image directly
-import colorCodeLogo from '../images/colorcode.jpg'; // Import the image directly
+import udemyLogo from '../images/udemy.jpg';
+import cs50Logo from '../images/cs50.png';
+import codecademyLogo from '../images/codecademy.jpg';
+import freecodecampLogo from '../images/freeCodeCamp.png';
+import W3SchoolsLogo from '../images/W3Schools.svg';
+import colorCodeLogo from '../images/colorcode.jpg';
 
+/**
+ * About component representing the personal information and interests of the user.
+ *
+ * @component
+ * @example
+ * return (
+ *   <About />
+ * )
+ *
+ * @returns {JSX.Element} The rendered component displaying the introduction, background, hobbies, and studies section.
+ *
+ * @description
+ * This component showcases the user's personal project, background in nursing and software development, hobbies, and educational logos.
+ * It includes three main sections:
+ * - Introduction: A brief welcome message.
+ * - Background: A detailed description of the user's professional journey from nursing to software development.
+ * - Hobbies: A list of the user's hobbies.
+ * - StudiesSection: A sub-component displaying logos of educational platforms.
+ *
+ * @namespace About
+ */
 const About = () => {
     const logos = [
-        { name: 'Udemy', src: udemyLogo }, // Use the imported image
+        { name: 'Udemy', src: udemyLogo },
         { name: 'CS50', src: cs50Logo },
         { name: 'Codecademy', src: codecademyLogo },
         { name: 'FreeCodeCamp', src: freecodecampLogo },
         { name: 'W3Schools', src: W3SchoolsLogo },
-        { name: 'ColorCode.io', src: colorCodeLogo},
-        // Add more logos as needed
+        { name: 'ColorCode.io', src: colorCodeLogo },
     ];
 
     const StudiesSection = ({ logos }) => (
