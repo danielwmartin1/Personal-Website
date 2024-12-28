@@ -108,7 +108,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .menu-container {
         display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */

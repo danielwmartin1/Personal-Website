@@ -262,7 +262,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 1rem;
   font-size: 1.5rem; /* 16px */
 }
 
@@ -289,6 +288,7 @@ body, html {
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .about_main, .form-container, .divProject, .section {
+    padding: 0rem;
     font-size: 1rem; /* 16px */
   }
 
@@ -305,7 +305,6 @@ body, html {
   }
 
   p.p {
-    width: 85%;
     font-size: 1rem!important; /* 16px */
   }
 
@@ -317,6 +316,7 @@ body, html {
 
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
+    padding: 0rem;
     font-size: 0.875rem; /* 14px */
   }
 
@@ -337,7 +337,6 @@ body, html {
   }
 
   p.p {
-    width: 90%;
     font-size: 1rem!important; /* 16px */
   }
 
@@ -349,7 +348,7 @@ body, html {
 
 @media (max-width: 480px) {
   .about_main, .form-container, .divProject {
-    padding: 0.5rem;
+    padding: 0rem;
     font-size: 0.75rem; /* 12px */
   }
 
@@ -366,7 +365,6 @@ body, html {
   }
 
   p.p {
-    width: 100%;
     font-size: 0.9rem!important; /* 14px */
   }
 
