@@ -383,8 +383,4 @@ body, html {
   .about_main div, .portfolio-container {
     margin: 2rem;
   }
-
-  #githubRepo {
-    font-size: 1.15rem; /* 12px */
-  }
 }
