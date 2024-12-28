@@ -21,6 +21,8 @@ import expressLogo from '../images/express.png';
 import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '../images/django-python-logo.png';
 import flaskLogo from '../images/flask.svg';
+import cLogo from '../images/C.png';
+import cPlusLogo from '../images/cPlus.png';
 import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
@@ -46,6 +48,8 @@ const logos = [
   { src: nextjsLogo, name: 'NextJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
+  { src: cLogo, name: 'C' },
+  { src: cPlusLogo, name: 'C++' },
   { src: csharpLogo, name: 'C#' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
