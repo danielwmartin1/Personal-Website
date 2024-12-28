@@ -68,12 +68,6 @@
   border-radius: 16px;
 }
 
-#Express {
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 8px;
-}
-
 #Vercel, #NextJS {
   background-color: white;
   border-radius: 50%;
