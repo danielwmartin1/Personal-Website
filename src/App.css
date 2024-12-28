@@ -224,7 +224,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px
 }
 
 #project-link {
@@ -232,7 +231,6 @@ p {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
-  margin: 3rem;
 }
 
 .project-link {
@@ -248,7 +246,6 @@ p {
   background-color: var(--background-color);
   border-radius: 5px;
   border: 2px solid var(--primary-color);
-  width: 60vw
 }
 
 .logos {
