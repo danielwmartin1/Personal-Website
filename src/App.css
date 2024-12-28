@@ -216,7 +216,7 @@ img {
 
 p.p {
   width: 80%;
-  font-size: 1rem; /* 16px */
+  font-size: 1.1rem!important; /* 16px */
 }
 
 .project {
@@ -257,6 +257,7 @@ p.p {
   justify-content: center;
   align-items: center;
   margin: 1rem 0.5rem;
+  width: auto;
 }
 
 .section {
@@ -308,6 +309,7 @@ body, html {
 
   p.p {
     width: 90%;
+    font-size: 1rem!important; /* 16px */
   }
 
   #project-link {
@@ -336,6 +338,7 @@ body, html {
 
   p.p {
     width: 100%;
+    font-size: 0.9rem!important; /* 14px */
   }
 
   #project-link {
