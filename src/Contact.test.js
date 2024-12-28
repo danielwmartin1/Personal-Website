@@ -42,6 +42,10 @@ describe('Contact Component', () => {
     });
 
     test('renders send message button and opens form in new tab', () => {
+        // Mock window.open
+        const originalOpen = window.open;
+        window.open = jest.fn();
+
         render(
             <Router>
                 <Contact />
@@ -52,5 +56,8 @@ describe('Contact Component', () => {
 
         fireEvent.click(sendMessageButton);
         expect(window.open).toHaveBeenCalledWith('/form', '_blank');
+
+        // Restore original window.open
+        window.open = originalOpen;
     });
 });
