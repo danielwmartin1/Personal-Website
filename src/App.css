@@ -134,7 +134,7 @@ a:hover {
 
 .center-text {
   text-align: center;
-  margin: 1rem;
+  margin-top: 1rem;
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
