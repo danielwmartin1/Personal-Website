@@ -39,14 +39,11 @@ const About = () => {
     ];
 
     const StudiesSection = ({ logos }) => (
-        <div className="study-container container">
-          <h2 id="tech" className='headings'>Software Development Learning</h2>
           <div className="logos study">
             {logos.map((logo, index) => (
               <img key={index} className="logo study-image" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
             ))}
           </div>
-        </div>
       );
 
     return (
@@ -73,8 +70,11 @@ const About = () => {
                         <li className='p'>Gardening/Landscaping</li>
                         <li className='p'>Learning new technologies</li>
                     </ul>
-                    <StudiesSection logos={logos} />
-                </section>    
+                </section>  
+                <section className="section">
+                    <h2 className="center-text">Continuing-Education</h2>
+                    <StudiesSection logos={logos} />  
+                </section>
             </div>
         </div>
     );

@@ -107,6 +107,16 @@ a:hover {
   background-color: var(--background-color);
 }
 
+.study {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem; /* 16px */
+  margin: 0 !important;
+  width: auto !important;
+}
+
 #githubRepo {
   color: var(--primary-color);
   text-decoration: none;
@@ -132,12 +142,11 @@ a:hover {
 
 .center-text {
   text-align: center;
-  margin: 0;
+  margin: 1rem;
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -161,7 +170,6 @@ h2.contact {
   font-family: var(--font-family);
   padding-left: 2rem;
 }
-
 
 .contact-container {
   display: flex;
@@ -195,7 +203,6 @@ img {
   width: 60px;
   margin: var(--margin);
 }
-
 
 #anchor {
   color: var(--primary-color);
@@ -274,15 +281,6 @@ p.p {
   font-size: 1rem; /* 16px */
 }
 
-.study {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  font-size: 1rem; /* 16px */
-}
-
 body, html {
   font-family: var(--font-family);
   font-size: 16px; /* Base font size */
@@ -299,6 +297,34 @@ body, html {
 }
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+  .about_main, .form-container, .divProject, .section {
+    font-size: 1rem; /* 16px */
+  }
+
+  .center-text {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  img {
+    width: 55px;
+  }
+
+  #profile {
+    width: 140px;
+  }
+
+  p.p {
+    width: 85%;
+    font-size: 1rem!important; /* 16px */
+  }
+
+  #project-link {
+    font-size: 1rem; /* 16px */
+    margin: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
     font-size: 0.875rem; /* 14px */
