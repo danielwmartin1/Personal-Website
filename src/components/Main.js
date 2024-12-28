@@ -22,6 +22,7 @@ import pythonDjangoLogo from '../images/django-python-logo.png';
 import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
+import supabaseLogo from '../images/supabaseLogo.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg'
 
@@ -44,6 +45,7 @@ const logos = [
   { src: csharpLogo, name: 'C#' },
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
+  { src: supabaseLogo, name: 'Supabase' },
   { src: viteLogo, name: 'ViteJS' },
   { src: vercelLogo, name: 'Vercel' }
 ];

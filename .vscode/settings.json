@@ -4,6 +4,7 @@
         "django",
         "heaadings",
         "noopener",
-        "noreferrer"
+        "noreferrer",
+        "supabase"
     ]
 }
