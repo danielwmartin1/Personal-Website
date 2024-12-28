@@ -31,10 +31,16 @@ import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg'
 
 const logos = [
+  // IDEs and Tools
   { src: visualStudioLogo, name: 'VisualStudio' },
   { src: vscodeLogo, name: 'VSCode' },
   { src: githubLogo, name: 'GitHub' },
   { src: gitLogo, name: 'Git' },
+  { src: npmLogo, name: 'NPM' },
+  { src: viteLogo, name: 'ViteJS' },
+  { src: vercelLogo, name: 'Vercel' },
+
+  // Frontend Technologies
   { src: htmlLogo, name: 'HTML' },
   { src: cssLogo, name: 'CSS' },
   { src: bootstrapLogo, name: 'Bootstrap' },
@@ -42,20 +48,23 @@ const logos = [
   { src: jsLogo, name: 'JavaScript' },
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
-  { src: nodeLogo, name: 'NodeJS' },
-  { src: npmLogo, name: 'NPM' },
-  { src: expressLogo, name: 'ExpressJS' },
   { src: nextjsLogo, name: 'NextJS' },
+
+  // Backend Technologies
+  { src: nodeLogo, name: 'NodeJS' },
+  { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
+
+  // Programming Languages
   { src: cLogo, name: 'C' },
   { src: cPlusLogo, name: 'C++' },
   { src: csharpLogo, name: 'C#' },
+
+  // Databases
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
-  { src: supabaseLogo, name: 'Supabase' },
-  { src: viteLogo, name: 'ViteJS' },
-  { src: vercelLogo, name: 'Vercel' }
+  { src: supabaseLogo, name: 'Supabase' }
 ];
 
 const ProfileSection = () => (
