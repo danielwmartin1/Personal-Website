@@ -111,6 +111,12 @@ a:hover {
   background-color: var(--background-color) !important;
 }
 
+.study img {
+  width: 60px;
+  margin: var(--margin-medium);
+  border-radius: 5px;
+}
+
 #githubRepo {
   color: var(--primary-color);
   text-decoration: none;
@@ -127,8 +133,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
+  margin: 3rem;
   border-radius: 5px;
+  width: 90%;
   border: 3.5px ridge var(--primary-color);
 }
 
@@ -213,6 +220,19 @@ img {
   width: 150px;
 }
 
+#Codecademy {
+  background-color: white;
+  padding: 0.5rem;
+  width: 150px; /* Increased by 15% from 60px */
+  height: auto;
+}
+
+#FreeCodeCamp {
+  padding: 0rem;
+  width: 150px; /* Increased by 15% from 60px */
+  height: auto;
+}
+
 p {
   text-indent: 1.5rem;
   text-align: left !important;
@@ -231,6 +251,14 @@ p {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
+  width: 80%;
+}
+
+#Udemy {
+  padding: 0.5rem;
+  width: 92.5px; /* Increased by 15% from 60px */
+  height: auto;
+  border-radius: 1rem;
 }
 
 .project-link {
@@ -344,6 +372,10 @@ body, html {
     font-size: 0.875rem; /* 14px */
     margin: 2rem;
   }
+
+  .study img {
+    width: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -375,5 +407,9 @@ body, html {
 
   .about_main div, .portfolio-container {
     margin: 2rem;
+  }
+
+  .study img {
+    width: 40px;
   }
 }

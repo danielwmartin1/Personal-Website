@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import udemyLogo from '../images/udemy.jpg';
 import cs50Logo from '../images/cs50.png';
-import codecademyLogo from '../images/codecademy.jpg';
+import codecademyLogo from '../images/codecademy.svg';
 import freecodecampLogo from '../images/freeCodeCamp.png';
 import W3SchoolsLogo from '../images/W3Schools.svg';
 import colorCodeLogo from '../images/colorcode.jpg';
@@ -41,7 +41,7 @@ const About = () => {
     const StudiesSection = ({ logos }) => (
           <div className="logos study">
             {logos.map((logo, index) => (
-              <img key={index} className="logo study-image" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
+              <img key={index} className="logo study-img" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
             ))}
           </div>
       );
