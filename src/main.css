@@ -116,6 +116,7 @@ p.p {
 
 #profile {
   width: 150px !important;
+  border: 2px solid var(--primary-color); 
 }
 
 #Flask {
