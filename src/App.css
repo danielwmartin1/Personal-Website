@@ -257,7 +257,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0.5rem;
+  margin: 2rem !important;
   width: auto;
 }
 

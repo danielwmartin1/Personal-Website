@@ -1,5 +1,9 @@
 @import './variables.css';
 
+#footer {
+  text-align: center !important;
+}
+
 footer.footer {
   background-color: var(--background-color);
   border-top: 5px ridge var(--primary-color);
