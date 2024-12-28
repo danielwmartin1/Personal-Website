@@ -214,4 +214,9 @@ p.p {
   #VisualStudio {
     width: 45px;
   }
+
+  .study-img {
+    width: 50px !important;
+    border-radius: 5px !important;
+  }
 }
