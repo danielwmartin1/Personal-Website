@@ -115,6 +115,7 @@ a:hover {
   font-size: 1rem; /* 16px */
   margin: 0 !important;
   width: auto !important;
+  background-color: #358eba8a !important;
 }
 
 #githubRepo {
