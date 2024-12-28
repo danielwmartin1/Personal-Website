@@ -320,7 +320,7 @@ body, html {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .about_main, .form-container, .divProject, .section {
     font-size: 0.875rem; /* 14px */
   }

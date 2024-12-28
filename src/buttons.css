@@ -63,7 +63,7 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   button, .submit-button {
     font-size: 13px;
     padding: 6px 12px;
