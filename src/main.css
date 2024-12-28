@@ -53,13 +53,13 @@
   border-radius: 5px;
 }
 
-#VisualStudio, #Git {
-  width: 85px;
-  height: auto;
-}
 
-#VisualStudio {
-  margin: 0;
+
+#Jest {
+  background-color: white !important;
+  padding: var(--padding-small);
+  border-radius: 50%;
+  width: 60px;
 }
 
 #GitHub {

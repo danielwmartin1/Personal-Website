@@ -55,6 +55,7 @@ p {
   font-size: 1.1rem!important; /* 16px */
 }
 
+/* Global img styles */
 img {
   width: 60px;
   margin: var(--margin);
@@ -258,14 +259,21 @@ form {
 #Codecademy {
   background-color: white;
   padding: 0.5rem;
-  width: 150px; /* Increased by 15% from 60px */
+  width: 175px; /* Increased by 33% from 60px */
   height: auto;
 }
 
 #FreeCodeCamp {
   padding: 0rem;
-  width: 150px; /* Increased by 15% from 60px */
+  width: 125px; /* Increased by 33% from 60px */
   height: auto;
+}
+
+#Udemy {
+  padding: 0.5rem;
+  width: 90px; /* Increased by 33% from 60px */
+  height: auto;
+  border-radius: 1rem;
 }
 
 #project-link {
@@ -274,13 +282,6 @@ form {
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
   width: 80%;
-}
-
-#Udemy {
-  padding: 0.5rem;
-  width: 92.5px; /* Increased by 15% from 60px */
-  height: auto;
-  border-radius: 1rem;
 }
 
 /* Classes with multiple selectors */
@@ -318,9 +319,33 @@ form {
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .about_main, .form-container, .divProject, .section {
+    padding: 1rem;
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .center-text {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  #profile {
+    width: 140px !important;
+  }
+
+  p.p {
+    font-size: 1rem!important; /* 16px */
+  }
+
+  #project-link {
+    font-size: 1rem; /* 16px */
+    margin: 2.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .about_main, .form-container, .divProject, .section {
-    padding: 0rem;
+    padding: 0.5rem;
     font-size: 1rem; /* 16px */
   }
 
@@ -328,12 +353,8 @@ form {
     font-size: 1.5rem; /* 24px */
   }
 
-  img {
-    width: 55px;
-  }
-
   #profile {
-    width: 140px;
+    width: 130px !important;
   }
 
   p.p {
@@ -348,12 +369,12 @@ form {
 
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
-    padding: 0rem;
+    padding: 0.5rem;
     font-size: 0.875rem; /* 14px */
   }
 
   .about_main div, .portfolio-container {
-    margin: 3rem;
+    margin: 2rem;
   }
 
   .center-text {
@@ -365,7 +386,7 @@ form {
   }
 
   #profile {
-    width: 120px;
+    width: 120px !important;
   }
 
   p.p {
@@ -376,28 +397,24 @@ form {
     font-size: 0.875rem; /* 14px */
     margin: 2rem;
   }
-
-  .study img {
-    width: 50px;
-  }
 }
 
 @media (max-width: 480px) {
   .about_main, .form-container, .divProject {
-    padding: 0rem;
+    padding: 0.5rem;
     font-size: 0.75rem; /* 12px */
   }
 
   .center-text {
-    font-size: 1rem; /* 16px */
+    font-size: 1.25rem; /* 16px */
   }
 
   img {
-    width: 40px;
+    width: 0.8rem !important;
   }
 
   #profile {
-    width: 100px;
+    width: 100px !important;
   }
 
   p.p {
@@ -411,9 +428,5 @@ form {
 
   .about_main div, .portfolio-container {
     margin: 2rem;
-  }
-
-  .study img {
-    width: 40px;
   }
 }
