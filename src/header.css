@@ -98,8 +98,6 @@ footer {
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .nav-items a {
-        margin: 0.5rem;
-        padding: 0.5rem 1.5rem;
         font-size: 1.5rem!important; /* Smaller font size for medium screens */
     }
 }
@@ -110,16 +108,14 @@ footer {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
 
-    .nav-items a {
-        font-size: 1.2rem!important; /* Smaller font size for small screens */
-        padding: 0.5rem 1.5rem;
-    }
-
     .nav-items {
         display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
-        margin: 0;
-        padding: 0;
+    }
+
+    .nav-items a {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem !important; /* Smaller font size for smaller screens */
     }
 
     header {

@@ -63,7 +63,7 @@
 }
 
 .main p {
-  font-size: 0.7em; /* 9px */
+  font-size: 1em; /* 9px */
 }
 
 p.p {
@@ -137,6 +137,10 @@ p.p {
   #VisualStudio {
     width: 75px;
   }
+
+  .main p  {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -172,12 +176,13 @@ p.p {
   #VisualStudio {
     width: 60px;
   }
+
+  .main p  {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .main p {
-    font-size: 0.7em; /* 9px */
-  }
 
   #profile {
     width: 80px;

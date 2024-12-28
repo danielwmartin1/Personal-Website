@@ -235,6 +235,9 @@ p.p {
   margin: 3rem;
 }
 
+.project-link {
+  margin-bottom: 1rem;
+}
 
 .divProject {
   display: flex;
