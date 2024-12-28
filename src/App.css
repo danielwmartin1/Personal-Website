@@ -87,8 +87,6 @@ a:hover {
   border: 3px solid var(--primary-color);
   padding: 2rem;
   border-radius: 5px;
-  background-color: var(--secondary-color);
-  background-color: #006191; /* Replace with actual rgba value */
 }
 
 .portfolio {
@@ -102,9 +100,6 @@ a:hover {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
-  background-color: var(--background-color);
 }
 
 .study {
@@ -129,27 +124,22 @@ a:hover {
   font-size: 1.5rem; /* 24px */
 }
 
-.about_main div {
+.about_main div, .portfolio-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 4rem;
-  background-color: #006191;
   border-radius: 5px;
-  border: 2px solid var(--primary-color);
+  border: 3px ridge var(--primary-color);
 }
 
 .center-text {
-  border-radius: 5px;
-  background-color: var(--background-color);
   text-align: center;
-  padding: 1rem;
   margin: 1rem;
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
 }
 
 code {
@@ -334,6 +324,10 @@ body, html {
     font-size: 0.875rem; /* 14px */
   }
 
+  .about_main div, .portfolio-container {
+    margin: 3rem;
+  }
+
   .center-text {
     font-size: 1.25rem; /* 20px */
   }
@@ -383,5 +377,9 @@ body, html {
   #project-link {
     font-size: 0.75rem; /* 12px */
     margin: 1rem;
+  }
+
+  .about_main div, .portfolio-container {
+    margin: 2rem;
   }
 }
