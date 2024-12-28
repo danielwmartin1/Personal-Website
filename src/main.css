@@ -62,6 +62,29 @@
   margin: 0;
 }
 
+#GitHub {
+  background-color: white;
+  padding: 0rem;
+  border-radius: 16px;
+}
+
+#Express {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+#Vercel, #NextJS {
+  background-color: white;
+  border-radius: 50%;
+}
+
+#ExpressJS {
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
 .main p {
   font-size: 1em; /* 9px */
 }
