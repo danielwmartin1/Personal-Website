@@ -180,7 +180,7 @@ form {
   justify-content: center;
   align-items: center;
   width: 70% !important;
-  margin: 0;
+  margin-top: 2rem;
 }
 
 .form-container {
