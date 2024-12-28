@@ -96,9 +96,15 @@ footer {
 }
 
 /* Media Queries for responsiveness */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .nav-items a {
         font-size: 1.5rem!important; /* Smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-items a {
+        font-size: 1.3rem!important; /* Smaller font size for smaller screens */
     }
 }
 
