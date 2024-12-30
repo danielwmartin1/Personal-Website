@@ -331,6 +331,16 @@ form {
   text-align: left;
 }
 
+.GitHub {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.Discord {
+  height: 60px;
+  width: auto;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .about_main, .form-container, .divProject, .section {
@@ -420,10 +430,6 @@ form {
 
   .center-text {
     font-size: 1.25rem; /* 16px */
-  }
-
-  img {
-    width: 0.8rem !important;
   }
 
   #profile {

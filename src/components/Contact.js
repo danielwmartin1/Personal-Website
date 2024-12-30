@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const SocialIcon = ({ href, src, alt }) => (
   <a className="icon" href={href} title={alt} target="_blank" rel="noopener noreferrer">
-    <img className="small-logo" src={src} alt={alt} />
+    <img className={alt} src={src} alt={alt} />
   </a>
 );
 
