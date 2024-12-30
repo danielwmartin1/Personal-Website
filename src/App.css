@@ -422,6 +422,10 @@ form {
     font-size: 0.875rem; /* 14px */
     margin: 2rem;
   }
+
+  .input-style {
+    font-size: small;
+  }
 }
 
 @media (max-width: 480px) {
