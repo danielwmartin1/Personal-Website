@@ -246,6 +246,7 @@ form {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1.25rem; /* 16px */
+  text-align: center;
 }
 
 #anchor {
