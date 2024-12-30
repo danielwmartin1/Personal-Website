@@ -183,6 +183,7 @@ form {
   width: 70% !important;
   border: 3.5px ridge var(--primary-color) !important;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .form-container {
