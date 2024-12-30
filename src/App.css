@@ -327,6 +327,10 @@ form {
   margin-bottom: 2.5rem;
 }
 
+.anchor {
+  text-align: left;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .about_main, .form-container, .divProject, .section {
