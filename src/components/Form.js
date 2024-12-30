@@ -41,7 +41,7 @@ function Form() {
     return (
         <div className="container contact-container">
             <form onSubmit={handleSubmit} className="form-style">
-                <label className="label-style">
+                <label className="label-style" style={{ textAlign: 'center' }}>
                     Email:
                     <input
                         placeholder='youremail@example.com'
@@ -52,7 +52,7 @@ function Form() {
                         style={{ fontFamily: 'inherit' }}
                     />
                 </label>
-                <label className="label-style">
+                <label className="label-style" style={{ textAlign: 'center' }}>
                     Message:
                     <textarea
                         placeholder='Type your message here...'
