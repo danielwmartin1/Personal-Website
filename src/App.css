@@ -426,6 +426,10 @@ form {
   .input-style {
     font-size: small;
   }
+
+  #footer {
+    font-size: 0.875rem!important
+  }
 }
 
 @media (max-width: 480px) {
