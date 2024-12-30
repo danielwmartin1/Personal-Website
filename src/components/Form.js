@@ -42,7 +42,7 @@ function Form() {
         <div className="container contact-container">
             <form onSubmit={handleSubmit} className="form-style">
                 <label className="label-style" style={{ textAlign: 'center' }}>
-                    Email:
+                    <span>Email:</span>
                     <input
                         placeholder='youremail@example.com'
                         type="email"
@@ -53,7 +53,7 @@ function Form() {
                     />
                 </label>
                 <label className="label-style" style={{ textAlign: 'center' }}>
-                    Message:
+                    <span>Message:</span>
                     <textarea
                         placeholder='Type your message here...'
                         value={message}
