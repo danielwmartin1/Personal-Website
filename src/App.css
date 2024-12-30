@@ -181,8 +181,8 @@ form {
   justify-content: center;
   align-items: center;
   width: 70% !important;
-  margin-top: 2rem;
   border: 3.5px ridge var(--primary-color) !important;
+  padding: 1rem;
 }
 
 .form-container {
@@ -192,6 +192,18 @@ form {
   align-items: center;
   margin: 5rem 1rem;
   width: 100%;
+}
+
+.label-style {
+  font-size: 1.25rem; /* 20px */
+  margin: 1rem;
+}
+
+.btn {
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project {
@@ -216,19 +228,16 @@ form {
   border: 3.5px ridge var(--primary-color) !important;
 }
 
-.logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem !important;
-  width: auto;
-  border: 3.5px ridge var(--primary-color) !important;
-}
-
 .indented-list {
   margin-left: 2rem;
   font-size: 1rem; /* 16px */
+}
+
+.input-style {
+  font-size: 1rem; /* 16px */
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 80%;
 }
 
 /* IDs */

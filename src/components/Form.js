@@ -39,30 +39,34 @@ function Form() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="form-style">
-            <label className="label-style">
-                Email:
-                <input
-                    placeholder='youremail@example.com'
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="input-style"
-                />
-            </label>
-            <label className="label-style">
-                Message:
-                <textarea
-                    placeholder='Type your message here...'
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="input-style textarea-style"
-                />
-            </label>
-            <button type="submit" className="btn">Submit</button>
-            {status === 'success' && <p>Message sent successfully!</p>}
-            {status === 'error' && <p>There was an error sending your message.</p>}
-        </form>
+        <div className="container contact-container">
+            <form onSubmit={handleSubmit} className="form-style">
+                <label className="label-style">
+                    Email:
+                    <input
+                        placeholder='youremail@example.com'
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="input-style"
+                        style={{ fontFamily: 'inherit' }}
+                    />
+                </label>
+                <label className="label-style">
+                    Message:
+                    <textarea
+                        placeholder='Type your message here...'
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        className="input-style textarea-style"
+                        style={{ fontFamily: 'inherit' }}
+                    />
+                </label>
+                <button type="submit" className="btn">Submit</button>
+                {status === 'success' && <p>Message sent successfully!</p>}
+                {status === 'error' && <p>There was an error sending your message.</p>}
+            </form>
+        </div>
     );
 }
 

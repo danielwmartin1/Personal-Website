@@ -220,3 +220,23 @@ p.p {
     border-radius: 5px !important;
   }
 }
+
+@media (max-width: 325px) {
+  #profile {
+    width: 60px !important;
+  }
+
+  .logo {
+    width: 30px !important;
+  }
+
+  #VisualStudio {
+    width: 40px;
+  }
+
+  .study-img {
+    width: 40px !important;
+    border-radius: 5px !important;
+  }
+  
+}
