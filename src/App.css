@@ -371,6 +371,7 @@ form {
     font-size: 1rem; /* 16px */
     margin: 2.5rem;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -435,8 +436,20 @@ form {
   #footer {
     font-size: 0.875rem!important
   }
-}
+  
+  #Udemy {
+    width: 60px !important;
+  }
 
+  #Codecademy {
+    width: 60px !important;
+  }
+
+  #FreeCodeCamp {
+    width: 70px !important;
+  }
+
+}
 @media (max-width: 480px) {
   .about_main, .form-container, .divProject {
     padding: 0.5rem;
@@ -464,3 +477,5 @@ form {
     margin: 2rem;
   }
 }
+
+
