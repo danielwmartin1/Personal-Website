@@ -216,11 +216,16 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+  text-indent: 1rem;
+  
 }
 
 .project-link {
   margin-bottom: 1rem;
+  text-indent: 5px !important;
 }
+
+
 
 .divProject {
   display: flex;
@@ -253,6 +258,7 @@ form {
   transition: color 0.3s ease;
   font-size: 1.25rem; /* 16px */
   text-align: center;
+  text-indent: 0 !important;
 }
 
 #anchor {
