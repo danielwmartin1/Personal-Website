@@ -48,7 +48,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: var(--margin-small) 3rem;
+  margin: 1rem 3rem !important;
   border-radius: 5px;
 }
 
@@ -87,6 +87,7 @@
 #profile {
   width: 150px !important;
   border: 2px solid var(--primary-color); 
+  margin: 1rem;
 }
 
 #name {
