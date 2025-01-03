@@ -155,7 +155,7 @@ p.contact {
   align-items: center;
   font-family: var(--font-family);
   font-size: 1.125rem; /* 16px */
-  margin-bottom: 3rem;
+  margin: 2rem;
 }
 
 h2.contact {
@@ -172,6 +172,10 @@ h2.contact {
   width: 100%;
   margin: 0;
   padding: 2rem;
+}
+
+#contactSection {
+  margin-top: 2rem;
 }
 
 form {

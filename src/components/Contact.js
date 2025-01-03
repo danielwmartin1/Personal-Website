@@ -40,7 +40,7 @@ const Contact = () => {
     <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>
       <div className="container contact-container">
         <ContactMessage />
-        <section className="section">
+        <section id="contactSection" className="section">
           <h2 className='contact'>Contact Me:</h2>
           <Link to="/form">
             <button title={"Contact Form"} className="menu-button" onClick={() => window.open('/form', '_blank')}>Send Message</button>
