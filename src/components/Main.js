@@ -30,6 +30,7 @@ import supabaseLogo from '../images/supabaseLogo.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg';
 import jestLogo from '../images/jest.svg';
+import postgresqlLogo from '../images/postgresql.png';
 
 /**
  * An array of logo objects representing various IDEs, tools, frontend technologies,
@@ -83,6 +84,8 @@ const logos = [
   // Databases
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
+  { src: postgresqlLogo, name: 'PostgreSQL' },
+
   { src: supabaseLogo, name: 'Supabase' }
 ];
 

@@ -6,28 +6,8 @@ import codecademyLogo from '../images/codecademy.svg';
 import freecodecampLogo from '../images/freeCodeCamp.png';
 import W3SchoolsLogo from '../images/W3Schools.svg';
 import colorCodeLogo from '../images/colorcode.jpg';
+import leetCodeLogo from '../images/leetCode.png';
 
-/**
- * About component representing the personal information and interests of the user.
- *
- * @component
- * @example
- * return (
- *   <About />
- * )
- *
- * @returns {JSX.Element} The rendered component displaying the introduction, background, hobbies, and studies section.
- *
- * @description
- * This component showcases the user's personal project, background in nursing and software development, hobbies, and educational logos.
- * It includes three main sections:
- * - Introduction: A brief welcome message.
- * - Background: A detailed description of the user's professional journey from nursing to software development.
- * - Hobbies: A list of the user's hobbies.
- * - StudiesSection: A sub-component displaying logos of educational platforms.
- *
- * @namespace About
- */
 const About = () => {
     const logos = [
         { name: 'Udemy', src: udemyLogo },
@@ -36,6 +16,7 @@ const About = () => {
         { name: 'FreeCodeCamp', src: freecodecampLogo },
         { name: 'W3Schools', src: W3SchoolsLogo },
         { name: 'ColorCode.io', src: colorCodeLogo },
+        { name: 'LeetCode', src: leetCodeLogo },
     ];
 
     const StudiesSection = ({ logos }) => (
