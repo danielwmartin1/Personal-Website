@@ -124,10 +124,7 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem; /* 16px */
-}
-
-.section p {
-  font-size: 1.5rem; /* 24px */
+  margin: 0.5rem;
 }
 
 .about_main div, .portfolio-container {
