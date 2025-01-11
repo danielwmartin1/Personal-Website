@@ -31,6 +31,7 @@ import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg';
 import jestLogo from '../images/jest.svg';
 import postgresqlLogo from '../images/postgresql.png';
+import postmanLogo from '../images/postman.png';
 
 /**
  * An array of logo objects representing various IDEs, tools, frontend technologies,
@@ -54,7 +55,8 @@ const logos = [
   { src: githubLogo, name: 'GitHub' },
   { src: gitLogo, name: 'Git' },
   { src: npmLogo, name: 'NPM' },
-  { src: viteLogo, name: 'ViteJS' },
+  { src: postmanLogo, name: 'Postman' },
+  { src: viteLogo, name: 'Vite' },
   { src: vercelLogo, name: 'Vercel' },
 
   // Frontend Technologies
@@ -85,7 +87,6 @@ const logos = [
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
   { src: postgresqlLogo, name: 'PostgreSQL' },
-
   { src: supabaseLogo, name: 'Supabase' }
 ];
 
