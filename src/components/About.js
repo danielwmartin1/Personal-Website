@@ -7,6 +7,7 @@ import freecodecampLogo from '../images/freeCodeCamp.png';
 import W3SchoolsLogo from '../images/W3Schools.svg';
 import colorCodeLogo from '../images/colorcode.jpg';
 import leetCodeLogo from '../images/leetCode.png';
+import ztmLogo from '../images/ZTM.png';
 
 const About = () => {
     const logos = [
@@ -16,6 +17,7 @@ const About = () => {
         { name: 'FreeCodeCamp', src: freecodecampLogo },
         { name: 'W3Schools', src: W3SchoolsLogo },
         { name: 'ColorCode.io', src: colorCodeLogo },
+        { name: 'ZeroToMastery', src: ztmLogo },
         { name: 'LeetCode', src: leetCodeLogo },
     ];
 
