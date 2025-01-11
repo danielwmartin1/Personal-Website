@@ -118,8 +118,8 @@
 }
 
 #VisualStudio {
-  width: 100px;
-  margin: 0;
+  width: 100px !important;
+  margin: 0 !important;
 }
 
 .main p {
@@ -165,7 +165,7 @@ p.p {
   }
 
   #VisualStudio {
-    width: 75px;
+    width: 75px !important;
   }
 
   .main p {
@@ -201,7 +201,7 @@ p.p {
   }
 
   #VisualStudio {
-    width: 60px;
+    width: 60px !important;
   }
 
   .main p {
@@ -219,7 +219,7 @@ p.p {
   }
 
   #VisualStudio {
-    width: 45px;
+    width: 45px !important;
   }
 
   .study-img {
@@ -237,11 +237,7 @@ p.p {
   }
 
   #VisualStudio {
-    width: 40px;
-  }
-
-  .study-img {
-
+    width: 40px !important;
   }
   
 }
