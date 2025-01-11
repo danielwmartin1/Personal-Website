@@ -117,6 +117,11 @@
   margin-top: var(--margin-small);
 }
 
+#VisualStudio {
+  width: 100px;
+  margin: 0;
+}
+
 .main p {
   font-size: 1em; /* 9px */
 }
