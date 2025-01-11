@@ -32,6 +32,7 @@ import vercelLogo from '../images/vercel.svg';
 import jestLogo from '../images/jest.svg';
 import postgresqlLogo from '../images/postgresql.png';
 import postmanLogo from '../images/postman.png';
+import angularLogo from '../images/angular.svg';
 
 /**
  * An array of logo objects representing various IDEs, tools, frontend technologies,
@@ -68,6 +69,7 @@ const logos = [
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
   { src: nextjsLogo, name: 'NextJS' },
+  { src: angularLogo, name: 'Angular' },
 
   // Backend Technologies
   { src: nodeLogo, name: 'NodeJS' },

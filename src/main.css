@@ -52,7 +52,11 @@
   border-radius: 5px;
 }
 
-
+#Angular {
+  height: 55px;
+  width: auto;
+  border-radius: 8px;
+}
 
 #Jest {
   background-color: white !important;
@@ -204,6 +208,10 @@ p.p {
     width: 60px !important;
   }
 
+  #Angular {
+    height: 45px;
+  }
+
   .main p {
     font-size: 1rem;
   }
@@ -222,9 +230,6 @@ p.p {
     width: 45px !important;
   }
 
-  .study-img {
-
-  }
 }
 
 @media (max-width: 325px) {
