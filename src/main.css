@@ -190,7 +190,7 @@ p.p {
     font-size: calc(var(--font-size-small) - 0.125rem);
   }
 
-  .logo {
+  .logo, #Jest {
     margin: calc(var(--margin-small) / 2);
     width: 40px;
   }
