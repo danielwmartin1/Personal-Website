@@ -281,13 +281,13 @@ form {
 #Codecademy {
   background-color: white;
   padding: 1rem;
-  width: 175px; /* Increased by 33% from 60px */
+  width: 150px; /* Increased by 33% from 60px */
   height: auto;
 }
 
 #FreeCodeCamp {
   padding: 0rem;
-  width: 125px; /* Increased by 33% from 60px */
+  width: 145px; /* Increased by 33% from 60px */
   height: auto;
 }
 
