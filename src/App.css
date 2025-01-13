@@ -297,6 +297,13 @@ form {
   border-radius: 8px;
 }
 
+#StackOverFlow {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
 #project-link {
   color: var(--primary-color);
   text-decoration: none;
