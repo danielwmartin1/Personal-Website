@@ -301,7 +301,7 @@ form {
   width: 100px;
   height: auto;
   border-radius: 8px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 #project-link {
@@ -312,6 +312,13 @@ form {
   width: 100%;
   margin: 1rem;
   padding: 1rem;
+}
+
+#MDN {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.734);
 }
 
 /* Classes with multiple selectors */

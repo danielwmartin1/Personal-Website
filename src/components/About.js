@@ -10,6 +10,7 @@ import leetCodeLogo from '../images/leetCode.png';
 import ztmLogo from '../images/ZTM.png';
 import reactLogo from '../images/React.png';
 import stackOverFlowLogo from '../images/stackOverFlow.png';
+import MDNLogo from '../images/MDN.png';
 
 const About = () => {
     const logos = [
@@ -22,7 +23,8 @@ const About = () => {
         { name: 'ZeroToMastery', src: ztmLogo },
         { name: 'LeetCode', src: leetCodeLogo },
         { name: 'React', src: reactLogo },
-        { name: 'StackOverFlow', src: stackOverFlowLogo }
+        { name: 'StackOverFlow', src: stackOverFlowLogo },
+        { name: 'MDN', src: MDNLogo },
     ];
 
     const StudiesSection = ({ logos }) => (
