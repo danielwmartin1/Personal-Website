@@ -99,7 +99,7 @@ img {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  margin: 2.5rem;
+
 }
 
 .study {
@@ -219,7 +219,6 @@ form {
 
 .project-link {
   margin-bottom: 1rem;
-  padding-left: 0.5rem !important;
   display: grid;
   grid-template-columns: auto auto auto;
 }
@@ -304,8 +303,8 @@ form {
   transition: color 0.3s ease;
   font-size: 1rem; /* 16px */
   width: 100%;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /* Classes with multiple selectors */
