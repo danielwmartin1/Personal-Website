@@ -5,6 +5,7 @@ import linkedinLogo from '../images/linkedin.png';
 import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
 import leetCodeLogo from '../images/leetCode.png';
+import stackOverFlowLogo from '../images/stackOverFlow.png';
 import '../buttons.css';
 import { Link } from 'react-router-dom';
 
@@ -56,6 +57,7 @@ const Contact = () => {
           <SocialIcon href="https://www.facebook.com/daniel.martin" src={facebookLogo} alt="Facebook" />
           <SocialIcon href="https://discord.com/users/danielmartin" src={discordLogo} alt="Discord" />
           <SocialIcon href="https://leetcode.com/u/danielwmartin1/" src={leetCodeLogo} alt="leetCode" />
+          <SocialIcon href="https://stackoverflow.com/users/19347547/daniel-martin/" src={stackOverFlowLogo} alt="Stack Overflow" />
         </div>
       </div>
     </main>

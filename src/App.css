@@ -383,6 +383,19 @@ form {
   margin: 2rem;
 }
 
+.social-icons img {
+  width: 60px;
+  margin: var(--margin);
+  border-radius: 8px;
+}
+
+.Stack {
+  width: 75px !important;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
     padding: 1rem;
