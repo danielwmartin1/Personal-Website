@@ -386,7 +386,7 @@ form {
 .social-icons img {
   width: 60px;
   margin: var(--margin);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .Stack {
