@@ -345,18 +345,18 @@ form {
 
 .GitHub {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .Discord {
-  height: 65px;
+  height: 70px;
   width: auto;
 }
 
-.leetCode {
-  height: 55px;
+.leetCode, #LeetCode {
+  height: 60px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* New social-icons class */
