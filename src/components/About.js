@@ -12,7 +12,7 @@ import ztmLogo from '../images/ZTM.png';
 const About = () => {
     const logos = [
         { name: 'Udemy', src: udemyLogo },
-        { name: 'CS50', src: cs50Logo },
+        { name: 'Harvard CS50', src: cs50Logo },
         { name: 'Codecademy', src: codecademyLogo },
         { name: 'FreeCodeCamp', src: freecodecampLogo },
         { name: 'W3Schools', src: W3SchoolsLogo },
