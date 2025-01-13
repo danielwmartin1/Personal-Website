@@ -28,7 +28,7 @@ import '../App.css';
  */
 function App() {
   return (
-    <ErrorBoundary>
+    <ErrorBoundary>  
       <div className="App">
         <Header />
         <Suspense fallback={<div>Loading...</div>}>

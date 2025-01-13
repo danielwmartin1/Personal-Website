@@ -85,7 +85,9 @@
 #Flask {
   background-color: white;
   padding: var(--padding-small);
-  border-radius: 8px;
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
 }
 
 #PostgreSQL {
