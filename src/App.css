@@ -354,8 +354,8 @@ form {
 }
 
 .leetCode, #LeetCode {
-  height: 60px;
-  width: auto;
+  width: 60px;
+  height: auto;
   border-radius: 10px;
 }
 
