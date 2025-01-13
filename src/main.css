@@ -85,8 +85,8 @@
 #Flask {
   background-color: white;
   padding: var(--padding-small);
-  height: 50px;
-  width: auto;
+  width: 50px;
+  height: auto;
   border-radius: 10px;
 }
 
