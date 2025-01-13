@@ -220,7 +220,7 @@ form {
   margin-bottom: 1rem;
   padding-left: 0.5rem !important;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
 }
 
 #W3Schools {
@@ -459,7 +459,13 @@ form {
     font-size: 0.9rem!important; /* 14px */
   }
 
+  .project-link {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
   #project-link {
+
     font-size: 0.75rem; /* 12px */
     margin: 1rem;
   }
