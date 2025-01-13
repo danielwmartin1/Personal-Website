@@ -364,8 +364,8 @@ form {
 }
 
 .Discord {
-  height: 70px;
-  width: auto;
+  height: auto;
+  width: 75px !important;
 }
 
 .leetCode, #LeetCode {
