@@ -85,7 +85,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  border: 3px solid var(--primary-color);
+  border: 3.5px ridge var(--primary-color);
   padding: 5rem 10rem;
   border-radius: 5px;
 }
@@ -114,7 +114,7 @@ img {
 }
 
 .study img {
-  width: 60px;
+  width: 60px !important;
   margin: var(--margin-small);
   border-radius: 8px;
 }
@@ -234,7 +234,7 @@ form {
   align-items: center;
   font-size: 1rem; /* 16px */
   background-color: var(--background-color);
-  border-radius: 5px;
+  border-radius: 5px ;
   border: 3.5px ridge var(--primary-color) !important;
 }
 
@@ -280,25 +280,25 @@ form {
 
 #Codecademy {
   background-color: white;
-  padding: 1rem;
-  width: 150px; /* Increased by 33% from 60px */
+  padding: 0.5rem;
+  width: 150px !important; /* Increased by 33% from 60px */
   height: auto;
 }
 
 #FreeCodeCamp {
   padding: 0rem;
-  width: 145px; /* Increased by 33% from 60px */
+  width: 120px !important; /* Increased by 33% from 60px */
   height: auto;
 }
 
 #Udemy {
-  width: 75px; /* Increased by 33% from 60px */
+  width: 70px !important; /* Increased by 33% from 60px */
   height: auto;
   border-radius: 8px;
 }
 
 #StackOverFlow {
-  width: 100px;
+  width: 100px !important; /* Increased by 33% from 60px */
   height: auto;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
@@ -315,7 +315,7 @@ form {
 }
 
 #MDN {
-  width: 100px;
+  width: 100px !important; /* Increased by 33% from 60px */
   height: auto;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.734);
