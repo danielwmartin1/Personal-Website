@@ -258,7 +258,7 @@ form {
 .GitHub {
   width: 60px !important; /* Increased by 33% from 45px */
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px !important;
   background-color: white;
 }
 
@@ -288,19 +288,19 @@ form {
 
 #FreeCodeCamp {
   padding: 0rem;
-  width: 120px !important; /* Increased by 33% from 60px */
-  height: auto;
+  height: 50px !important; /* Increased by 33% from 60px */
+  width: auto;
 }
 
 #Udemy {
-  width: 70px !important; /* Increased by 33% from 60px */
-  height: auto;
+  height: 50px !important; /* Increased by 33% from 60px */
+  width: auto;
   border-radius: 8px;
 }
 
 #StackOverFlow {
-  width: 100px !important; /* Increased by 33% from 60px */
-  height: auto;
+  height: 55px !important; /* Increased by 33% from 60px */
+  width: auto;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
 }
@@ -316,7 +316,7 @@ form {
 }
 
 #MDN {
-  height: 60px !important; /* Increased by 33% from 60px */
+  height: 55px !important; /* Increased by 33% from 60px */
   width: auto;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.734);
@@ -361,7 +361,7 @@ form {
 
 
 .leetCode, #LeetCode {
-  border-radius: 10px;
+  border-radius: 14px !important;
 }
 
 .social-icons img {
@@ -372,7 +372,7 @@ form {
 }
 
 .social-icons img.Discord {
-  height: 90px !important;
+  height: 80px !important;
   width: auto !important;
 }
 
@@ -487,6 +487,7 @@ form {
     font-size: 1.5rem;
     margin: 2rem;
   }
+
 }
 
 @media (max-width: 480px) {
