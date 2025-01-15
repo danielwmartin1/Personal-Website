@@ -364,7 +364,7 @@ form {
   border-radius: 14px !important;
 }
 
-.social-icons img {
+.study-img, .social-icons img {
   height: 70px !important;
   width: auto !important;
   margin: 1rem;
@@ -405,9 +405,9 @@ form {
     font-size: 1rem!important; /* 16px */
   }
 
-  .social-icons {
-    flex-direction: column;
-    margin: 1rem;
+  .study-img, .social-icons img {
+    height: 50px !important;
+    width: auto !important;
   }
 }
 
@@ -440,10 +440,14 @@ form {
     margin: 2rem;
   }
 
-  .social-icons {
+
+  .social-icons img.Discord {
+    height: 60px !important;
+    width: auto !important;
+  }
+
+  .study-img, .social-icons img {
     margin: 0.5rem;
-    display: grid !important;
-    grid-template-columns: auto auto auto auto;
   }
 
   .center-text {
@@ -519,6 +523,11 @@ form {
 
   .about_main div {
     margin: 2rem;
+  }
+
+  .social-icons {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
   }
 
   .portfolio-container {

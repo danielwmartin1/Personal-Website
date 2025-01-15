@@ -98,8 +98,8 @@
 #Flask {
   background-color: white;
   padding: var(--padding-small);
-  width: 50px;
-  height: auto;
+  height: 55px !important;
+  width: auto !important;
   border-radius: 10px;
 }
 
@@ -222,7 +222,7 @@ p.p {
   }
 
   #VisualStudio {
-    width: 65px !important;
+    width: 70px !important;
   }
 
   #Angular {
@@ -243,7 +243,7 @@ p.p {
 
 @media (max-width: 325px) {
   #profile {
-    width: 75px !important;
+    width: 80px !important;
   }
   
 }
