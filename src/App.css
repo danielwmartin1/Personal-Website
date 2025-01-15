@@ -365,10 +365,7 @@ form {
   text-align: left;
 }
 
-.Discord {
-  height: auto;
-  width: 75px !important;
-}
+
 
 .leetCode, #LeetCode {
   width: 60px;
@@ -385,9 +382,15 @@ form {
 }
 
 .social-icons img {
-  width: 60px;
-  margin: 0.5rem;
+  height: 75px !important;
+  width: auto !important;
+  margin: 1rem;
   border-radius: 8px;
+}
+
+.social-icons img.Discord {
+  height: 90px !important;
+  width: auto !important;
 }
 
 .Stack {
@@ -550,18 +553,13 @@ form {
 
   .social-icons img {
     height: 60px !important;
-    width: auto !important;
-    margin: 0.5rem;
+    width: auto !important; 
+    margin: 1rem;
     border-radius: 8px;
   }
 
   .Stack.Overflow {
     width: 60px !important;
     height: auto !important;
-  }
-
-  img.Discord {
-    height: 60px !important;
-    width: auto !important;
   }
 }
