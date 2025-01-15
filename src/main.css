@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 3rem !important;
+  padding: 1rem;
   border-radius: 5px;
 }
 
@@ -168,6 +169,13 @@ p.p {
   transform: scale(0.9);
 }
 
+#C, #C\+\+, #C\# {
+  height: 70px !important;
+  width: auto !important;
+}
+
+
+
 /* Responsive adjustments */
 
 @media (max-width: 1024px) {
@@ -181,10 +189,6 @@ p.p {
 
   .logo {
     width: 50px;
-  }
-
-  #VisualStudio {
-    width: 75px !important;
   }
 
   .main p {
@@ -209,18 +213,25 @@ p.p {
     font-size: calc(var(--font-size-small) - 0.125rem);
   }
 
-  .logo, #Jest {
+  .logo, {
     margin: calc(var(--margin-small) / 2);
     width: 40px;
   }
 
+  #Jest {
+    width: 50px;
+  }
+
+  #C, #C\+\+, #C\# {
+    height: 50px !important;
+  }
 
   #profile {
     width: 120px !important;
   }
 
   #VisualStudio {
-    width: 60px !important;
+    width: 65px !important;
   }
 
   #Angular {
@@ -241,14 +252,6 @@ p.p {
     width: 40px !important;
   }
 
-  .logos {
-    margin: 1.25rem !important;
-  }
-
-  #VisualStudio {
-    width: 45px !important;
-  }
-
 }
 
 @media (max-width: 325px) {
@@ -257,11 +260,7 @@ p.p {
   }
 
   .logo {
-    width: 30px !important;
-  }
-
-  #VisualStudio {
-    width: 40px !important;
+      width: 30px !important;
   }
   
 }
