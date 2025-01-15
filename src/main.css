@@ -105,13 +105,14 @@
 #PostgreSQL {
   background-color: white;
   padding: 0.25rem;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 #profile {
   width: 150px !important;
   border: 2px solid var(--primary-color); 
   margin: 1rem;
+  border-radius: 8px;
 }
 
 #name {
