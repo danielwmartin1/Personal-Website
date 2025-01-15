@@ -376,7 +376,7 @@ form {
 
 @media (max-width: 768px) {
   .about_main, .form-container, .divProject, .section {
-    padding: 1rem;
+    padding: 0!important;
     font-size: 1.125rem; /* 18px */
   }
 
