@@ -187,10 +187,6 @@ p.p {
     gap: 1.5rem;
   }
 
-  .logo {
-    width: 50px;
-  }
-
   .main p {
     font-size: 1.2rem;
   }
@@ -211,11 +207,6 @@ p.p {
 
   p.p {
     font-size: calc(var(--font-size-small) - 0.125rem);
-  }
-
-  .logo, {
-    margin: calc(var(--margin-small) / 2);
-    width: 40px;
   }
 
   #Jest {
@@ -248,19 +239,11 @@ p.p {
     width: 100px !important;
   }
 
-  .logo {
-    width: 40px !important;
-  }
-
 }
 
 @media (max-width: 325px) {
   #profile {
     width: 75px !important;
-  }
-
-  .logo {
-      width: 30px !important;
   }
   
 }

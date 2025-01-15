@@ -113,12 +113,6 @@ img {
   background-color: var(--background-color) !important;
 }
 
-.study img {
-  width: 60px !important;
-  margin: var(--margin-small);
-  border-radius: 8px;
-}
-
 .section {
   display: flex;
   flex-direction: column;
@@ -322,8 +316,8 @@ form {
 }
 
 #MDN {
-  width: 100px !important; /* Increased by 33% from 60px */
-  height: auto;
+  height: 60px !important; /* Increased by 33% from 60px */
+  width: auto;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.734);
 }
@@ -366,23 +360,12 @@ form {
 }
 
 
-
 .leetCode, #LeetCode {
-  width: 60px;
-  height: auto;
   border-radius: 10px;
 }
 
-/* New social-icons class */
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .social-icons img {
-  height: 75px !important;
+  height: 70px !important;
   width: auto !important;
   margin: 1rem;
   border-radius: 8px;
@@ -459,8 +442,8 @@ form {
 
   .social-icons {
     margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
+    display: grid !important;
+    grid-template-columns: auto auto auto auto;
   }
 
   .center-text {
