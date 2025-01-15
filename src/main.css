@@ -109,7 +109,7 @@
 }
 
 #profile {
-  width: 150px !important;
+  width: 175px !important;
   border: 2px solid var(--primary-color); 
   margin: 1rem;
   border-radius: 8px;
@@ -172,7 +172,7 @@ p.p {
 
 @media (max-width: 1024px) {
   #profile {
-    width: 130px;
+    width: 140px;
   }
 
   .logo-container {
@@ -216,7 +216,7 @@ p.p {
 
 
   #profile {
-    width: 100px !important;
+    width: 120px !important;
   }
 
   #VisualStudio {
@@ -234,7 +234,7 @@ p.p {
 
 @media (max-width: 480px) {
   #profile {
-    width: 80px !important;
+    width: 100px !important;
   }
 
   .logo {
@@ -253,7 +253,7 @@ p.p {
 
 @media (max-width: 325px) {
   #profile {
-    width: 60px !important;
+    width: 75px !important;
   }
 
   .logo {
