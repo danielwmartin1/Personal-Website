@@ -281,25 +281,12 @@ form {
 
 #Codecademy {
   background-color: white;
-  padding: 0.5rem;
-  width: 150px !important; /* Increased by 33% from 60px */
-  height: auto;
+  padding: 1rem;
 }
 
-#FreeCodeCamp {
-  padding: 0rem;
-  height: 50px !important; /* Increased by 33% from 60px */
-  width: auto;
-}
-
-#Udemy {
-  height: 50px !important; /* Increased by 33% from 60px */
-  width: auto;
-  border-radius: 8px;
-}
 
 #StackOverFlow {
-  height: 55px !important; /* Increased by 33% from 60px */
+  height: 60px !important; /* Increased by 33% from 60px */
   width: auto;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
@@ -316,8 +303,8 @@ form {
 }
 
 #MDN {
-  height: 55px !important; /* Increased by 33% from 60px */
-  width: auto;
+  height: 60px !important; /* Increased by 33% from 60px */
+  width: auto !important;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.734);
 }
