@@ -31,7 +31,6 @@
 }
 
 .logo {
-  max-width: 100%;
   height: auto;
   margin: var(--margin-medium);
   text-align: center;
@@ -70,6 +69,18 @@
   background-color: white;
   padding: 0;
   border-radius: 16px;
+}
+
+#Git {
+  padding: 0;
+  height: 25px !important;
+  width: auto !important;
+}
+
+#NPM {
+  padding: 0;
+  height: 50px !important;
+  width: auto !important;
 }
 
 #Vercel, #NextJS {
@@ -226,7 +237,11 @@ p.p {
   }
 
   .logo {
-    width: 35px !important;
+    width: 40px !important;
+  }
+
+  .logos {
+    margin: 1.25rem !important;
   }
 
   #VisualStudio {
