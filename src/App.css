@@ -261,6 +261,13 @@ form {
   text-indent: 0 !important;
 }
 
+.GitHub {
+  width: 60px !important; /* Increased by 33% from 45px */
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
 #anchor {
   color: var(--primary-color);
   text-decoration: none;
@@ -375,13 +382,12 @@ form {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
 }
 
 .social-icons img {
   width: 60px;
-  margin: var(--margin);
-  border-radius: 10px;
+  margin: 0.5rem;
+  border-radius: 8px;
 }
 
 .Stack {
@@ -389,6 +395,10 @@ form {
   height: auto;
   border-radius: 8px;
   background-color: white;
+}
+
+.form-style {
+  padding: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -534,9 +544,24 @@ form {
   }
 
   .social-icons {
-    margin: 0.5rem;
     display: grid !important;
     grid-template-columns: auto auto auto;
+  }
 
+  .social-icons img {
+    height: 60px !important;
+    width: auto !important;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .Stack.Overflow {
+    width: 60px !important;
+    height: auto !important;
+  }
+
+  img.Discord {
+    height: 60px !important;
+    width: auto !important;
   }
 }
