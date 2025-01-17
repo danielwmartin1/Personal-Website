@@ -32,7 +32,7 @@
 
 .logo {
   height: auto;
-  margin: var(--margin-medium);
+  margin: var(--margin-small);
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@
 
 #profile {
   width: 175px !important;
-  border: 2px solid var(--primary-color); 
+  border: 3.5px ridge var(--primary-color); 
   margin: 1rem;
   border-radius: 8px;
 }
