@@ -8,6 +8,8 @@ import visualStudioLogo from '../images/visualstudio.png';
 import vscodeLogo from '../images/vscode.png';
 import githubLogo from '../images/github.png';
 import gitLogo from '../images/git.png';
+import viteLogo from '../images/Vitejs-logo.svg';
+import vercelLogo from '../images/vercel.svg';
 import htmlLogo from '../images/HTML.png';
 import cssLogo from '../images/CSS.png';
 import bootstrapLogo from '../images/bootstrap.png';
@@ -15,6 +17,8 @@ import tailwindLogo from '../images/tailwind.png';
 import jsLogo from '../images/JS.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
+import angularLogo from '../images/angular.svg';
+/* import vueLogo from '../images/vue.png'; */
 import nodeLogo from '../images/node.png';
 import npmLogo from '../images/npm.png';
 import expressLogo from '../images/express.png';
@@ -27,12 +31,10 @@ import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import supabaseLogo from '../images/supabaseLogo.png';
-import viteLogo from '../images/Vitejs-logo.svg';
-import vercelLogo from '../images/vercel.svg';
 import jestLogo from '../images/jest.svg';
 import postgresqlLogo from '../images/postgresql.png';
 import postmanLogo from '../images/postman.png';
-import angularLogo from '../images/angular.svg';
+
 
 /**
  * An array of logo objects representing various IDEs, tools, frontend technologies,
@@ -68,8 +70,9 @@ const logos = [
   { src: jsLogo, name: 'JavaScript' },
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
-  { src: nextjsLogo, name: 'NextJS' },
   { src: angularLogo, name: 'Angular' },
+  /* { src: vueLogo, name: 'Vue' }, */
+  { src: nextjsLogo, name: 'NextJS' },
 
   // Backend Technologies
   { src: nodeLogo, name: 'NodeJS' },
