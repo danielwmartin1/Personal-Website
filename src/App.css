@@ -356,6 +356,17 @@ form {
   width: auto !important;
   margin: 1rem;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.study-img:hover, .social-icons img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.study-img:active, .social-icons img:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
 }
 
 .social-icons img.Discord {

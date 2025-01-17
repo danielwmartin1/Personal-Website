@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import udemyLogo from '../images/udemy.jpg';
+import galeUdemyLogo from '../images/galeUdemy.png';
 import cs50Logo from '../images/cs50.png';
 import codecademyLogo from '../images/codecademy.svg';
 import freecodecampLogo from '../images/freeCodeCamp.png';
@@ -14,23 +15,24 @@ import MDNLogo from '../images/MDN.png';
 
 const About = () => {
     const logos = [
-        { name: 'Udemy', src: udemyLogo },
-        { name: 'Harvard CS50', src: cs50Logo },
-        { name: 'Codecademy', src: codecademyLogo },
-        { name: 'FreeCodeCamp', src: freecodecampLogo },
-        { name: 'W3Schools', src: W3SchoolsLogo },
-        { name: 'ColorCode.io', src: colorCodeLogo },
-        { name: 'ZeroToMastery', src: ztmLogo },
-        { name: 'LeetCode', src: leetCodeLogo },
-        { name: 'React', src: reactLogo },
-        { name: 'StackOverFlow', src: stackOverFlowLogo },
-        { name: 'MDN', src: MDNLogo },
+        { name: 'Udemy', src: udemyLogo, url: 'https://www.udemy.com/user/daniel-martin-504/' },
+        { name: 'Gale Udemy', src: galeUdemyLogo, url: 'https://gale.udemy.com/user/daniel-martin-550/' },
+        { name: 'Harvard CS50', src: cs50Logo, url: 'https://cs50.harvard.edu/' },
+        { name: 'Codecademy', src: codecademyLogo, url: 'https://www.codecademy.com/profiles/dwm1982' },
+        { name: 'FreeCodeCamp', src: freecodecampLogo, url: 'https://www.freecodecamp.org/' },
+        { name: 'W3Schools', src: W3SchoolsLogo, url: 'https://pathfinder.w3schools.com/' },
+        { name: 'ColorCode.io', src: colorCodeLogo, url: 'https://colorcode.io/' },
+        { name: 'ZeroToMastery', src: ztmLogo, url: 'https://zerotomastery.io/' },
+        { name: 'LeetCode', src: leetCodeLogo, url: 'https://leetcode.com/u/danielwmartin1/' },
+        { name: 'React', src: reactLogo, url: 'https://react.dev/learn/' },
+        { name: 'StackOverFlow', src: stackOverFlowLogo, url: 'https://stackoverflow.com/users/19347547/daniel-martin/' },
+        { name: 'MDN', src: MDNLogo, url: 'https://developer.mozilla.org/' },
     ];
 
     const StudiesSection = ({ logos }) => (
           <div className="logos study">
             {logos.map((logo, index) => (
-              <img key={index} className="logo study-img" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
+              <img onClick={() => window.open(logo.url, '_blank')} key={index} className="logo study-img" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.url}`} />
             ))}
           </div>
       );
