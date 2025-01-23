@@ -25,7 +25,8 @@ const Projects = () => {
         { href: "https://dwm-todolist-supabase.vercel.app/", text: "Supabase To-Do List" },
         { href: "https://dwm-todolist.vercel.app/", text: "To-Do List" },
         { href: "https://dwm-todolist-api.vercel.app/tasks/", text: "To-Do List API" },
-        { href: "https://dwm-todolist-next.vercel.app/", text: "Next.JS To-Do List" }
+        { href: "https://dwm-todolist-next.vercel.app/", text: "Next.JS To-Do List" },
+        { href: "https://dwm-todolist-angular.vercel.app/", text: "Angular.TS To-Do List" },
     ];
 
     return (

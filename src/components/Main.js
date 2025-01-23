@@ -18,7 +18,7 @@ import jsLogo from '../images/JS.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import angularLogo from '../images/angular.svg';
-/* import vueLogo from '../images/vue.png'; */
+import vueLogo from '../images/vue.png';
 import nodeLogo from '../images/node.png';
 import npmLogo from '../images/npm.png';
 import expressLogo from '../images/express.png';
@@ -70,8 +70,10 @@ const logos = [
   { src: jsLogo, name: 'JavaScript' },
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: reactLogo, name: 'React' },
+  // Unit-Testing
+  { src: jestLogo, name: 'Jest' },
   { src: angularLogo, name: 'Angular' },
-  /* { src: vueLogo, name: 'Vue' }, */
+  { src: vueLogo, name: 'Vue' },
   { src: nextjsLogo, name: 'NextJS' },
 
   // Backend Technologies
@@ -79,9 +81,8 @@ const logos = [
   { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
-  
-  // Unit-Testing
-  { src: jestLogo, name: 'Jest' },
+
+
 
   // Programming Languages
   { src: cLogo, name: 'C' },
