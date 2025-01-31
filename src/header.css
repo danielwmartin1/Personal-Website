@@ -1,0 +1,141 @@
+@import url('./header.css');
+@import url('./variables.css');
+
+header {
+    background-color: var(--background-color);
+    border-bottom: 5px ridge var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
+    justify-content: center; /* Center the header content horizontally */
+    align-items: center; /* Center the header content vertically */
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--background-color);
+    border-top: 3px solid var(--primary-color);
+    margin-top: auto;
+    text-align: center;
+}
+
+.listItem > a {
+    align-items: center;
+    background-color: var(--background-color);
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 2.25rem !important;
+}
+
+.menu-container {
+    align-items: center;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+}
+
+.menu-button {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-container {
+    align-items: center;
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items {
+    align-items: center; /* Center items vertically */
+    background-color: var(--background-color);
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items a {
+    color: var(--text-color);
+    display: flex;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Change font-family to Arial Black for a standout effect */
+    font-size: clamp(1.5rem, 3vw, 3rem); /* Responsive font size */
+    justify-content: center;
+    align-items: center; /* Center text inside the links */
+    margin: 1rem;
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-items a:active {
+    color: yellowgreen;
+    transform: scale(0.95); /* Slightly shrink the link when active */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .nav-items a {
+        font-size: 1.5rem!important; /* Smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-items a {
+        font-size: 1.3rem!important; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .nav-items a {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem !important; /* Smaller font size for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header content vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items a {
+        font-size: 1rem!important; /* Smaller font size for very small screens */
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-button {
+        font-size: 1rem;
+    }
+}

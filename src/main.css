@@ -1,0 +1,249 @@
+:root {
+  --margin-small: 0.5rem;
+  --margin-medium: 0.75rem;
+  --padding-small: 0.5rem;
+  --padding-medium: 0.75rem;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --text-color: #ffffff;
+  --font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  flex: 1;
+  color: var(--text-color);
+}
+
+.logo-container {
+  gap: 1.5rem;
+}
+
+.logo {
+  height: auto;
+  margin: var(--margin-small);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.logos {
+  background-color: var(--background-color);
+  border: 3.5px ridge var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem !important;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#Angular {
+  height: 55px;
+  width: auto;
+  border-radius: 8px;
+}
+
+#Jest {
+  background-color: white !important;
+  padding: var(--padding-small);
+  border-radius: 50%;
+  width: 60px;
+}
+
+#GitHub {
+  background-color: white;
+  padding: 0;
+  border-radius: 16px;
+}
+
+#Git {
+  padding: 0;
+  height: 25px !important;
+  width: auto !important;
+}
+
+#NPM {
+  padding: 0;
+  height: 50px !important;
+  width: auto !important;
+}
+
+#Vercel, #NextJS {
+  background-color: white;
+  border-radius: 50%;
+}
+
+#ExpressJS {
+  background-color: black;
+  padding: var(--padding-small);
+  border-radius: 50%;
+}
+
+#Flask {
+  background-color: white;
+  padding: var(--padding-small);
+  height: 55px !important;
+  width: auto !important;
+  border-radius: 10px;
+}
+
+#PostgreSQL {
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+#profile {
+  width: 175px !important;
+  border: 3.5px ridge var(--primary-color); 
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+#name {
+  font-size: var(--font-size-large);
+  color: var(--text-color);
+}
+
+#experience, #tech {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+}
+
+#contact {
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+  margin: var(--margin-small);
+}
+
+#name, #experience, #tech {
+  font-family: var(--font-family);
+  margin-top: var(--margin-small);
+}
+
+#VisualStudio {
+  width: 100px !important;
+  margin: 0 !important;
+}
+
+.main p {
+  font-size: 1em; /* 9px */
+}
+
+p.p {
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  width: 80%;
+}
+
+.small-logo {
+  width: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.small-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-logo:active {
+  transform: scale(0.9);
+}
+
+#C, #C\+\+, #C\# {
+  height: 70px !important;
+  width: auto !important;
+}
+
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+  #profile {
+    width: 140px;
+  }
+
+  .logo-container {
+    gap: 1.5rem;
+  }
+
+  .main p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #name {
+    font-size: calc(var(--font-size-large) - 0.25rem);
+  }
+
+  #experience, #tech {
+    font-size: calc(var(--font-size-medium) - 0.25rem);
+  }
+
+  #contact {
+    font-size: calc(var(--font-size-small) - 0.25rem);
+  }
+
+  p.p {
+    font-size: calc(var(--font-size-small) - 0.125rem);
+  }
+
+  #Jest {
+    width: 50px;
+  }
+
+  #C, #C\+\+, #C\# {
+    height: 50px !important;
+  }
+
+  #profile {
+    width: 120px !important;
+  }
+
+  #VisualStudio {
+    width: 70px !important;
+  }
+
+  #Angular {
+    height: 45px;
+  }
+
+  .main p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile {
+    width: 100px !important;
+  }
+
+}
+
+@media (max-width: 325px) {
+  #profile {
+    width: 80px !important;
+  }
+  
+}

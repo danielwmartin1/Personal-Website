@@ -1,0 +1,42 @@
+@import url('./variables.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active {
+  color: yellowgreen;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  background-image: url('./images/bluegradient.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  min-height: 100vh !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  color: var(--text-color);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

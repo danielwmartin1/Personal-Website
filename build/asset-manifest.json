@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c303bd4e.css",
+    "main.js": "/static/js/main.ddf5915c.js",
+    "static/js/488.4d201857.chunk.js": "/static/js/488.4d201857.chunk.js",
+    "static/media/bluegradient.jpg": "/static/media/bluegradient.efb62ce88a00d6d1b387.jpg",
+    "static/media/profile.jpg": "/static/media/profile.aaf642225d8e33a0bdf3.jpg",
+    "static/media/vscode.png": "/static/media/vscode.b5518dd165c9763f206d.png",
+    "static/media/visualstudio.png": "/static/media/visualstudio.45dbc75cbde38af852a0.png",
+    "static/media/Csharp.png": "/static/media/Csharp.456d41f630085700b5d8.png",
+    "static/media/discord.png": "/static/media/discord.54082400e5a679e420ee.png",
+    "static/media/facebook.png": "/static/media/facebook.c0588947be1b49d3ebfc.png",
+    "static/media/JS.png": "/static/media/JS.225c093439f71ab59f3e.png",
+    "static/media/node.png": "/static/media/node.007e99f68b718e476aba.png",
+    "static/media/django-python-logo.png": "/static/media/django-python-logo.1dd4a6731ff82c516038.png",
+    "static/media/SQL.png": "/static/media/SQL.64b3eb63f995c0da35b3.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.924f5d5d42d02d370a40.png",
+    "static/media/linkedin.png": "/static/media/linkedin.d21b834035baa551e886.png",
+    "static/media/HTML.png": "/static/media/HTML.771c70c2006a4aa0109b.png",
+    "static/media/CSS.png": "/static/media/CSS.993b00a05cf8d05a6d95.png",
+    "static/media/github.png": "/static/media/github.05f6c17b8cd04c28456f.png",
+    "static/media/React.png": "/static/media/React.e627d8b7feb21a57995b.png",
+    "static/media/next-js.svg": "/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
+    "static/media/Vitejs-logo.svg": "/static/media/Vitejs-logo.41adc49884a136155c2e57ea5470194c.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
+    "index.html": "/index.html",
+    "main.c303bd4e.css.map": "/static/css/main.c303bd4e.css.map",
+    "main.ddf5915c.js.map": "/static/js/main.ddf5915c.js.map",
+    "488.4d201857.chunk.js.map": "/static/js/488.4d201857.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c303bd4e.css",
+    "static/js/main.ddf5915c.js"
+  ]
+}

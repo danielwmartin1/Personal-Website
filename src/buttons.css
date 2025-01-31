@@ -1,0 +1,92 @@
+@import url('./variables.css');
+
+.menu-button {
+  background-color: var(--button-background-color);
+  border: none;
+  color: var(--text-color);
+  width: auto !important;
+}
+
+button, .submit-button {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+  background-color: #008CBA !important; /* Default Blue */
+  color: white !important;
+  width: auto;
+}
+
+button:hover {
+  background-color: #007bb5 !important; /* Hover Blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.submit-button {
+  background-color: var(--button-background-color);
+  border: none;
+  color: var(--text-color);
+  width: auto;
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.submit-button:active {
+  background-color: var(--button-active-color);
+  color: var(--tertiary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  button, .submit-button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  button, .submit-button {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  button, .submit-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  button, .submit-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  button, .submit-button {
+    font-size: 0.85rem;
+   
+  }
+}
+
+@media (max-width: 352px) {
+  button, .submit-button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
