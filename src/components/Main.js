@@ -69,9 +69,11 @@ const logos = [
   { src: tailwindLogo, name: 'TailwindCSS' },
   { src: jsLogo, name: 'JavaScript' },
   { src: typeScriptLogo, name: 'TypeScript' },
-  { src: reactLogo, name: 'React' },
   // Unit-Testing
   { src: jestLogo, name: 'Jest' },
+
+  // Frontend Frameworks
+  { src: reactLogo, name: 'React' },
   { src: angularLogo, name: 'Angular' },
   { src: vueLogo, name: 'Vue' },
   { src: nextjsLogo, name: 'NextJS' },
