@@ -20,7 +20,7 @@ const Projects = () => {
         { href: "https://dwm-tictactoe.vercel.app/", text: "Tic-Tac-Toe" },
         { href: "https://dwm-simonsays.vercel.app/", text: "Simon Says" },
         { href: "https://dwm-acls-algorithm.vercel.app/", text: "Interactive ACLS Algorithm" },
-        { href: "https://dwm-ecommerce.vercel.app/", text: "E-Commerce (Frontend)" },
+        //{ href: "https://dwm-ecommerce.vercel.app/", text: "E-Commerce (Frontend)" },
         { href: "https://dwm-weatherapp.vercel.app/", text: "Weather App" },
         { href: "https://dwm-todolist-react.vercel.app/", text: "React.JS To-Do List" },
         { href: "https://dwm-todolist-api.vercel.app/tasks/", text: "React.JS To-Do List API" },
