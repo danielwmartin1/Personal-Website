@@ -18,6 +18,7 @@ import jsLogo from '../images/JS.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import angularLogo from '../images/angular.svg';
+// eslint-disable-next-line
 import vueLogo from '../images/vue.png';
 import nodeLogo from '../images/node.png';
 import npmLogo from '../images/npm.png';
