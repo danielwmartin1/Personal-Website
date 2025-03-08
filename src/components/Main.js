@@ -76,7 +76,7 @@ const logos = [
   // Frontend Frameworks
   { src: reactLogo, name: 'React' },
   { src: angularLogo, name: 'Angular' },
-  { src: vueLogo, name: 'Vue' },
+  //{ src: vueLogo, name: 'Vue' },
   { src: nextjsLogo, name: 'NextJS' },
 
   // Backend Technologies
