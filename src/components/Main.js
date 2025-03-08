@@ -15,6 +15,7 @@ import cssLogo from '../images/CSS.png';
 import bootstrapLogo from '../images/bootstrap.png';
 import tailwindLogo from '../images/tailwind.png';
 import jsLogo from '../images/JS.png';
+import jQueryLogo from '../images/jQuery.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
 import reactLogo from '../images/React.png';
 import angularLogo from '../images/angular.svg';
@@ -70,6 +71,7 @@ const logos = [
   { src: bootstrapLogo, name: 'Bootstrap' },
   { src: tailwindLogo, name: 'TailwindCSS' },
   { src: jsLogo, name: 'JavaScript' },
+  { src: jQueryLogo, name: 'jQuery'},
   { src: typeScriptLogo, name: 'TypeScript' },
   // Unit-Testing
   { src: jestLogo, name: 'Jest' },
