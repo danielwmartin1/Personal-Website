@@ -126,7 +126,7 @@ const ExperienceSection = () => (
 );
 
 const TechnologiesSection = () => (
-  <div className="container" style={{ margin: '0.5rem' }}>
+  <div className="container">
     <h2 id="tech" className='headings'>Technologies</h2>
     <div className="logos">
       {logos.map((logo, index) => (
