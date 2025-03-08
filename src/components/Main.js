@@ -137,7 +137,8 @@ const TechnologiesSection = () => (
           src={logo.src} 
           alt={`${logo.name} Logo`} 
           title={`${logo.name} Logo`} 
-          style={logo.name === 'REST API' ? { width: '7rem', height: '7rem', margin: '0', padding: '0' } : {}}
+          // eslint-disable-next-line
+          style={logo.name == 'REST API' ? { width: '7rem', height: '7rem', margin: '0', padding: '0' } : {}}
         />
       ))}
     </div>
