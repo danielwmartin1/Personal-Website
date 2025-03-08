@@ -23,6 +23,7 @@ import angularLogo from '../images/angular.svg';
 import vueLogo from '../images/vue.png';
 import nodeLogo from '../images/node.png';
 import npmLogo from '../images/npm.png';
+import restapiLogo from '../images/restapi.svg';
 import expressLogo from '../images/express.png';
 import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '../images/django-python-logo.png';
@@ -84,6 +85,7 @@ const logos = [
 
   // Backend Technologies
   { src: nodeLogo, name: 'NodeJS' },
+  { src: restapiLogo, name: 'REST API' },
   { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
@@ -124,11 +126,19 @@ const ExperienceSection = () => (
 );
 
 const TechnologiesSection = () => (
-  <div className="container">
+  <div className="container" style={{ margin: '0.5rem' }}>
     <h2 id="tech" className='headings'>Technologies</h2>
     <div className="logos">
       {logos.map((logo, index) => (
-        <img key={index} className="logo" id={logo.name} src={logo.src} alt={`${logo.name} Logo`} title={`${logo.name} Logo`} />
+        <img 
+          key={index} 
+          className="logo" 
+          id={logo.name} 
+          src={logo.src} 
+          alt={`${logo.name} Logo`} 
+          title={`${logo.name} Logo`} 
+          style={logo.name === 'REST API' ? { width: '7rem', height: '7rem', margin: '0', padding: '0' } : {}}
+        />
       ))}
     </div>
   </div>
