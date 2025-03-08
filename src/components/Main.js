@@ -120,7 +120,7 @@ const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
     <p className="p">
-      With extensive hands-on experience in web development and software engineering, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications and software solutions, giving me a comprehensive understanding of web technologies, software development practices, and their practical applications.
+      With extensive hands-on experience in web development, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications, giving me a comprehensive understanding of web technologies and their practical applications.
     </p>
   </div>
 );
@@ -137,8 +137,7 @@ const TechnologiesSection = () => (
           src={logo.src} 
           alt={`${logo.name} Logo`} 
           title={`${logo.name} Logo`} 
-          // eslint-disable-next-line
-          style={logo.name == 'REST API' ? { width: '7rem', height: '7rem', margin: '0', padding: '0' } : {}}
+          style={logo.name === 'REST API' ? { width: '5rem', height: '5rem' } : {}}
         />
       ))}
     </div>
