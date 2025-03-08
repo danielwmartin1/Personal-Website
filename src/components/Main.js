@@ -29,6 +29,7 @@ import cLogo from '../images/C.png';
 import cPlusLogo from '../images/cPlus.png';
 import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
+import netLogo from '../images/.NET.png';
 import sqlLogo from '../images/SQL.png';
 import supabaseLogo from '../images/supabaseLogo.png';
 import jestLogo from '../images/jest.svg';
@@ -85,11 +86,14 @@ const logos = [
   { src: flaskLogo, name: 'Flask' },
 
 
-
-  // Programming Languages
+  // Backend Languages
   { src: cLogo, name: 'C' },
   { src: cPlusLogo, name: 'C++' },
   { src: csharpLogo, name: 'C#' },
+
+  
+  // Backend Frameworks
+  { src: netLogo, name: '.NET' },
 
   // Databases
   { src: mongodbLogo, name: 'MongoDB' },
