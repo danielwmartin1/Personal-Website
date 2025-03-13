@@ -6,6 +6,7 @@
         "linkedin",
         "noopener",
         "noreferrer",
+        "postgresql",
         "supabase"
     ]
 }

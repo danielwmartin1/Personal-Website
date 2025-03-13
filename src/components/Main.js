@@ -34,9 +34,10 @@ import csharpLogo from '../images/Csharp.png';
 import mongodbLogo from '../images/mongodb.svg';
 import netLogo from '../images/.NET.png';
 import sqlLogo from '../images/SQL.png';
+import postgresqlLogo from '../images/postgresql.png';
+import sqliteLogo from '../images/sqlite.png';
 import supabaseLogo from '../images/supabaseLogo.png';
 import jestLogo from '../images/jest.svg';
-import postgresqlLogo from '../images/postgresql.png';
 import postmanLogo from '../images/postman.png';
 
 
@@ -103,6 +104,7 @@ const logos = [
   // Databases
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
+  { src: sqliteLogo, name: 'SQLite' },
   { src: postgresqlLogo, name: 'PostgreSQL' },
   { src: supabaseLogo, name: 'Supabase' }
 ];
