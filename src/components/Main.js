@@ -8,6 +8,7 @@ import visualStudioLogo from '../images/visualstudio.png';
 import vscodeLogo from '../images/vscode.png';
 import githubLogo from '../images/github.png';
 import gitLogo from '../images/git.png';
+import postmanLogo from '../images/postman.png';
 import viteLogo from '../images/Vitejs-logo.svg';
 import vercelLogo from '../images/vercel.svg';
 import htmlLogo from '../images/HTML.png';
@@ -17,28 +18,26 @@ import tailwindLogo from '../images/tailwind.png';
 import jsLogo from '../images/JS.png';
 import jQueryLogo from '../images/jQuery.png';
 import typeScriptLogo from '../images/ts-logo-128.png';
+import jestLogo from '../images/jest.svg';
 import reactLogo from '../images/React.png';
+import nextjsLogo from '../images/next-js.svg';
 import angularLogo from '../images/angular.svg';
 // eslint-disable-next-line
 import vueLogo from '../images/vue.png';
-import nodeLogo from '../images/node.png';
-//import npmLogo from '../images/npm.png';
 import restapiLogo from '../images/restapi.svg';
+import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.png';
-import nextjsLogo from '../images/next-js.svg';
 import pythonDjangoLogo from '../images/django-python-logo.png';
 import flaskLogo from '../images/flask.svg';
 import cLogo from '../images/C.png';
 import cPlusLogo from '../images/cPlus.png';
 import csharpLogo from '../images/Csharp.png';
-import mongodbLogo from '../images/mongodb.svg';
 import netLogo from '../images/.NET.png';
+import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
-import postgresqlLogo from '../images/postgresql.png';
 import sqliteLogo from '../images/sqlite.png';
+import postgresqlLogo from '../images/postgresql.png';
 import supabaseLogo from '../images/supabaseLogo.png';
-import jestLogo from '../images/jest.svg';
-import postmanLogo from '../images/postman.png';
 
 
 /**
@@ -80,13 +79,13 @@ const logos = [
 
   // Frontend Frameworks
   { src: reactLogo, name: 'React' },
+  { src: nextjsLogo, name: 'NextJS' },
   { src: angularLogo, name: 'Angular' },
   //{ src: vueLogo, name: 'Vue' },
-  { src: nextjsLogo, name: 'NextJS' },
 
   // Backend Technologies
-  { src: nodeLogo, name: 'NodeJS' },
   { src: restapiLogo, name: 'REST API' },
+  { src: nodeLogo, name: 'NodeJS' },
   { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
