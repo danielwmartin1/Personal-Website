@@ -7,6 +7,7 @@
         "noopener",
         "noreferrer",
         "postgresql",
+        "restapi",
         "supabase"
     ]
 }

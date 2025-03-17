@@ -22,7 +22,7 @@ import angularLogo from '../images/angular.svg';
 // eslint-disable-next-line
 import vueLogo from '../images/vue.png';
 import nodeLogo from '../images/node.png';
-import npmLogo from '../images/npm.png';
+//import npmLogo from '../images/npm.png';
 import restapiLogo from '../images/restapi.svg';
 import expressLogo from '../images/express.png';
 import nextjsLogo from '../images/next-js.svg';
@@ -62,7 +62,7 @@ const logos = [
   { src: vscodeLogo, name: 'VSCode' },
   { src: githubLogo, name: 'GitHub' },
   { src: gitLogo, name: 'Git' },
-  { src: npmLogo, name: 'NPM' },
+//{ src: npmLogo, name: 'NPM' },
   { src: postmanLogo, name: 'Postman' },
   { src: viteLogo, name: 'Vite' },
   { src: vercelLogo, name: 'Vercel' },
