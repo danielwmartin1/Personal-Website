@@ -70,12 +70,16 @@ const NavBar = () => {
   }, [isOpen]);
 
   return (
-    <nav>
+    <nav className="navbar">
       {isMobile ? (
         <div className="menu-container">
-          <button onClick={toggleMenu} className="menu-button">
-            Menu
-          </button>
+          <img 
+            src={require('../images/horizontallines.jpg')} 
+            alt="Menu" 
+            onClick={toggleMenu} 
+            className="menu-button" 
+            style={{ cursor: 'pointer', width: '50px', height: '50px', margin: "0.5rem", padding: "0.25rem", backgroundColor: 'rgb(97, 218, 251)', borderRadius: "6px" }} 
+          />
           {isOpen && <NavItems closeMenu={closeMenu} />}
         </div>
       ) : (
