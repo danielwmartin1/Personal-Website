@@ -21,22 +21,6 @@ const ContactMessage = () => (
   </div>
 );
 
-/**
- * Contact component renders the contact section of the website.
- * 
- * This component includes:
- * - A message section rendered by the `ContactMessage` component.
- * - A section with a button that opens a contact form in a new tab.
- * - A section with social media icons linking to various profiles.
- * 
- * @component
- * @example
- * return (
- *   <Contact />
- * )
- * 
- * @returns {JSX.Element} The rendered contact section.
- */
 const Contact = () => {
   return (
     <main id="contact_main" className="container" style={{ textAlign: 'center', marginBottom: '6.5rem' }}>

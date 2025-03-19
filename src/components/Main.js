@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import '../main.css';
 import '../buttons.css';
-
 import profileImg from '../images/profile.jpg';
 import visualStudioLogo from '../images/visualstudio.png';
 import vscodeLogo from '../images/vscode.png';
@@ -22,8 +21,8 @@ import jestLogo from '../images/jest.svg';
 import reactLogo from '../images/React.png';
 import nextjsLogo from '../images/next-js.svg';
 import angularLogo from '../images/angular.svg';
-// eslint-disable-next-line
-import vueLogo from '../images/vue.png';
+import reduxLogo from '../images/redux.png';
+//import vueLogo from '../images/vue.png';
 import restapiLogo from '../images/restapi.svg';
 import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.png';
@@ -39,29 +38,12 @@ import sqliteLogo from '../images/sqlite.png';
 import postgresqlLogo from '../images/postgresql.png';
 import supabaseLogo from '../images/supabaseLogo.png';
 
-
-/**
- * An array of logo objects representing various IDEs, tools, frontend technologies,
- * backend technologies, programming languages, and databases.
- * Each object contains the source path of the logo image and the name of the technology.
- *
- * @type {Array<{src: string, name: string}>}
- * @property {string} src - The source path of the logo image.
- * @property {string} name - The name of the technology.
- *
- * @example
- * // Accessing the first logo object
- * const firstLogo = logos[0];
- * console.log(firstLogo.src); // Output: visualStudioLogo
- * console.log(firstLogo.name); // Output: 'VisualStudio'
- */
 const logos = [
   // IDEs and Tools
   { src: visualStudioLogo, name: 'VisualStudio' },
   { src: vscodeLogo, name: 'VSCode' },
   { src: githubLogo, name: 'GitHub' },
   { src: gitLogo, name: 'Git' },
-//{ src: npmLogo, name: 'NPM' },
   { src: postmanLogo, name: 'Postman' },
   { src: viteLogo, name: 'Vite' },
   { src: vercelLogo, name: 'Vercel' },
@@ -74,14 +56,13 @@ const logos = [
   { src: jsLogo, name: 'JavaScript' },
   { src: jQueryLogo, name: 'jQuery'},
   { src: typeScriptLogo, name: 'TypeScript' },
-  // Unit-Testing
   { src: jestLogo, name: 'Jest' },
 
   // Frontend Frameworks
   { src: reactLogo, name: 'React' },
+  { src: reduxLogo, name: 'Redux' },
   { src: nextjsLogo, name: 'NextJS' },
   { src: angularLogo, name: 'Angular' },
-  //{ src: vueLogo, name: 'Vue' },
 
   // Backend Technologies
   { src: restapiLogo, name: 'REST API' },
@@ -90,13 +71,11 @@ const logos = [
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
 
-
   // Backend Languages
   { src: cLogo, name: 'C' },
   { src: cPlusLogo, name: 'C++' },
   { src: csharpLogo, name: 'C#' },
 
-  
   // Backend Frameworks
   { src: netLogo, name: '.NET' },
 

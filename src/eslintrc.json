@@ -1,12 +1,12 @@
 {
     "extends": [
-      "react-app", // If you're using Create React App
+      "react-app",
       "eslint:recommended"
     ],
     "plugins": ["react-hooks"],
     "rules": {
-      "react-hooks/rules-of-hooks": "error", // Checks rules of hooks
-      "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn" 
     }
   }
   
