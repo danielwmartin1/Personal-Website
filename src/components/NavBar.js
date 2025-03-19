@@ -69,6 +69,12 @@ const NavBar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
+  const [rotation, setRotation] = useState(0);
+
+  const handleImageClick = (isOpening) => {
+    setRotation((prevRotation) => prevRotation + (isOpening ? -90 : 90));
+  };
+
   return (
     <nav className="navbar">
       {isMobile ? (
@@ -76,9 +82,23 @@ const NavBar = () => {
           <img 
             src={require('../images/horizontallines.jpg')} 
             alt="Menu" 
-            onClick={toggleMenu} 
+            onClick={() => {
+              handleImageClick(!isOpen);
+              toggleMenu();
+            }} 
             className="menu-button" 
-            style={{ cursor: 'pointer', width: '50px', height: '50px', margin: "0.5rem", padding: "0.25rem", backgroundColor: 'rgb(97, 218, 251)', borderRadius: "6px" }} 
+            style={{ 
+              cursor: 'pointer', 
+              width: '50px', 
+              height: '50px', 
+              margin: "0.5rem", 
+              padding: "0.25rem", 
+              backgroundColor: 'rgb(97, 218, 251)', 
+              borderRadius: "6px", 
+              textAlign: "right",
+              transform: `rotate(${rotation}deg) scale(${isOpen ? 1 : 1})`, // Added scaling effect
+              transition: 'transform 0.3s ease, background-color 0.3s ease', // Smoother animation
+            }} 
           />
           {isOpen && <NavItems closeMenu={closeMenu} />}
         </div>

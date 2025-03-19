@@ -11,6 +11,7 @@ header {
     align-items: center;
     font-size: 1.25rem;
     text-align: center;
+    padding: 0!important
 }
 
 footer {
@@ -24,12 +25,14 @@ footer {
     align-items: center;
     background-color: var(--background-color);
     display: flex;
-    flex: 1 1 auto;
+    flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     font-size: 2.25rem !important;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-container {
@@ -46,10 +49,17 @@ footer {
     color: var(--text-color);
     cursor: pointer;
     font-size: 1.25rem;
-    margin: 1rem;
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 0.5rem 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
+
+.menu-button:hover {
+    background-color: var(--secondary-color); /* Change background on hover */
+}
+
 
 .nav-container {
     align-items: center;
@@ -117,17 +127,15 @@ footer {
     .nav-items {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-right: 2rem;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        text-align: right;
     }
 
     .nav-items a {
         margin-bottom: 0.5rem;
         font-size: 1.1rem !important;
-    }
-
-    .menu-button {
-        margin-right: 3rem;
     }
 
     header {
@@ -140,9 +148,5 @@ footer {
     .nav-items a {
         font-size: 1rem!important;
         padding: 0.5rem 1rem;
-    }
-
-    .menu-button {
-        font-size: 1rem;
     }
 }
