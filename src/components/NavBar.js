@@ -40,6 +40,7 @@ const NavItems = ({ closeMenu }) => (
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [isOpen, setIsOpen] = useState(false);
+  const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -69,11 +70,9 @@ const NavBar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
-  const [rotation, setRotation] = useState(0);
-
-  const handleImageClick = (isOpening) => {
-    setRotation((prevRotation) => prevRotation + (isOpening ? -90 : 90));
-  };
+  useEffect(() => {
+    setRotation((prevRotation) => prevRotation + (isOpen ? -90 : 90)); // Rotate based on menu state
+  }, [isOpen]);
 
   return (
     <nav className="navbar">
@@ -82,10 +81,7 @@ const NavBar = () => {
           <img 
             src={require('../images/horizontallines.jpg')} 
             alt="Menu" 
-            onClick={() => {
-              handleImageClick(!isOpen);
-              toggleMenu();
-            }} 
+            onClick={toggleMenu} 
             className="menu-button" 
             style={{ 
               cursor: 'pointer', 
@@ -96,8 +92,8 @@ const NavBar = () => {
               backgroundColor: 'rgb(97, 218, 251)', 
               borderRadius: "6px", 
               textAlign: "right",
-              transform: `rotate(${rotation}deg) scale(${isOpen ? 1 : 1})`, // Added scaling effect
-              transition: 'transform 0.3s ease, background-color 0.3s ease', // Smoother animation
+              transform: `rotate(${rotation}deg)`, // Apply rotation
+              transition: 'transform 0.3s ease, background-color 0.3s ease', // Smooth rotation
             }} 
           />
           {isOpen && <NavItems closeMenu={closeMenu} />}
