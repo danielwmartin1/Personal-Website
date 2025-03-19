@@ -174,7 +174,12 @@ p.p {
   width: auto !important;
 }
 
-
+#Redux {
+  background-color: white;
+  border-radius: 6px;
+  height: 55px;
+  width: auto;
+}
 
 /* Responsive adjustments */
 
