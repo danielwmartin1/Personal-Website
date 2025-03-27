@@ -57,7 +57,6 @@
   height: 55px;
   width: auto;
   border-radius: 8px;
-  transform: scale(1.075);
 }
 
 #Jest {
@@ -75,7 +74,7 @@
 
 #Git {
   padding: 0;
-  height: 27.5px !important; /* Increased by 10% */
+  height: 25px !important;
   width: auto !important;
 }
 
@@ -99,8 +98,8 @@
 #Flask {
   background-color: white;
   padding: var(--padding-small);
-  height: 55px !important;
-  width: auto !important;
+  height: 55px;
+  width: 55px;  /* Increased width by 10% */
   border-radius: 10px;
 }
 
@@ -108,7 +107,6 @@
   background-color: white;
   padding: 0.25rem;
   border-radius: 8px;
-  transform: scale(0.9);
 }
 
 #profile {
@@ -181,28 +179,6 @@ p.p {
   border-radius: 6px;
   height: 55px;
   width: auto;
-}
-
-.restapi-logo {
-  width: 3.75rem;
-  height: 3.75rem;
-  outline: 1px solid aqua;
-}
-
-.sqlite-logo {
-  transform: scale(1.15);
-}
-
-.flask-logo {
-  transform: scale(1.05);
-}
-
-#HTML {
-  transform: scale(1.075);
-}
-
-#TailwindCSS, #Python-Django {
-  transform: scale(1.1);
 }
 
 /* Responsive adjustments */

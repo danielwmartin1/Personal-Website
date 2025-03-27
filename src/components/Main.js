@@ -115,11 +115,14 @@ const TechnologiesSection = () => (
       {logos.map((logo, index) => (
         <img 
           key={index} 
-          className={`logo ${logo.name === 'REST API' ? 'restapi-logo' : ''} ${logo.name === 'SQLite' ? 'sqlite-logo' : ''} ${logo.name === 'Flask' ? 'flask-logo' : ''}`} 
+          className="logo" 
           id={logo.name} 
           src={logo.src} 
           alt={`${logo.name} Logo`} 
           title={`${logo.name} Logo`} 
+          style={logo.name === 'REST API' ? { width: '3.75rem', height: '3.75rem', outline: '1px solid aqua' } : 
+                 logo.name === 'SQLite' ? { transform: 'scale(1.15)' } : 
+                 logo.name === 'Flask' ? { transform: 'scale(1.05)' } : {}}
         />
       ))}
     </div>
