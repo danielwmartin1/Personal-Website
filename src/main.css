@@ -113,7 +113,7 @@
 
 #TailwindCSS, #Bootstrap {
   padding: var(--padding-small);
-  transform: scale(1.5);
+  transform: scale(1.56);
 }
 
 #profile {
