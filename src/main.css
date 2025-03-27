@@ -103,8 +103,8 @@
   border-radius: 10px;
 }
 
-#Angular {
-  transform: scale(1.1);
+#Angular, #HTML, #Git {
+  transform: scale(1.25);
 }
 
 #PostgreSQL {
