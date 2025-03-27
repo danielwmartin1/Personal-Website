@@ -68,6 +68,10 @@ img {
   min-height: 100vh;
 }
 
+.container p {
+  font-size: 0.75rem;
+}
+
 .main {
   display: flex;
   flex-direction: column;
