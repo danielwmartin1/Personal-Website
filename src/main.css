@@ -103,10 +103,19 @@
   border-radius: 10px;
 }
 
+#Angular {
+  transform: scale(1.1);
+}
+
 #PostgreSQL {
   background-color: white;
   padding: 0.25rem;
   border-radius: 8px;
+}
+
+#TailwindCSS, #Bootstrap {
+  padding: var(--padding-small);
+  transform: scale(1.5);
 }
 
 #profile {
