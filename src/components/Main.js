@@ -35,6 +35,7 @@ import netLogo from '../images/.NET.png';
 import mongodbLogo from '../images/mongodb.svg';
 import sqlLogo from '../images/SQL.png';
 import sqliteLogo from '../images/sqlite.png';
+import mysqlLogo from '../images/mysql.png';
 import postgresqlLogo from '../images/postgresql.png';
 import supabaseLogo from '../images/supabaseLogo.png';
 
@@ -83,6 +84,7 @@ const logos = [
   { src: mongodbLogo, name: 'MongoDB' },
   { src: sqlLogo, name: 'SQL' },
   { src: sqliteLogo, name: 'SQLite' },
+  { src: mysqlLogo, name: 'MySQL'},
   { src: postgresqlLogo, name: 'PostgreSQL' },
   { src: supabaseLogo, name: 'Supabase' }
 ];
