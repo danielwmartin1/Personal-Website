@@ -54,9 +54,7 @@
 }
 
 #Angular {
-  height: 55px;
-  width: auto;
-  border-radius: 8px;
+  transform: scale(1.15);
 }
 
 #Jest {
@@ -103,7 +101,7 @@
   border-radius: 10px;
 }
 
-#Angular, #HTML, #Git {
+#HTML, #Git {
   transform: scale(1.25);
 }
 
@@ -179,8 +177,8 @@ p.p {
 }
 
 #C, #C\+\+, #C\# {
-  height: 70px !important;
-  width: auto !important;
+  height: 70px;
+  width: auto;
 }
 
 #Redux {
@@ -188,6 +186,11 @@ p.p {
   border-radius: 6px;
   height: 55px;
   width: auto;
+}
+
+#ExpressJS, #NodeJS, #Python-Django {
+  height: 60px !important;
+  width: auto !important;
 }
 
 /* Responsive adjustments */
@@ -223,25 +226,12 @@ p.p {
     font-size: calc(var(--font-size-small) - 0.125rem);
   }
 
-  #Jest {
-    width: 50px;
-  }
-
-  #C, #C\+\+, #C\# {
-    height: 50px !important;
-  }
 
   #profile {
     width: 120px !important;
   }
 
-  #VisualStudio {
-    width: 70px !important;
-  }
 
-  #Angular {
-    height: 45px;
-  }
 
   .main p {
     font-size: 1rem;
@@ -254,10 +244,4 @@ p.p {
   }
 
 }
-
-@media (max-width: 325px) {
-  #profile {
-    width: 80px !important;
-  }
   
-}
