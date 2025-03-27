@@ -38,6 +38,7 @@ import sqliteLogo from '../images/sqlite.png';
 import mysqlLogo from '../images/mysql.png';
 import postgresqlLogo from '../images/postgresql.png';
 import supabaseLogo from '../images/supabaseLogo.png';
+import netlifyLogo from '../images/netlify.png';
 
 const logos = [
   // IDEs and Tools
@@ -48,7 +49,7 @@ const logos = [
   { src: postmanLogo, name: 'Postman' },
   { src: viteLogo, name: 'Vite' },
   { src: vercelLogo, name: 'Vercel' },
-
+  { src: netlifyLogo, name: 'Netlify' },
   // Frontend Technologies
   { src: htmlLogo, name: 'HTML' },
   { src: cssLogo, name: 'CSS' },
@@ -82,11 +83,11 @@ const logos = [
 
   // Databases
   { src: mongodbLogo, name: 'MongoDB' },
+  { src: supabaseLogo, name: 'Supabase' },
   { src: sqlLogo, name: 'SQL' },
   { src: sqliteLogo, name: 'SQLite' },
   { src: mysqlLogo, name: 'MySQL'},
   { src: postgresqlLogo, name: 'PostgreSQL' },
-  { src: supabaseLogo, name: 'Supabase' }
 ];
 
 const ProfileSection = () => (
