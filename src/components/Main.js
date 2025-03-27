@@ -120,7 +120,7 @@ const TechnologiesSection = () => (
           src={logo.src} 
           alt={`${logo.name} Logo`} 
           title={`${logo.name} Logo`} 
-          style={logo.name === 'REST API' ? { width: '5rem', height: '5rem' } : {}}
+          style={logo.name === 'REST API' ? { width: '3.75rem', height: '3.75rem', outline: '1px solid aqua' } : {}}
         />
       ))}
     </div>
