@@ -39,7 +39,7 @@ const NavItems = ({ closeMenu }) => (
  * - `handleClickOutside` closes the menu if a click is detected outside the menu container and button.
  */
 const NavBar = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
   const [rotation, setRotation] = useState(0);
   const toggleIconRef = useRef(null);
@@ -47,6 +47,9 @@ const NavBar = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
     };
 
     window.addEventListener('resize', handleResize);
@@ -63,7 +66,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.menu-container') && !event.target.closest('.menu-button')) {
+      if (isOpen && !event.target.closest('.menu-container') && !event.target.closest('#toggleIcon')) {
         setIsOpen(false);
       }
     };
@@ -73,7 +76,7 @@ const NavBar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    setRotation((prevRotation) => prevRotation + (isOpen ? -90 : 90)); // Rotate based on menu state
+    setRotation((prevRotation) => prevRotation + (isOpen ? -90 : 90));
   }, [isOpen]);
 
   useEffect(() => {
@@ -88,7 +91,6 @@ const NavBar = () => {
 
       toggleIcon.addEventListener('click', handleClick);
 
-      // Cleanup the event listener on component unmount
       return () => {
         toggleIcon.removeEventListener('click', handleClick);
       };
@@ -98,7 +100,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       {isMobile ? (
-        <div className="menu-container">
+        <div className={`menu-container ${isOpen ? 'open' : ''}`}>
           <img 
             id="toggleIcon"
             ref={toggleIconRef}

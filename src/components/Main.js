@@ -22,7 +22,6 @@ import reactLogo from '../images/React.png';
 import nextjsLogo from '../images/next-js.svg';
 import angularLogo from '../images/angular.svg';
 import reduxLogo from '../images/redux.png';
-//import vueLogo from '../images/vue.png';
 import restapiLogo from '../images/restapi.svg';
 import nodeLogo from '../images/node.png';
 import expressLogo from '../images/express.png';
@@ -41,7 +40,6 @@ import supabaseLogo from '../images/supabaseLogo.png';
 import netlifyLogo from '../images/netlify.png';
 
 const logos = [
-  // IDEs and Tools
   { src: visualStudioLogo, name: 'VisualStudio' },
   { src: vscodeLogo, name: 'VSCode' },
   { src: githubLogo, name: 'GitHub' },
@@ -50,7 +48,6 @@ const logos = [
   { src: viteLogo, name: 'Vite' },
   { src: vercelLogo, name: 'Vercel' },
   { src: netlifyLogo, name: 'Netlify' },
-  // Frontend Technologies
   { src: htmlLogo, name: 'HTML' },
   { src: cssLogo, name: 'CSS' },
   { src: bootstrapLogo, name: 'Bootstrap' },
@@ -59,29 +56,19 @@ const logos = [
   { src: jQueryLogo, name: 'jQuery'},
   { src: typeScriptLogo, name: 'TypeScript' },
   { src: jestLogo, name: 'Jest' },
-
-  // Frontend Frameworks
   { src: reactLogo, name: 'React' },
   { src: reduxLogo, name: 'Redux' },
   { src: nextjsLogo, name: 'NextJS' },
   { src: angularLogo, name: 'Angular' },
-
-  // Backend Technologies
   { src: restapiLogo, name: 'REST API' },
   { src: nodeLogo, name: 'NodeJS' },
   { src: expressLogo, name: 'ExpressJS' },
   { src: pythonDjangoLogo, name: 'Python-Django' },
   { src: flaskLogo, name: 'Flask' },
-
-  // Backend Languages
   { src: cLogo, name: 'C' },
   { src: cPlusLogo, name: 'C++' },
   { src: csharpLogo, name: 'C#' },
-
-  // Backend Frameworks
   { src: netLogo, name: '.NET' },
-
-  // Databases
   { src: mongodbLogo, name: 'MongoDB' },
   { src: supabaseLogo, name: 'Supabase' },
   { src: sqlLogo, name: 'SQL' },
