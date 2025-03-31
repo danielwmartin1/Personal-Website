@@ -193,6 +193,11 @@ p.p {
   width: auto !important;
 }
 
+.toggleIcon {
+  transform: none; /* Removed the 90-degree twist */
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Responsive adjustments */
 
 @media (max-width: 1024px) {
