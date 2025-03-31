@@ -79,6 +79,7 @@ const NavBar = () => {
       {isMobile ? (
         <div className="menu-container">
           <img 
+            id="toggleIcon"
             src={require('../images/horizontallines.jpg')} 
             alt="Menu" 
             onClick={toggleMenu} 
@@ -93,7 +94,6 @@ const NavBar = () => {
               borderRadius: "6px", 
               textAlign: "right",
               transform: `rotate(${rotation}deg)`, // Apply rotation
-              transition: 'transform 0.3s ease, background-color 0.3s ease', // Smooth rotation
             }} 
           />
           {isOpen && <NavItems closeMenu={closeMenu} />}
