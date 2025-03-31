@@ -6,6 +6,7 @@
 @import url('./main.css');
 @import url('./index.css');
 @import url('./variables.css');
+@import url('./Portfolio.css'); /* Added import for Portfolio.css */
 
 /* Reset and Global Styles */
 * {
@@ -83,28 +84,6 @@ img {
   padding-right: 2rem;
 }
 
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  border: 3.5px ridge var(--primary-color);
-  padding: 5rem 10rem;
-  border-radius: 5px;
-}
-
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
 .study {
   display: flex;
   flex-direction: row !important;
@@ -173,32 +152,8 @@ h2.contact {
   margin-top: 2rem;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.project-link {
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
 #W3Schools {
   border-radius: 0px !important;
-}
-
-.divProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem; /* 16px */
-  background-color: var(--background-color);
-  border-radius: 5px ;
-  border: 3.5px ridge var(--primary-color) !important;
 }
 
 .indented-list {
@@ -343,7 +298,7 @@ h2.contact {
 }
 
 @media (max-width: 768px) {
-  .about_main, .divProject, .section {
+  .about_main, .section {
     padding: 0!important;
     font-size: 1.125rem; /* 18px */
   }
@@ -367,7 +322,7 @@ h2.contact {
 }
 
 @media (max-width: 1024px) {
-  .about_main, .divProject, .section {
+  .about_main, .section {
     padding: 0.5rem;
     font-size: 1rem; /* 16px */
   }
@@ -386,7 +341,7 @@ h2.contact {
 }
 
 @media (max-width: 768px) {
-  .about_main, .divProject, .section {
+  .about_main, .section {
     padding: 0.5rem;
     font-size: 0.875rem; /* 14px */
   }
@@ -421,32 +376,13 @@ h2.contact {
     font-size: 1rem!important; /* 16px */
   }
 
-  .project-link {
-    padding-left: 0.5rem !important;
-    grid-template-columns: auto auto;
-  }
-
-  #project-link {
-    font-size: 0.875rem; /* 14px */
-  }
-
   #footer {
     font-size: 0.875rem!important;
   }
-
-  .portfolio-container {
-    padding: 1rem 5rem;
-  }
-
-  .portfolio {
-    font-size: 1.5rem;
-    margin: 2rem;
-  }
-
 }
 
 @media (max-width: 480px) {
-  .about_main, .divProject {
+  .about_main {
     padding: 0.5rem;
     font-size: 0.75rem; /* 12px */
   }
@@ -463,15 +399,6 @@ h2.contact {
     font-size: 0.9rem!important; /* 14px */
   }
 
-  .project-link {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  #project-link {
-    font-size: 0.75rem; /* 12px */
-  }
-
   .about_main div {
     margin: 2rem;
   }
@@ -479,14 +406,6 @@ h2.contact {
   .social-icons {
     display: grid !important;
     grid-template-columns: auto auto auto;
-  }
-
-  .portfolio-container {
-    padding: 1rem 2rem;
-  }
-
-  .portfolio {
-    margin: 1.5rem;
   }
 
   .social-icons {
