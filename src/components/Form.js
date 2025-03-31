@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/App.css';
+import '../styles/Form.css';
 import '../styles/buttons.css';
 
 function Form() {

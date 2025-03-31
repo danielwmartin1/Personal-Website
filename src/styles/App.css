@@ -173,41 +173,6 @@ h2.contact {
   margin-top: 2rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70% !important;
-  border: 3.5px ridge var(--primary-color) !important;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 1rem;
-  width: 100%;
-}
-
-.label-style {
-  font-size: 1.25rem; /* 20px */
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
 .project {
   display: flex;
   flex-direction: column;
@@ -239,14 +204,6 @@ form {
 .indented-list {
   margin-left: 2rem;
   font-size: 1rem; /* 16px */
-}
-
-.input-style {
-  font-size: 1rem; /* 16px */
-  margin: 1rem;
-  padding: 0.5rem;
-  width: 80%;
-  border-radius: 5px;
 }
 
 /* IDs */
@@ -385,12 +342,8 @@ form {
   background-color: white;
 }
 
-.form-style {
-  padding: 2rem;
-}
-
 @media (max-width: 768px) {
-  .about_main, .form-container, .divProject, .section {
+  .about_main, .divProject, .section {
     padding: 0!important;
     font-size: 1.125rem; /* 18px */
   }
@@ -414,7 +367,7 @@ form {
 }
 
 @media (max-width: 1024px) {
-  .about_main, .form-container, .divProject, .section {
+  .about_main, .divProject, .section {
     padding: 0.5rem;
     font-size: 1rem; /* 16px */
   }
@@ -433,7 +386,7 @@ form {
 }
 
 @media (max-width: 768px) {
-  .about_main, .form-container, .divProject, .section {
+  .about_main, .divProject, .section {
     padding: 0.5rem;
     font-size: 0.875rem; /* 14px */
   }
@@ -477,10 +430,6 @@ form {
     font-size: 0.875rem; /* 14px */
   }
 
-  .input-style {
-    font-size: small;
-  }
-
   #footer {
     font-size: 0.875rem!important;
   }
@@ -497,7 +446,7 @@ form {
 }
 
 @media (max-width: 480px) {
-  .about_main, .form-container, .divProject {
+  .about_main, .divProject {
     padding: 0.5rem;
     font-size: 0.75rem; /* 12px */
   }

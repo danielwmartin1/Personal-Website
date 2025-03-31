@@ -1,0 +1,107 @@
+span {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: var(--font-size-small);
+}
+
+.input-style {
+  font-size: 1rem; /* 16px */
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+}
+
+.label-style {
+  font-size: 1.25rem; /* 20px */
+  margin: 0.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .input-style {
+    width: 150%; /* Adjusted for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .input-style {
+    width: 120%; /* Adjusted for small screens */
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (max-width: 480px) {
+  .input-style {
+    width: 100%; /* Adjusted for extra small screens */
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70% !important;
+  border: 3.5px ridge var(--primary-color) !important;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 1rem;
+  width: 100%;
+}
+
+.form-style {
+  padding: 2rem;
+}
+
+@media (max-width: 1024px) {
+  form {
+    width: 80% !important;
+  }
+
+  .input-style {
+    width: 150%; /* Adjusted for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 70% !important;
+  }
+
+  .input-style {
+    width: 120%; /* Adjusted for small screens */
+    font-size: 0.875rem; /* Adjusted font size */
+  }
+
+  .form-style {
+    padding: 1rem; /* Adjusted padding */
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 90% !important;
+  }
+
+  .input-style {
+    width: 100%; /* Adjusted for extra small screens */
+    font-size: 0.75rem; /* Adjusted font size */
+  }
+
+  .form-style {
+    padding: 0.75rem; /* Adjusted padding */
+  }
+}
