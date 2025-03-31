@@ -104,7 +104,15 @@ footer {
     color: yellowgreen;
     transform: scale(0.95);
 }
-
+#toggleIcon {
+    position: relative; /* Change to relative */
+    top: 0; /* Reset top positioning */
+    right: 0; /* Reset right positioning */
+    height: 37.5px !important;
+    width: 37.5px !important;
+    z-index: auto; /* Reset z-index */
+    opacity: 0.6;
+}
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .nav-items a {
@@ -148,9 +156,5 @@ footer {
     .nav-items a {
         font-size: 1rem!important;
         padding: 0.5rem 1rem;
-    }
-    #toggleIcon {
-        height: 37.5px !important;
-        width: 37.5px !important;
     }
 }
