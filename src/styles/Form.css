@@ -1,3 +1,4 @@
+/* General Styles */
 span {
   color: var(--color-text);
   font-weight: 500;
@@ -21,30 +22,6 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 1024px) {
-  .input-style {
-    width: 150%; /* Adjusted for medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .input-style {
-    width: 120%; /* Adjusted for small screens */
-    font-size: var(--font-size-small);
-  }
-  span {
-    color: var(--color-text);
-    font-weight: 500;
-    font-size: var(--font-size-medium);
-  }
-}
-
-@media (max-width: 480px) {
-  .input-style {
-    width: 100%; /* Adjusted for extra small screens */
-  }
 }
 
 form {
@@ -71,6 +48,7 @@ form {
   padding: 2rem;
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
   form {
     width: 80% !important;
@@ -93,6 +71,10 @@ form {
 
   .form-style {
     padding: 1rem; /* Adjusted padding */
+  }
+
+  span {
+    font-size: var(--font-size-medium);
   }
 }
 
