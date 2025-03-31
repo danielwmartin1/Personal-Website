@@ -81,7 +81,7 @@ const NavBar = () => {
   useEffect(() => {
     const toggleIcon = toggleIconRef.current;
     if (toggleIcon) {
-      let isRotated = true;
+      let isRotated = false;
 
       const handleClick = () => {
         isRotated = !isRotated;
