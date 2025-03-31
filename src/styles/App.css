@@ -7,6 +7,8 @@
 @import url('./index.css');
 @import url('./variables.css');
 @import url('./Portfolio.css'); /* Added import for Portfolio.css */
+@import url('./Contact.css');
+@import url('./Form.css');
 
 /* Reset and Global Styles */
 * {

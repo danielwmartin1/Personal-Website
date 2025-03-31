@@ -75,25 +75,24 @@ const NavBar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    setRotation((prevRotation) => prevRotation + (isOpen ? -90 : 90));
-  }, [isOpen]);
+    let isRotated = false;
 
-  useEffect(() => {
-    const toggleIcon = toggleIconRef.current;
-    if (toggleIcon) {
-      let isRotated = false;
+    const handleClick = () => {
+      isRotated = !isRotated;
+      if (toggleIconRef.current) {
+        toggleIconRef.current.style.transform = isRotated ? 'rotate(90deg)' : 'rotate(0deg)';
+      }
+    };
 
-      const handleClick = () => {
-        isRotated = !isRotated;
-        toggleIcon.style.transform = isRotated ? 'rotate(90deg)' : 'rotate(0deg)';
-      };
-
-      toggleIcon.addEventListener('click', handleClick);
-
-      return () => {
-        toggleIcon.removeEventListener('click', handleClick);
-      };
+    if (toggleIconRef.current) {
+      toggleIconRef.current.addEventListener('click', handleClick);
     }
+
+    return () => {
+      if (toggleIconRef.current) {
+        toggleIconRef.current.removeEventListener('click', handleClick);
+      }
+    };
   }, []);
 
   return (
