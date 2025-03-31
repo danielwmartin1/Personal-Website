@@ -48,7 +48,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 1rem 3rem !important;
+  margin: 1rem 2.5rem 1.5rem 2.5rem !important;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -137,11 +137,6 @@
   font-size: var(--font-size-small);
   color: var(--text-color);
   margin: var(--margin-small);
-}
-
-#name, #experience, #tech {
-  font-family: var(--font-family);
-  margin-top: var(--margin-small);
 }
 
 #VisualStudio {
