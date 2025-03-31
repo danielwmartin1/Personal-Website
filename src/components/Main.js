@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
-import '../main.css';
-import '../buttons.css';
+import '../styles/App.css';
+import '../styles/main.css';
+import '../styles/buttons.css';
 import profileImg from '../images/profile.jpg';
 import visualStudioLogo from '../images/visualstudio.png';
 import vscodeLogo from '../images/vscode.png';

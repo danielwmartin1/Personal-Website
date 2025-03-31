@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
-import '../buttons.css';
+import '../styles/App.css';
+import '../styles/buttons.css';
 
 function Form() {
     const [email, setEmail] = useState('');

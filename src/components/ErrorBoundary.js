@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../styles/App.css';
 
 /**
  * ErrorBoundary component is a React component that catches JavaScript errors anywhere in its child component tree,

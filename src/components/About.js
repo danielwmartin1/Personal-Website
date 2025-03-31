@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../styles/App.css';
 import udemyLogo from '../images/udemy.jpg';
 import galeUdemyLogo from '../images/galeUdemy.png';
 import cs50Logo from '../images/cs50.png';

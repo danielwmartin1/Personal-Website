@@ -1,11 +1,11 @@
 /* Imports */
-@import url('./styles/global.css');
-@import url('./styles/header.css');
-@import url('./styles/footer.css');
-@import url('./styles/buttons.css');
-@import url('./styles/main.css');
-@import url('./styles/index.css');
-@import url('./styles/variables.css');
+@import url('./global.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./buttons.css');
+@import url('./main.css');
+@import url('./index.css');
+@import url('./variables.css');
 
 /* Reset and Global Styles */
 * {
@@ -17,7 +17,7 @@
 body, html {
   font-family: var(--font-family);
   font-size: 16px; /* Base font size */
-  background-image: url('./images/bluegradient.jpg');
+  background-image: url('../images/bluegradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

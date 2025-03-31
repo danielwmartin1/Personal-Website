@@ -245,6 +245,7 @@ p.p {
 
   .container {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .menu-container {
@@ -259,7 +260,7 @@ p.p {
 
   .menu-container.open {
     display: flex !important;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   #toggleIcon {

@@ -8,7 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
 import Form from './Form';
-import '../App.css';
+import '../styles/App.css';
 
 /**
  * The main application component that sets up the routing and layout of the app.

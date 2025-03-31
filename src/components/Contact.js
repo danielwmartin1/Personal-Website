@@ -1,12 +1,12 @@
 import React from 'react';
-import '../App.css';
+import '../styles/App.css';
 import githubLogo from '../images/github.png';
 import linkedinLogo from '../images/linkedin.png';
 import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
 import leetCodeLogo from '../images/leetCode.png';
 import stackOverFlowLogo from '../images/stackOverFlow.png';
-import '../buttons.css';
+import '../styles/buttons.css';
 import { Link } from 'react-router-dom';
 
 const SocialIcon = ({ href, src, alt }) => (

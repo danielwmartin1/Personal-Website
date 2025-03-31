@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import '../styles/App.css';
 
 /**
  * Projects component renders a list of project links and a link to the user's GitHub repositories.
