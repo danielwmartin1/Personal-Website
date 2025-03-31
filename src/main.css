@@ -246,7 +246,7 @@ p.p {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 50%; /* Increased height by 50% */
     z-index: 1000;
     flex-direction: column;
     align-items: flex-end;
@@ -258,6 +258,7 @@ p.p {
   }
 
   #toggleIcon {
+    position: fixed;
     display: flex;  
     justify-self: flex-end;
     align-self: center;
@@ -268,13 +269,25 @@ p.p {
     z-index: 1100;
   }
 
-  .nav-items {
+  .nav-items, .nav-items > * {
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding: var(--margin-small) !important;
     background-color: transparent !important;
   }
 
-  .nav-items > *, .listItem > * {
+  .listItem > a {
+    width: 100% !important;
+    padding: var(--padding-small) !important;
+    margin: var(--margin-small) !important;
+    font-size: calc(var(--font-size-medium) - 0.25rem) !important;
     background-color: transparent !important;
   }
+
+
 }
 
 @media (max-width: 480px) {
