@@ -1,14 +1,14 @@
 span {
   color: var(--color-text);
   font-weight: 500;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-large);
 }
 
 .input-style {
   font-size: 1rem; /* 16px */
   margin: 1rem;
   padding: 0.5rem;
-  width: 80%;
+  width: 100% !important;
   border-radius: 5px;
   text-align: center;
   display: flex;
@@ -33,6 +33,11 @@ span {
   .input-style {
     width: 120%; /* Adjusted for small screens */
     font-size: var(--font-size-small);
+  }
+  span {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: var(--font-size-medium);
   }
 }
 
