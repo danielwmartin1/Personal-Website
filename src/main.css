@@ -231,6 +231,7 @@ p.p {
 
   #profile {
     width: 120px !important;
+    margin-top: 1rem !important;
   }
 
   .main p {
@@ -240,6 +241,10 @@ p.p {
   .header {
     background: none;
     border: none;
+  }
+
+  .container {
+    margin-top: 0.5rem;
   }
 
   .menu-container {
