@@ -3,6 +3,7 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 import "../script.js";
 import "../header.css";
+import toggleIcon from '../images/horizontallines.jpg';
 
 const NavItems = ({ closeMenu }) => (
   <ul className="nav-items">
@@ -74,14 +75,24 @@ const NavBar = () => {
     setRotation((prevRotation) => prevRotation + (isOpen ? -90 : 90)); // Rotate based on menu state
   }, [isOpen]);
 
+  useEffect(() => {
+    const toggleIcon = document.getElementById('toggleIcon');
+    let isRotated = true;
+
+    toggleIcon.addEventListener('click', () => {
+      isRotated = !isRotated;
+      toggleIcon.style.transform = isRotated ? 'rotate(90deg)' : 'rotate(0deg)';
+    });
+  }, []);
+
   return (
     <nav className="navbar">
       {isMobile ? (
         <div className="menu-container">
           <img 
             id="toggleIcon"
-            src={require('../images/horizontallines.jpg')} 
-            alt="Menu" 
+            src={toggleIcon} 
+            alt="Toggle Icon" 
             onClick={toggleMenu} 
             className="menu-button" 
             style={{ 
