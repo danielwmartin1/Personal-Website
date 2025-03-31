@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import "../script.js";
@@ -42,6 +42,7 @@ const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [isOpen, setIsOpen] = useState(false);
   const [rotation, setRotation] = useState(0);
+  const toggleIconRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -76,13 +77,22 @@ const NavBar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    const toggleIcon = document.getElementById('toggleIcon');
-    let isRotated = true;
+    const toggleIcon = toggleIconRef.current;
+    if (toggleIcon) {
+      let isRotated = true;
 
-    toggleIcon.addEventListener('click', () => {
-      isRotated = !isRotated;
-      toggleIcon.style.transform = isRotated ? 'rotate(90deg)' : 'rotate(0deg)';
-    });
+      const handleClick = () => {
+        isRotated = !isRotated;
+        toggleIcon.style.transform = isRotated ? 'rotate(90deg)' : 'rotate(0deg)';
+      };
+
+      toggleIcon.addEventListener('click', handleClick);
+
+      // Cleanup the event listener on component unmount
+      return () => {
+        toggleIcon.removeEventListener('click', handleClick);
+      };
+    }
   }, []);
 
   return (
@@ -91,6 +101,7 @@ const NavBar = () => {
         <div className="menu-container">
           <img 
             id="toggleIcon"
+            ref={toggleIconRef}
             src={toggleIcon} 
             alt="Toggle Icon" 
             onClick={toggleMenu} 
