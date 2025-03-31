@@ -1,63 +1,81 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Contact from './Contact.js';
+import '@testing-library/jest-dom/extend-expect';
+import { MemoryRouter } from 'react-router-dom';
+import Contact from './Contact';
 
 describe('Contact Component', () => {
+    beforeEach(() => {
+        // Mock window.open
+        global.open = jest.fn();
+    });
+
+    afterEach(() => {
+        // Clear mocks after each test
+        jest.clearAllMocks();
+    });
+
     test('renders contact message', () => {
         render(
-            <Router>
+            <MemoryRouter>
                 <Contact />
-            </Router>
+            </MemoryRouter>
         );
-        const contactMessage = screen.getByText(/Thank you for visiting my portfolio!/i);
-        expect(contactMessage).toBeInTheDocument();
+        expect(screen.getByText(/Thank you for visiting my portfolio!/i)).toBeInTheDocument();
     });
 
-    test('renders contact me heading', () => {
+    test('renders "Contact Me" heading', () => {
         render(
-            <Router>
+            <MemoryRouter>
                 <Contact />
-            </Router>
+            </MemoryRouter>
         );
-        const contactHeading = screen.getByText(/Contact Me:/i);
-        expect(contactHeading).toBeInTheDocument();
+        expect(screen.getByText('Contact Me:')).toBeInTheDocument();
     });
 
-    test('renders social media icons', () => {
+    test('renders "Find me on" heading', () => {
         render(
-            <Router>
+            <MemoryRouter>
                 <Contact />
-            </Router>
+            </MemoryRouter>
         );
-        const githubIcon = screen.getByAltText(/GitHub/i);
-        const linkedinIcon = screen.getByAltText(/LinkedIn/i);
-        const facebookIcon = screen.getByAltText(/Facebook/i);
-        const discordIcon = screen.getByAltText(/Discord/i);
-
-        expect(githubIcon).toBeInTheDocument();
-        expect(linkedinIcon).toBeInTheDocument();
-        expect(facebookIcon).toBeInTheDocument();
-        expect(discordIcon).toBeInTheDocument();
+        expect(screen.getByText('Find me on:')).toBeInTheDocument();
     });
 
-    test('renders send message button and opens form in new tab', () => {
-            // Mock window.open
-            const originalWindowOpen = window.open;
-            window.open = jest.fn();
-    
-            render(
-                <Router>
-                    <Contact />
-                </Router>
-            );
-            const sendMessageButton = screen.getByText(/Send Message/i);
-            expect(sendMessageButton).toBeInTheDocument();
-    
-            fireEvent.click(sendMessageButton);
-            expect(window.open).toHaveBeenCalledWith('/form', '_blank');
-    
-            // Restore original window.open
-            window.open = originalWindowOpen;
+    test('renders social media icons with correct links', () => {
+        render(
+            <MemoryRouter>
+                <Contact />
+            </MemoryRouter>
+        );
+
+        const socialLinks = [
+            { alt: 'GitHub', href: 'https://www.github.com/danielwmartin1' },
+            { alt: 'LinkedIn', href: 'https://www.linkedin.com/in/danielmartin82/' },
+            { alt: 'Facebook', href: 'https://www.facebook.com/daniel.martin' },
+            { alt: 'Discord', href: 'https://discord.com/users/danielmartin' },
+            { alt: 'leetCode', href: 'https://leetcode.com/u/danielwmartin1/' },
+            { alt: 'Stack Overflow', href: 'https://stackoverflow.com/users/19347547/daniel-martin/' },
+        ];
+
+        socialLinks.forEach(({ alt, href }) => {
+            const linkElement = screen.getByTitle(alt);
+            expect(linkElement).toBeInTheDocument();
+            expect(linkElement).toHaveAttribute('href', href);
+        });
+    });
+
+    test('renders "Send Message" button and navigates to form', () => {
+        render(
+            <MemoryRouter>
+                <Contact />
+            </MemoryRouter>
+        );
+
+        const button = screen.getByTitle('Contact Form');
+        expect(button).toBeInTheDocument();
+
+        fireEvent.click(button);
+        expect(global.open).toHaveBeenCalledWith('/form', '_blank');
     });
 });
