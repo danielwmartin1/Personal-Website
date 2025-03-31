@@ -193,7 +193,7 @@ p.p {
   width: auto !important;
 }
 
-.toggleIcon {
+#toggleIcon {
   transform: none; /* Removed the 90-degree twist */
   transition: transform 0.3s ease-in-out;
 }
