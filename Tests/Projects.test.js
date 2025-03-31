@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Projects from './Projects.js';
+import Projects from '../src/components/Projects.js';
 
 test('renders Portfolio heading', () => {
     render(<Projects />);
@@ -21,11 +21,11 @@ test('renders all project links', () => {
         "My First Website",
         "Tic-Tac-Toe",
         "Simon Says",
-        "Interactive ACLS Algorithm",
-        "React.JS To-Do List",
+        "ACLS Algorithm",
+        "E-Commerce Frontend",
         "Weather App",
-        "React Intermediate To-Do List",
-        "React Intermediate To-Do List API"
+        "To-Do List",
+        "To-Do List API"
     ];
 
     projectLinks.forEach(linkText => {
