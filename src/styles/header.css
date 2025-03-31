@@ -2,6 +2,9 @@
 @import url('./variables.css');
 
 header {
+    position: relative; /* Ensure header can be adjusted */
+    z-index: 1000; /* Place header above the body */
+    top: 0; /* Keep it at the top */
     background-color: var(--background-color);
     border-bottom: 5px ridge var(--primary-color);
     display: flex;
@@ -105,12 +108,12 @@ footer {
     transform: scale(0.95);
 }
 #toggleIcon {
-    position: relative; /* Change to relative */
-    top: 0; /* Reset top positioning */
-    right: 0; /* Reset right positioning */
+    position: relative; /* Position relative to the body */
+    top: 1rem; /* Adjust as needed */
+    right: 1rem; /* Adjust as needed */
     height: 37.5px !important;
     width: 37.5px !important;
-    z-index: auto; /* Reset z-index */
+    z-index: 1100; /* Ensure toggleIcon is above the header */
     opacity: 0.6;
 }
 /* Media Queries for responsiveness */
@@ -124,37 +127,6 @@ footer {
     .nav-items a {
         font-size: 1.3rem!important;
     }
-}
 
-@media (max-width: 768px) {
-    .menu-container {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .nav-items {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        width: 100%;
-        text-align: right;
-    }
-
-    .nav-items a {
-        margin-bottom: 0.5rem;
-        font-size: 1.1rem !important;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-items a {
-        font-size: 0.7rem!important;
-        padding: 0.5rem 1rem;
-    }
 }
