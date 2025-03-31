@@ -149,4 +149,8 @@ footer {
         font-size: 1rem!important;
         padding: 0.5rem 1rem;
     }
+    #toggleIcon {
+        height: 37.5px !important;
+        width: 37.5px !important;
+    }
 }

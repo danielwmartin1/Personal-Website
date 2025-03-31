@@ -80,7 +80,10 @@ button:hover {
 @media (max-width: 480px) {
   button, .submit-button {
     font-size: 0.85rem;
-   
+  }
+  .menu-button {
+    font-size: 0.9rem;
+    padding: 5px 10px;
   }
 }
 
