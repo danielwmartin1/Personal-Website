@@ -8,6 +8,7 @@ import leetCodeLogo from '../images/leetCode.png';
 import stackOverFlowLogo from '../images/stackOverFlow.png';
 import '../styles/buttons.css';
 import { Link } from 'react-router-dom';
+import '../styles/Contact.css';
 
 const SocialIcon = ({ href, src, alt }) => (
   <a className="icon" href={href} title={alt} target="_blank" rel="noopener noreferrer">

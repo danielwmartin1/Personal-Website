@@ -33,6 +33,17 @@
   grid-template-columns: auto auto auto;
 }
 
+#project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem; /* 16px */
+  width: 100%;
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+
+
 .divProject {
   display: flex;
   flex-direction: column;

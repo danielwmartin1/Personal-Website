@@ -1,0 +1,32 @@
+#contactSection {
+  margin-top: 2rem;
+}
+
+h2.contact {
+  font-size: 2rem; /* 32px */
+  font-family: var(--font-family);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+p.contact {
+  font-size: 1.25rem !important;
+}
+
+@media screen and (max-width: 480px) {
+  p.contact {
+    font-size: 1rem !important;
+  }
+  h2.contact {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+  

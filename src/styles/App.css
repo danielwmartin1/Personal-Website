@@ -133,24 +133,9 @@ p.contact {
   margin: 2rem;
 }
 
-h2.contact {
-  font-size: 1.5rem; /* 32px */
-  font-family: var(--font-family);
-}
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 2rem;
-}
 
-#contactSection {
-  margin-top: 2rem;
-}
+
 
 #W3Schools {
   border-radius: 0px !important;
@@ -206,16 +191,6 @@ h2.contact {
   width: auto;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
-}
-
-#project-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 1rem; /* 16px */
-  width: 100%;
-  margin: 0.5rem;
-  padding: 1.5rem;
 }
 
 #MDN {
