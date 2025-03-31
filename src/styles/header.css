@@ -154,7 +154,7 @@ footer {
 
 @media (max-width: 480px) {
     .nav-items a {
-        font-size: 1rem!important;
+        font-size: 0.7rem!important;
         padding: 0.5rem 1rem;
     }
 }
