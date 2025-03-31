@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Form.css';
+import '../styles/Form.css'; // Ensure this path is correct and matches the file structure
 import '../styles/buttons.css';
 
 function Form() {
