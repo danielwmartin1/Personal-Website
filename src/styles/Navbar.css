@@ -13,3 +13,8 @@
 .nav-link:hover {
     color: aqua;
 }
+
+.nav-link.active {
+    color: aqua;
+    font-weight: bold;
+}

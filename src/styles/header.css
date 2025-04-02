@@ -121,6 +121,10 @@ footer {
   transition: transform 0.1s ease;
 }
 
+.nav-link.active {
+  color: var(--primary-color); /* Set the active link color to aqua */
+}
+
 #toggleIcon {
     position: relative; /* Position relative to the body */
     top: 1rem; /* Adjust as needed */

@@ -59,6 +59,8 @@ form {
   padding: 2rem;
 }
 
+/* Navbar Styles */
+
 /* Media Queries */
 @media (max-width: 1024px) {
   form {

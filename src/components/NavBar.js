@@ -1,18 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
-import { Link } from 'react-router-dom';
 import "../styles/header.css";
 import toggleIcon from '../images/horizontallines.jpg';
 import "../styles/Footer.css"; // Changed 'Footer.css' to 'footer.css' to match the correct case
 
-const NavItems = ({ closeMenu }) => (
-  <ul className="nav-items" style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'space-around' }}>
-    <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
-    <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
-    <li className="listItem" onClick={closeMenu}><Link to="/projects">Portfolio</Link></li>
-    <li className="listItem" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
-  </ul>
-);
+const NavItems = ({ closeMenu }) => {
+  const location = useLocation();
+
+  return (
+    <ul className="nav-items" style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'space-around' }}>
+      <li className="listItem" onClick={closeMenu}>
+        <Link to="/" className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
+      </li>
+      <li className="listItem" onClick={closeMenu}>
+        <Link to="/about" className={location.pathname === '/about' ? 'nav-link active' : 'nav-link'}>About</Link>
+      </li>
+      <li className="listItem" onClick={closeMenu}>
+        <Link to="/projects" className={location.pathname === '/projects' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
+      </li>
+      <li className="listItem" onClick={closeMenu}>
+        <Link to="/contact" className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
+      </li>
+    </ul>
+  );
+};
 
 /**
  * NavBar component that renders a navigation bar with responsive behavior.
