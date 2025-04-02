@@ -113,9 +113,10 @@ img {
   justify-content: center;
   align-items: center;
   margin: 3rem;
-  border-radius: 5px;
+  border-radius: 6px;
   width: 90%;
   border: 3.5px ridge var(--primary-color);
+  background-color: rgba(0, 0, 59, 0.8);
 }
 
 .center-text {

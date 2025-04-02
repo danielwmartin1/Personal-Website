@@ -6,7 +6,8 @@
   margin-top: 1rem;
   border: 3.5px ridge var(--primary-color);
   padding: 5rem 10rem;
-  border-radius: 5px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 59, 0.8);
 }
 
 .portfolio {
