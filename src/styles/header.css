@@ -105,9 +105,9 @@ footer {
 }
 
 .nav-items a:active {
-    color: rgb(0, 255, 75);
+    color: aqua;
     transform: scale(0.95);
-    border: 3px solid var(--primary-color);
+    border: 2.5px solid aqua;
     border-radius: 6px;
     padding: 0 0.5rem;
 }
