@@ -5,7 +5,7 @@ import "../styles/header.css";
 import toggleIcon from '../images/horizontallines.jpg';
 
 const NavItems = ({ closeMenu }) => (
-  <ul className="nav-items">
+  <ul className="nav-items" style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'space-around' }}>
     <li className="listItem" onClick={closeMenu}><Link to="/">Home</Link></li>
     <li className="listItem" onClick={closeMenu}><Link to="/about">About</Link></li>
     <li className="listItem" onClick={closeMenu}><Link to="/projects">Portfolio</Link></li>
