@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
 import "../styles/header.css";
+import "../styles/Footer.css"; // Correct capitalization
 import toggleIcon from '../images/horizontallines.jpg';
 
 const NavItems = ({ closeMenu }) => {

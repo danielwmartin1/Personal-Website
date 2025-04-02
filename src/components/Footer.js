@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
-import '../styles/Footer.css'; // Ensure this path is correct and matches the file structure
+import '../styles/Footer.css'; // Correct capitalization
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
