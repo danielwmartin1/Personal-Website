@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+  margin: 0.5rem 1rem;
 }
 
 .project-link {
