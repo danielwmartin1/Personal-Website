@@ -1,7 +1,6 @@
 /* Imports */
 @import url('./global.css');
 @import url('./header.css');
-@import url('./Footer.css'); /* Ensure case matches the actual file name */
 @import url('./buttons.css'); /* Changed 'Buttons.css' to 'buttons.css' to match the correct case */
 @import url('./main.css');
 @import url('./index.css');
