@@ -76,7 +76,7 @@ footer {
     align-items: center;
     background-color: var(--background-color);
     display: flex;
-    flex: 1 1 auto;
+    flex: 1; /* Added missing semicolon */
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
