@@ -121,8 +121,7 @@ footer {
 
 .nav-link.active {
   color: var(--primary-color);
-  transform: scale(1.25);
-  transition: transform 0.3s ease;
+  transform: scale(1.25) !important;
 }
 
 #toggleIcon {
