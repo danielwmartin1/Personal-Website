@@ -53,7 +53,7 @@
   align-items: center;
   font-size: 1rem; /* 16px */
   background-color: var(--background-color);
-  border-radius: 5px;
+  border-radius: 6px;
   border: 3.5px ridge var(--primary-color) !important;
 }
 
