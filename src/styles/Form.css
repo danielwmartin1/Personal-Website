@@ -6,6 +6,7 @@ h2 {
   font-size: var(--font-size-large);
   text-align: center;
   margin: 0.5rem;
+  font-weight: 600;
 }
 
 span {

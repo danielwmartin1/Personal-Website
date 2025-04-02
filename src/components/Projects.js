@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/App.css';
+import '../styles/Portfolio.css'; // Ensure this path is correct and matches the file structure
 
 const Projects = () => {
     const projectLinks = [

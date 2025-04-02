@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
 import "../styles/header.css";
 import toggleIcon from '../images/horizontallines.jpg';
+import "../styles/Footer.css"; // Changed 'Footer.css' to 'footer.css' to match the correct case
 
 const NavItems = ({ closeMenu }) => {
   const location = useLocation();

@@ -124,6 +124,7 @@ img {
   font-size: 1.75rem; /* 16px */
   font-family: var(--font-family);
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 p.contact {
