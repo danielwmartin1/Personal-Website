@@ -8,7 +8,7 @@
 @import url('./Portfolio.css'); /* Added import for Portfolio.css */
 @import url('./Contact.css');
 @import url('./Form.css');
-@import url('./Footer.css'); /* Ensure the case matches the actual file name */
+@import url('./Footer.css'); /* Changed 'Footer.css' to 'footer.css' to match the correct case */
 
 /* Reset and Global Styles */
 * {
