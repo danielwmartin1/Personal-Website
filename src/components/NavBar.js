@@ -15,15 +15,7 @@ const NavItems = ({ closeMenu }) => (
 
 /**
  * NavBar component that renders a navigation bar with responsive behavior.
- * 
- * @component
- * 
- * @example
- * return (
- *   <NavBar />
- * )
- * 
- * @returns {JSX.Element} The rendered navigation bar component.
+
  * 
  * @description
  * - Uses `useState` to manage the state of whether the view is mobile (`isMobile`) and whether the menu is open (`isOpen`).

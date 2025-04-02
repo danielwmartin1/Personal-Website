@@ -12,15 +12,7 @@ import '../styles/App.css';
 
 /**
  * The main application component that sets up the routing and layout of the app.
- * 
- * @component
- * @example
- * return (
- *   <App />
- * )
- * 
- * @returns {JSX.Element} The rendered component.
- * 
+
  * @semantic
  * - Uses `ErrorBoundary` to catch and handle errors in the component tree.
  * - Wraps routes in `Suspense` to handle lazy loading of components.
