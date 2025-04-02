@@ -107,6 +107,9 @@ footer {
 .nav-items a:active {
     color: rgb(0, 255, 75);
     transform: scale(0.95);
+    border: 3px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0 0.5rem;
 }
 
 .nav-items .listItem:hover {
@@ -119,9 +122,13 @@ footer {
   transition: transform 0.2s ease;
 }
 
+.nav-link {
+    margin: 1.5rem !important;
+}
+
 .nav-link.active {
   color: var(--primary-color);
-  transform: scale(1.25) !important;
+  transform: scale(1.1) !important;
   border: 2.5px solid var(--primary-color) !important;
   padding: 0 0.5rem !important;
   border-radius: 6px !important;
