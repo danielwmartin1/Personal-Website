@@ -1,8 +1,19 @@
 /* General Styles */
-span {
-  color: var(--color-text);
+
+h2 {
+  color: var(--color-primary);
   font-weight: 500;
   font-size: var(--font-size-large);
+  text-align: center;
+  margin: 0.5rem;
+}
+
+span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: var(--font-size-large);
+  text-align: center;
+  margin: 0.5rem;
 }
 
 .input-style {

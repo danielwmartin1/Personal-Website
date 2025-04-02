@@ -36,7 +36,7 @@ const Contact = () => {
       </div>
       <div className="find">
         <h2 className='contact'>Find me on:</h2>
-        <div className="social-icons" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="social-icons" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <SocialIcon href="https://www.github.com/danielwmartin1" src={githubLogo} alt="GitHub" />
           <SocialIcon href="https://www.linkedin.com/in/danielmartin82/" src={linkedinLogo} alt="LinkedIn" />
           <SocialIcon href="https://www.facebook.com/daniel.martin" src={facebookLogo} alt="Facebook" />

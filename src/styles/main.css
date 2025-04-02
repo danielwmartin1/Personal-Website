@@ -48,7 +48,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 1rem 2.5rem; /* Default margin */
+  margin: 0.5rem 2rem 2.5rem 2rem; /* Default margin */
   padding: 1rem;
   border-radius: 6px;
 }
@@ -119,24 +119,27 @@
 #profile {
   width: 175px !important;
   border: 3.5px ridge var(--primary-color); 
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 8px;
 }
 
 #name {
   font-size: var(--font-size-large);
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 #experience, #tech {
   font-size: var(--font-size-medium);
-  color: var(--text-color);
+  color: var(--primary-color);
+  margin-top: var(--margin-small);
 }
 
 #contact {
   font-size: var(--font-size-small);
   color: var(--text-color);
   margin: var(--margin-small);
+  color: var(--primary-color);
+  font-style: bold;
 }
 
 #VisualStudio {
