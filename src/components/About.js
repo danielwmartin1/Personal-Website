@@ -41,7 +41,9 @@ const About = () => {
         <div className="about_main container about">
             <div className="about_main main container">
                 <section className="section">
-                    <h2 className="center-text">Introduction</h2>
+                    <h2 className="center-text"
+                        style={{ marginTop: '2rem'}}>
+                        About</h2>
                     <p className='p'>
                         Welcome to my personal project! Here you will find information about me and my interests. Thank you for visiting!
                     </p>
