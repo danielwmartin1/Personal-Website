@@ -1,4 +1,3 @@
-@import url('./header.css');
 @import url('./variables.css');
 
 header {
@@ -14,7 +13,8 @@ header {
     align-items: center;
     font-size: 1.25rem;
     text-align: center;
-    padding: 0!important
+    padding: 0!important;
+    overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
 footer {
@@ -83,7 +83,8 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Changed from 'auto' to 'hidden' to remove scroll */
+    overflow-x: hidden !important; /* Prevent horizontal scroll */
+    overflow-y: hidden !important; /* Prevent vertical scroll */
 }
 
 .nav-items a {
@@ -102,6 +103,7 @@ footer {
 .nav-items a:hover {
     color: var(--secondary-color);
     transform: scale(1.1);
+    overflow-y: hidden; /* Ensure no vertical scroll on hover */
 }
 
 .nav-items a:active {
