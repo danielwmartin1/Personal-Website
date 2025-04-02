@@ -82,7 +82,7 @@ const ProfileSection = () => (
     <img id="profile" src={profileImg} alt="Profile Pic" title="Profile Pic" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
     <p className="p">
-    Welcome! I’m a full-stack developer passionate about technology and problem-solving. Over the past few years, I’ve honed my skills in programming languages like JavaScript and Python, as well as frameworks such as React and Node.js. I thrive in innovative environments, embrace continuous learning, and love exploring emerging technologies to create impactful solutions. Let’s build something amazing together!</p>
+    I’m a passionate software engineer specializing in building scalable, high-performance applications. With expertise in JavaScript, C#, Python, React, .NET, and Node.js, I develop robust, efficient, and user-friendly solutions that drive real-world impact. I thrive in innovative environments that embrace problem-solving, clean architecture, and modern engineering principles. Let’s build something extraordinary together!    </p>
   </div>
 );
 
@@ -90,8 +90,7 @@ const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
     <p className="p">
-      With extensive hands-on experience in web development, I have developed strong expertise in HTML, CSS, JavaScript, and modern frameworks such as React. My journey includes working on a wide range of projects, from small business websites to large-scale web applications, giving me a comprehensive understanding of web technologies and their practical applications.
-    </p>
+    With years of hands-on experience in full-stack web and software development, I have mastered a wide range of technologies, from frontend frameworks like React and Angular to backend systems powered by Node.js, .NET, and C#. My portfolio spans from dynamic small-business websites to enterprise-level applications, allowing me to design, develop, and optimize complex systems for performance and scalability. Beyond development, I have experience with database management with SQL Server and PostgreSQL, and API development to integrate software solutions seamlessly. </p>
   </div>
 );
 
