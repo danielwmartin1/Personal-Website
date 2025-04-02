@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import '../styles/main.css';
-import '../styles/Buttons.css';
+import '../styles/Buttons.css'; // Ensure the case matches the actual file name
 import profileImg from '../images/profile.jpg';
 import visualStudioLogo from '../images/visualstudio.png';
 import vscodeLogo from '../images/vscode.png';
