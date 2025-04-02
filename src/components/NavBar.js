@@ -3,6 +3,7 @@ import '../styles/App.css';
 import { Link } from 'react-router-dom';
 import "../styles/header.css";
 import toggleIcon from '../images/horizontallines.jpg';
+import "../styles/Footer.css"; // Ensure the case matches the actual file name
 
 const NavItems = ({ closeMenu }) => (
   <ul className="nav-items" style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'space-around' }}>
