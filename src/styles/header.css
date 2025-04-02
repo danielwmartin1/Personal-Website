@@ -63,7 +63,6 @@ footer {
     background-color: var(--secondary-color); /* Change background on hover */
 }
 
-
 .nav-container {
     align-items: center;
     background-color: var(--background-color);
@@ -136,6 +135,12 @@ footer {
     z-index: 1100; /* Ensure toggleIcon is above the header */
     opacity: 0.6;
 }
+
+/* Universal style for all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Set a consistent font-family for all headings */
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .nav-items a {
@@ -147,6 +152,4 @@ footer {
     .nav-items a {
         font-size: 1.3rem!important;
     }
-
-
 }
