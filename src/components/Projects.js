@@ -1,19 +1,6 @@
 import React from "react";
 import '../styles/App.css';
 
-/**
- * Projects component renders a list of project links and a link to the user's GitHub repositories.
- *
- * @component
- * @example
- * return (
- *   <Projects />
- * )
- *
- * @returns {JSX.Element} The rendered component.
- *
-
- */
 const Projects = () => {
     const projectLinks = [
         { href: "https://pro1construction.vercel.app/", text: "My First Website" },
