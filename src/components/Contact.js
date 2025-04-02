@@ -6,7 +6,7 @@ import facebookLogo from '../images/facebook.png';
 import discordLogo from '../images/discord.png';
 import leetCodeLogo from '../images/leetCode.png';
 import stackOverFlowLogo from '../images/stackOverFlow.png';
-import '../styles/Buttons.css'; // Changed 'buttons.css' back to 'Buttons.css' to match the actual file name
+import '../styles/buttons.css'; // Changed 'Buttons.css' to 'buttons.css' to match the correct case
 import { Link } from 'react-router-dom';
 import '../styles/Contact.css';
 

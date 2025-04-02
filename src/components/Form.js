@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Form.css'; // Ensure this path is correct and matches the file structure
-import '../styles/Buttons.css'; // Changed 'buttons.css' back to 'Buttons.css' to match the actual file name
+import '../styles/buttons.css'; // Changed 'Buttons.css' to 'buttons.css' to match the correct case
 
 function Form() {
     const [email, setEmail] = useState('');
