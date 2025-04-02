@@ -1,12 +1,12 @@
 /* Imports */
 @import url('./global.css');
-@import url('./header.css');
-@import url('./footer.css');
-@import url('./buttons.css');
+@import url('./Header.css'); /* Changed 'header.css' back to 'Header.css' */
+@import url('./Footer.css');
+@import url('./Buttons.css');
 @import url('./main.css');
 @import url('./index.css');
 @import url('./variables.css');
-@import url('./Portfolio.css'); /* Added import for Portfolio.css */
+@import url('./Projects.css'); /* Added import for Portfolio.css */
 @import url('./Contact.css');
 @import url('./Form.css');
 
@@ -134,8 +134,6 @@ p.contact {
   font-size: 1.125rem; /* 16px */
   margin: 2rem;
 }
-
-
 
 
 

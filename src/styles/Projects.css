@@ -55,6 +55,10 @@
   border: 3.5px ridge var(--primary-color) !important;
 }
 
+.projectDescription {
+  font-size: 0.75rem; /* 16px */
+}
+
 @media (max-width: 768px) {
   .portfolio-container {
     padding: 1rem 5rem;
