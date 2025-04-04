@@ -305,11 +305,9 @@ p.p {
 }
 
 @media (max-width: 480px) {
-  #profile {
-    width: 100px !important;
-  }
-
-  .logos {
-    margin: 1rem 1rem; /* Adjusted for extra small screens */
+  .logos > * {
+    transform: scale(0.75); /* Scales down by 25% */
+    transform-origin: center; /* Ensures scaling happens from the center */
+    margin: 0.125rem;
   }
 }
