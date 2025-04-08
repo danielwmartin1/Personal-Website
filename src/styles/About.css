@@ -1,8 +1,3 @@
-.logo {
-  width: 100%;
-  height: auto;
-  margin: 0 auto; /* Center the logo */
-}
 
 .logos.study {
   display: flex;
@@ -25,4 +20,10 @@
 
 .logos.study img:hover {
   transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+  .logos.study img {
+    height: 60px !important; /* Adjust size for smaller screens */
+  }
 }
