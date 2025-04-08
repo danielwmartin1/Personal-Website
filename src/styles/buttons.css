@@ -31,6 +31,13 @@ button:hover {
   transform: scale(1.05);
 }
 
+button:active {
+  background-color: #0090d2 !important; /* Active Blue */
+  color: var(--tertiary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
 .submit-button {
   background-color: var(--button-background-color);
   border: none;

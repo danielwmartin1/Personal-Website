@@ -42,7 +42,7 @@ function Form() {
         <div className="form-container">
             <div>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 className='contact'>Contact Form</h2>
+                    <h2 className='contact-form'>Contact Form</h2>
                 </div>
             </div>
             <div className="container contact-container">

@@ -59,7 +59,7 @@ footer {
 
 .header {
     background-color: var(--background-color);
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 5px ridge var(--primary-color);
     display: flex;
     justify-content: center;
     padding: 0.5rem 0;

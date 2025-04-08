@@ -246,17 +246,6 @@ p.contact {
   border-radius: 14px !important;
 }
 
-.form-style {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem; /* 16px */
-  margin: 0.5rem;
-  background-color: rgba(0, 0, 59, 0.8);
-
-}
-
 .study-img, .social-icons img {
   height: 70px !important;
   width: auto !important;
