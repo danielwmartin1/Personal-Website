@@ -4,15 +4,14 @@ header {
     position: relative; /* Ensure header can be adjusted */
     z-index: 1000; /* Place header above the body */
     top: 0; /* Keep it at the top */
-    border-bottom: 5px ridge var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 0!important;
+    flex-direction: row; /* Force row layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    padding: 0.5rem 1rem; /* Add some padding */
+    background-color: var(--background-color); /* Ensure background color */
     overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
@@ -164,9 +163,23 @@ h1, h2, h3, h4, h5, h6 {
     .nav-items a {
         font-size: 1.3rem!important;
     }
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgb(0, 0, 136) !important;
+    }
 }
 
 @media (max-width: 900px) {
+    header {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
     .nav-link.active {
         font-size: 1.5rem !important;
         transform: scale(1.1) !important;
