@@ -49,7 +49,7 @@
   justify-content: center;
   align-items: center;
   margin: 0.5rem 2rem 2.5rem 2rem; /* Default margin */
-  padding: 1rem;
+  padding: 0.75rem!important;
   border-radius: 6px;
 }
 
@@ -273,7 +273,6 @@ p.p {
     display: flex;  
     justify-self: flex-end;
     align-self: center;
-    position: fixed;
     top: 0;
     right: 0;
     margin: 0.5rem;
@@ -300,6 +299,7 @@ p.p {
 
   .logos {
     margin: 1rem 1.5rem; /* Adjusted for small screens */
+    padding: 0.5rem !important;
   }
 }
 
@@ -307,6 +307,6 @@ p.p {
   .logos > * {
     transform: scale(0.75) !important; /* Scales down by 25% */
     transform-origin: center; /* Ensures scaling happens from the center */
-    margin: 0.1rem!important; /* Adjusted margin */
+    margin: 0.05rem!important; /* Adjusted margin */
   }
 }

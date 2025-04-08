@@ -79,10 +79,11 @@ const logos = [
 
 const ProfileSection = () => (
   <div className="container">
-    <img id="profile" src={profileImg} alt="Profile Pic" title="Profile Pic" />
+    <img id="profile" src={profileImg} alt="Daniel Martin" title="Profile Picture" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
     <p className="p">
-    I’m a passionate software engineer specializing in building scalable, high-performance applications. With expertise in JavaScript, C#, Python, React, .NET, and Node.js, I develop robust, efficient, and user-friendly solutions that drive real-world impact. I thrive in innovative environments that embrace problem-solving, clean architecture, and modern engineering principles. Let’s build something extraordinary together!    </p>
+      I am a dedicated software engineer with a strong focus on developing scalable and high-performance applications. Proficient in JavaScript, C#, Python, React, .NET, and Node.js, I specialize in delivering robust, efficient, and user-centric solutions. I excel in dynamic environments that prioritize innovation, clean architecture, and modern engineering practices. Let’s collaborate to create impactful and transformative solutions.
+    </p>
   </div>
 );
 
@@ -90,7 +91,7 @@ const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
     <p className="p">
-    With years of hands-on experience in full-stack web and software development, I have mastered a wide range of technologies, from frontend frameworks like React and Angular to backend systems powered by Node.js, .NET, and C#. My portfolio spans from dynamic small-business websites to enterprise-level applications, allowing me to design, develop, and optimize complex systems for performance and scalability. Beyond development, I have experience with database management with SQL Server and PostgreSQL, and API development to integrate software solutions seamlessly. </p>
+    I bring extensive experience in full-stack web and software development, leveraging a diverse set of technologies such as React, Angular, Python with Flask, JavaScript with Node.js, and C# with .NET. My work ranges from crafting dynamic websites for small businesses to architecting enterprise-grade applications, focusing on performance and scalability. Additionally, I have expertise in database management using SQL Server and PostgreSQL, as well as API development to ensure seamless software integration. </p>
   </div>
 );
 
