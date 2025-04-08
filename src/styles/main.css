@@ -144,6 +144,9 @@
 
 #VisualStudio {
   width: 80px;
+  height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 .main p {
@@ -307,6 +310,11 @@ p.p {
   .logos > * {
     transform: scale(0.75) !important; /* Scales down by 25% */
     transform-origin: center; /* Ensures scaling happens from the center */
-    margin: 0.05rem!important; /* Adjusted margin */
+    margin: 0.05rem; /* Adjusted margin */
+  }
+
+  #TailwindCSS, #Bootstrap {
+    padding: var(--padding-small) !important;
+    transform: scale(1.25) !important; /* Scales down by 25% */
   }
 }
