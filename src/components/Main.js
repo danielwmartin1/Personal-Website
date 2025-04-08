@@ -82,7 +82,7 @@ const ProfileSection = () => (
     <img id="profile" src={profileImg} alt="Daniel Martin" title="Profile Picture" />
     <h1 id="name" className='headings'>Daniel Martin</h1>
     <p className="p">
-      I am a dedicated software engineer with a strong focus on developing scalable and high-performance applications. Proficient in JavaScript, C#, Python, React, .NET, and Node.js, I specialize in delivering robust, efficient, and user-centric solutions. I excel in dynamic environments that prioritize innovation, clean architecture, and modern engineering practices. Let’s collaborate to create impactful and transformative solutions.
+      I am a dedicated software engineer with a strong focus on developing scalable and high-performance applications. Proficient in JavaScript, C#, Python, React, .NET, and Node.js, I specialize in delivering robust, efficient, and user-centric solutions. I excel in dynamic environments that prioritize innovation, clean architecture, and modern engineering practices.
     </p>
   </div>
 );
@@ -91,7 +91,8 @@ const ExperienceSection = () => (
   <div className="container">
     <h2 id="experience" className='headings'>Experience</h2>
     <p className="p">
-    I bring extensive experience in full-stack web and software development, leveraging a diverse set of technologies such as React, Angular, Python with Flask, JavaScript with Node.js, and C# with .NET. My work ranges from crafting dynamic websites for small businesses to architecting enterprise-grade applications, focusing on performance and scalability. Additionally, I have expertise in database management using SQL Server and PostgreSQL, as well as API development to ensure seamless software integration. </p>
+      I have a wealth of experience in full-stack web and software development, utilizing a wide range of technologies including React, Angular, Python with Flask, JavaScript with Node.js, and C# with .NET. My projects span from building interactive websites for small businesses to designing enterprise-level applications with a focus on scalability and performance. Furthermore, I am skilled in database management with SQL Server, PostgreSQL, and MongoDB, as well as API development to enable smooth software integration.
+    </p>
   </div>
 );
 
