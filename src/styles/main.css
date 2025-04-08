@@ -268,7 +268,7 @@ p.p {
 
   .menu-container.open {
     display: flex !important;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 12, 73, 0.5);
   }
 
   #toggleIcon {
@@ -276,21 +276,28 @@ p.p {
     display: flex;  
     justify-self: flex-end;
     align-self: center;
-    top: 0;
-    right: 0;
+    top: 0 !important;
+    right: 0 !important;
     margin: 0.5rem;
     z-index: 1100;
   }
 
-  .nav-items, .nav-items > * {
-    margin: 0 !important;
+  .nav-items  {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
-    align-items: flex-start !important;
-    padding: var(--margin-small) !important;
-    background-color: transparent !important;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: transparent;
   }
+
+  .nav-items > * {
+    margin: var(--margin-small) !important;
+    padding: 1rem 1rem 1rem 0 !important;
+    font-size: calc(var(--font-size-medium) - 0.25rem) !important;
+    background-color: transparent !important;
+    text-shadow: #000000 2px 2px 2px !important;
+  } 
 
   .listItem > a {
     width: 100% !important;
