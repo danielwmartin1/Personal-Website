@@ -260,7 +260,7 @@ p.p {
     position: fixed;
     top: 0;
     right: 0;
-    height: 50%; /* Increased height by 50% */
+    height: 100%; /* Increased height by 50% */
     z-index: 1000;
     flex-direction: column;
     align-items: flex-end;
