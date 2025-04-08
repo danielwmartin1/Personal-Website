@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
+import '../styles/About.css';
 import udemyLogo from '../images/udemy.jpg';
 import galeUdemyLogo from '../images/galeUdemy.png';
 import cs50Logo from '../images/cs50.png';

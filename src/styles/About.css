@@ -1,0 +1,28 @@
+.logo {
+  width: 100%;
+  height: auto;
+  margin: 0 auto; /* Center the logo */
+}
+
+.logos.study {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--background-color); /* Optional: Add a background color */quotes: none ;
+}
+
+/* Optional: Adjust grid item styles if needed */
+.logos.study img {
+  height: 70px !important;
+  width: auto !important;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin: var(--small-margin)
+}
+
+.logos.study img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}

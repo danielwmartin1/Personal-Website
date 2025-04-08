@@ -3,6 +3,7 @@
 @import url('./Header.css'); /* Changed from 'header.css' to 'Header.css' */
 @import url('./buttons.css'); /* Changed 'Buttons.css' to 'buttons.css' to match the correct case */
 @import url('./Main.css');
+@import url('./About.css');
 @import url('./index.css');
 @import url('./variables.css');
 @import url('./Portfolio.css'); /* Added import for Portfolio.css */
@@ -404,3 +405,4 @@ p.contact {
     height: auto !important;
   }
 }
+
