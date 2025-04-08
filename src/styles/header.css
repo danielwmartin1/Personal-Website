@@ -4,7 +4,6 @@ header {
     position: relative; /* Ensure header can be adjusted */
     z-index: 1000; /* Place header above the body */
     top: 0; /* Keep it at the top */
-    background-color: var(--background-color);
     border-bottom: 5px ridge var(--primary-color);
     display: flex;
     flex-direction: row;
@@ -26,7 +25,7 @@ footer {
 
 .listItem > a {
     align-items: center;
-    background-color: var(--background-color);
+    background-color: rgba(0 0 0 0) !important;
     display: flex;
     flex: 1;
     flex-direction: row;

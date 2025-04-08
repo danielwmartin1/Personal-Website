@@ -103,7 +103,7 @@ const NavBar = () => {
               padding: "0.25rem", 
               backgroundColor: 'rgb(97, 218, 251)', 
               borderRadius: "6px", 
-              textAlign: "right",
+              textAlign: "right !important",
               transform: `rotate(${rotation}deg)`, // Apply rotation
             }} 
           />
