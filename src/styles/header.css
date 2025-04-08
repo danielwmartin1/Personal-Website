@@ -114,9 +114,7 @@ footer {
 }
 
 .nav-items a:active {
-    color: aqua;
     transform: scale(0.95);
-    border: 2.5px solid aqua;
     border-radius: 6px;
     padding: 0 0.5rem;
 }
@@ -137,7 +135,7 @@ footer {
 
 .nav-link.active {
   color: var(--primary-color);
-  font-size: 3rem !important;
+  font-size: 2.75rem !important;
   transform: scale(1.1) !important;
   border: 2.5px solid var(--primary-color) !important;
   padding: 0 0.5rem !important;
@@ -148,8 +146,8 @@ footer {
 
 #toggleIcon {
     position: relative; /* Position relative to the body */
-    top: 1rem; /* Adjust as needed */
-    right: 1rem; /* Adjust as needed */
+    top: 0.5rem; /* Adjust as needed */
+    right: 0.5rem; /* Adjust as needed */
     height: 37.5px !important;
     width: 37.5px !important;
     z-index: 1100; /* Ensure toggleIcon is above the header */
@@ -165,5 +163,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 900px) {
     .nav-items a {
         font-size: 1.3rem!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgb(0, 0, 136) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
     }
 }
