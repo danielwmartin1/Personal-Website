@@ -4,7 +4,7 @@ header {
     position: relative; /* Ensure header can be adjusted */
     z-index: 1000; /* Place header above the body */
     top: 0; /* Keep it at the top */
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
     display: flex;
     flex-direction: row; /* Force row layout */
     justify-content: space-between; /* Space between items */
@@ -17,7 +17,7 @@ header {
 
 footer {
     background-color: var(--background-color);
-    border-top: 3px solid var(--primary-color);
+    border-top: 3px ridge var(--primary-color); /* Changed to ridge */
     margin-top: auto;
     text-align: center;
 }
@@ -73,7 +73,7 @@ footer {
 .nav-container {
     align-items: center;
     background-color: transparent !important; /* Set background to transparent */
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
     display: flex;
     justify-content: center;
 }
@@ -136,21 +136,25 @@ footer {
   color: var(--primary-color);
   font-size: 2.5rem !important;
   transform: scale(1.1) !important;
-  border: 2.5px solid var(--primary-color) !important;
+  border: 2.5px ridge var(--primary-color) !important; /* Changed to ridge */
   padding: 0 0.5rem !important;
   border-radius: 6px !important;
-  background-color: rgb(0, 0, 136) !important;
+  background-color:rgba(0, 0, 136, 0.75) !important;
 }
 
 
 #toggleIcon {
-    position: relative; /* Position relative to the body */
-    top: 0.5rem; /* Adjust as needed */
-    right: 0.5rem; /* Adjust as needed */
-    height: 37.5px !important;
-    width: 37.5px !important;
-    z-index: 1100; /* Ensure toggleIcon is above the header */
-    opacity: 0.6;
+  position: absolute; /* Position it relative to the header */
+  top: 1rem; /* Adjust the distance from the top of the header */
+  right: 1rem; /* Adjust the distance from the right of the header */
+  z-index: 1000; /* Ensure it stays above other elements */
+  cursor: pointer;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  background-color: rgba(97, 218, 251, 0.8) !important; /* Optional: Background color */
+  border-radius: 6px; /* Optional: Rounded corners */
+  padding: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
 
 /* Universal style for all headings */
@@ -158,6 +162,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial Black', Gadget, sans-serif; /* Set a consistent font-family for all headings */
 }
 
+#anchor {
+    border: 3px ridge var(--primary-color); /* Changed to ridge */
+}
 
 @media (max-width: 1024px) {
     .nav-items a {
@@ -169,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
         border-radius: 6px !important;
-        background-color: rgb(0, 0, 136) !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
     }
 }
 
@@ -186,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
         border-radius: 6px !important;
-        background-color: rgb(0, 0, 136) !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
     }   
     .nav-items a {
         font-size: 1.5rem!important;

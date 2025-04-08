@@ -42,7 +42,7 @@ form {
   justify-content: center;
   align-items: center;
   width: 70% !important;
-  border: 3.5px ridge var(--primary-color) !important;
+  border: 3.5px ridge var(--primary-color) !important; /* Changed to ridge */
   padding: 1rem;
   border-radius: 6px;
 }
@@ -55,7 +55,7 @@ form {
   text-align: center;
   padding: 1rem;
   border-radius: 6px;
-  border: 3.5px ridge var(--primary-color);
+  border: 3.5px ridge var(--primary-color); /* Changed to ridge */
 }
 
 .form-container {

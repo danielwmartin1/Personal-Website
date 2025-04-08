@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  border: 3.5px ridge var(--primary-color);
+  border: 3.5px ridge var(--primary-color); /* Changed to ridge */
   padding: 3.5rem 7.5rem;
   border-radius: 6px;
   background-color: rgba(0, 0, 59, 0.8);
@@ -54,7 +54,7 @@
   font-size: 1rem; /* 16px */
   background-color: var(--background-color);
   border-radius: 6px;
-  border: 3.5px ridge var(--primary-color) !important;
+  border: 3.5px ridge var(--primary-color) !important; /* Changed to ridge */
 }
 
 @media (max-width: 768px) {
