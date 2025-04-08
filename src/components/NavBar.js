@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
-import "../styles/header.css";
+import "../styles/Header.css";
 import toggleIcon from '../images/horizontallines.jpg';
 
 const NavItems = ({ closeMenu }) => {

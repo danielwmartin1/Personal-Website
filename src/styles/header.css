@@ -1,4 +1,4 @@
-@import url('./variables.css');
+@import '../styles/Header.css';
 
 header {
     position: relative; /* Ensure header can be adjusted */
