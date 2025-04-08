@@ -1,4 +1,4 @@
-@import '../styles/Header.css';
+@import url('./variables.css');
 
 header {
     position: relative; /* Ensure header can be adjusted */
@@ -135,7 +135,7 @@ footer {
 
 .nav-link.active {
   color: var(--primary-color);
-  font-size: 2.75rem !important;
+  font-size: 2.5rem !important;
   transform: scale(1.1) !important;
   border: 2.5px solid var(--primary-color) !important;
   padding: 0 0.5rem !important;
@@ -160,13 +160,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .nav-items a {
         font-size: 1.3rem!important;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav-link.active {
         font-size: 1.5rem !important;
         transform: scale(1.1) !important;

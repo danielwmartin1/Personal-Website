@@ -110,7 +110,7 @@ img {
 .about_main div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 3rem;
   border-radius: 6px;
@@ -288,7 +288,7 @@ p.contact {
 }
 
 @media (max-width: 768px) {
-  .about_main, .section {
+.section {
     padding: 0!important;
     font-size: 1.125rem; /* 18px */
   }
