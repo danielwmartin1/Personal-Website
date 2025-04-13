@@ -26,17 +26,14 @@
   color: var(--text-color);
 }
 
-.logo-container {
-  gap: 1.5rem;
-}
-
 .logo {
-  height: auto;
+  height: 60px;
   margin: var(--margin-small);
   text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  width: auto;
 }
 
 .logos {
@@ -61,30 +58,19 @@
   background-color: white !important;
   padding: var(--padding-small);
   border-radius: 50%;
-  width: 60px;
 }
+
 
 #GitHub {
   background-color: white;
-  padding: 0;
-  border-radius: 16px;
-}
-
-#Git {
-  padding: 0;
-  height: 25px !important;
-  width: auto !important;
-}
-
-#NPM {
-  padding: 0;
-  height: 50px !important;
-  width: auto !important;
+  padding: 0!important;
+  border-radius: 18px;
 }
 
 #Vercel, #NextJS {
   background-color: white;
   border-radius: 50%;
+  padding: 0 !important;
 }
 
 #ExpressJS {
@@ -101,8 +87,21 @@
   border-radius: 10px;
 }
 
-#HTML, #Git {
+#REST.API {
+  background-color: white;
+  padding: var(--padding-small);
+  border-radius: 8px;
+}
+
+#HTML {
   transform: scale(1.25);
+}
+
+#Git {
+  height: 55px;
+  background-color: white;
+  padding: var(--padding-small);
+  border-radius: 8px;
 }
 
 #PostgreSQL {
@@ -110,12 +109,7 @@
   padding: 0.25rem;
   border-radius: 8px;
 }
-
-#TailwindCSS, #Bootstrap {
-  padding: var(--padding-small);
-  transform: scale(1.56);
-}
-
+                 
 #profile {
   width: 175px !important;
   border: 3.5px ridge var(--primary-color); 
@@ -183,7 +177,7 @@ p.p {
 
 #Redux {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   height: 55px;
   width: auto;
 }

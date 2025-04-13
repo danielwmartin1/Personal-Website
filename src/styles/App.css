@@ -59,12 +59,6 @@ p {
   font-size: 1.1rem!important; /* 16px */
 }
 
-/* Global img styles */
-img {
-  width: 60px;
-  margin: var(--margin);
-}
-
 /* Classes */
 .App {
   display: flex;
