@@ -144,7 +144,7 @@ footer {
 
 
 #toggleIcon {
-  position: absolute; /* Position it relative to the header */
+  position: relative; /* Position it relative to the header */
   top: 1rem; /* Adjust the distance from the top of the header */
   right: 1rem; /* Adjust the distance from the right of the header */
   z-index: 1000; /* Ensure it stays above other elements */
@@ -155,6 +155,8 @@ footer {
   border-radius: 6px; /* Optional: Rounded corners */
   padding: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  transform: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Universal style for all headings */
@@ -172,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-link.active {
         font-size: 1.5rem !important;
-        transform: scale(1.1) !important;
+        transform: scale(1.0) !important;
         border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
         border-radius: 6px !important;
@@ -187,15 +189,24 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center; /* Center items vertically */
         text-align: center; /* Center text */
     }
+
+    .nav-link {
+        padding: 0 0.5rem !important;
+    }
     .nav-link.active {
         font-size: 1.5rem !important;
         transform: scale(1.1) !important;
         border: 2.5px solid var(--primary-color) !important;
-        padding: 0 0.5rem !important;
         border-radius: 6px !important;
         background-color: rgba(0, 0, 136, 0.75) !important;
     }   
     .nav-items a {
         font-size: 1.5rem!important;
     }
+
+    .logos > * {
+        transform: scale(0.80) !important; /* Scales down by 25% */
+    }
+
+
 }

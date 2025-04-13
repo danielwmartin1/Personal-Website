@@ -187,11 +187,6 @@ p.p {
   width: auto !important;
 }
 
-#toggleIcon {
-  transform: none;
-  transition: transform 0.3s ease-in-out;
-}
-
 #experience.headings, #tech.headings {
   font-weight: 600 !important;
 }
@@ -276,6 +271,17 @@ p.p {
     z-index: 1100;
   }
 
+  #toggleIcon:hover {
+    background-color: var(--secondary-color) !important; /* Change background on hover */
+    opacity: 0.8; /* Slightly transparent on hover */
+    transform: scale(1.1) !important; /* Slightly increase size on hover */
+  }
+  #toggleIcon:active {
+    background-color: var(--primary-color) !important; /* Change background on active */
+    opacity: 1.0;
+    transform: scale(1.0) !important; /* Slightly decrease size on active */
+  }
+
   .nav-items  {
     display: flex !important;
     flex-direction: column !important;
@@ -292,6 +298,7 @@ p.p {
     background-color: transparent !important;
     text-shadow: #000000 2px 2px 2px !important;
   } 
+
 
   .listItem > a {
     width: 100% !important;

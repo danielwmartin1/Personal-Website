@@ -119,15 +119,5 @@ const NavBar = () => {
   );
 };
 
-// Add hover and click effects for nav-items in the CSS file (header.css or App.css)
-// Example:
-// .nav-items .listItem:hover {
-//   transform: scale(1.1);
-//   transition: transform 0.3s ease;
-// }
-// .nav-items .listItem:active {
-//   transform: scale(0.95);
-//   transition: transform 0.1s ease;
-// }
 
 export default NavBar;
