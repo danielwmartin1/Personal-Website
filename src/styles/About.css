@@ -5,13 +5,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
   background-color: var(--background-color); /* Optional: Add a background color */quotes: none ;
 }
 
 /* Optional: Adjust grid item styles if needed */
 .logos.study img {
-  height: 70px !important;
+  height: 60px !important;
   width: auto !important;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -24,6 +23,6 @@
 
 @media (max-width: 768px) {
   .logos.study img {
-    height: 60px !important; /* Adjust size for smaller screens */
+    height: 50px !important; /* Adjust size for smaller screens */
   }
 }

@@ -97,13 +97,15 @@ const NavBar = () => {
             className="menu-button" 
             style={{ 
               cursor: 'pointer', 
-              width: '50px', 
-              height: '50px', 
-              margin: "0.5rem", 
+              width: '45px', 
+              height: '45px', 
+              margin: "var(--margin-small)", 
               padding: "0.25rem", 
               backgroundColor: 'rgba(97, 218, 251, 0.8)', 
               borderRadius: "6px", 
               transform: `rotate(${rotation}deg)`, // Apply rotation
+              transition: 'transform 0.3s ease', // Smooth transition for rotation
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
             }} 
           />
           {isOpen && (
