@@ -203,10 +203,4 @@ h1, h2, h3, h4, h5, h6 {
     .nav-items a {
         font-size: 1.5rem!important;
     }
-
-    .logos > * {
-        transform: scale(0.80) !important; /* Scales down by 25% */
-    }
-
-
 }

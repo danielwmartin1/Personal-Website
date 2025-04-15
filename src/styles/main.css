@@ -16,6 +16,7 @@
   box-sizing: border-box;
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
@@ -87,9 +88,8 @@
   border-radius: 10px;
 }
 
-#REST.API {
-  background-color: white;
-  padding: var(--padding-small);
+#REST {
+  background-color: white!important;
   border-radius: 8px;
 }
 
@@ -314,7 +314,7 @@ p.p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .logos > * {
     transform: scale(0.75) !important; /* Scales down by 25% */
     transform-origin: center; /* Ensures scaling happens from the center */
