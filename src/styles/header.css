@@ -144,7 +144,7 @@ footer {
 
 
 #toggleIcon {
-  position: relative; /* Position it relative to the header */
+  position: absolute; /* Position it relative to the header */
   top: 1rem; /* Adjust the distance from the top of the header */
   right: 1rem; /* Adjust the distance from the right of the header */
   z-index: 1000; /* Ensure it stays above other elements */
@@ -155,17 +155,6 @@ footer {
   border-radius: 6px; /* Optional: Rounded corners */
   padding: 0.25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
-  /* Remove transform and transition */
-}
-
-#toggleIcon:hover {
-  background-color: var(--secondary-color) !important;
-  opacity: 0.8;
-}
-
-#toggleIcon:active {
-  background-color: var(--primary-color) !important;
-  opacity: 1.0;
 }
 
 /* Universal style for all headings */
@@ -183,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-link.active {
         font-size: 1.5rem !important;
-        transform: scale(1.0) !important;
+        transform: scale(1.1) !important;
         border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
         border-radius: 6px !important;
@@ -198,14 +187,49 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center; /* Center items vertically */
         text-align: center; /* Center text */
     }
-
-    .nav-link {
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
     }
     .nav-link.active {
         font-size: 1.5rem !important;
         transform: scale(1.1) !important;
         border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
         border-radius: 6px !important;
         background-color: rgba(0, 0, 136, 0.75) !important;
     }   

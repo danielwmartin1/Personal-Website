@@ -16,7 +16,6 @@
   box-sizing: border-box;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -27,14 +26,17 @@
   color: var(--text-color);
 }
 
+.logo-container {
+  gap: 1.5rem;
+}
+
 .logo {
-  height: 60px;
+  height: auto;
   margin: var(--margin-small);
   text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  width: auto;
 }
 
 .logos {
@@ -59,19 +61,30 @@
   background-color: white !important;
   padding: var(--padding-small);
   border-radius: 50%;
+  width: 60px;
 }
-
 
 #GitHub {
   background-color: white;
-  padding: 0!important;
-  border-radius: 18px;
+  padding: 0;
+  border-radius: 16px;
+}
+
+#Git {
+  padding: 0;
+  height: 25px !important;
+  width: auto !important;
+}
+
+#NPM {
+  padding: 0;
+  height: 50px !important;
+  width: auto !important;
 }
 
 #Vercel, #NextJS {
   background-color: white;
   border-radius: 50%;
-  padding: 0 !important;
 }
 
 #ExpressJS {
@@ -88,20 +101,8 @@
   border-radius: 10px;
 }
 
-#REST {
-  background-color: white!important;
-  border-radius: 8px;
-}
-
-#HTML {
+#HTML, #Git {
   transform: scale(1.25);
-}
-
-#Git {
-  height: 55px;
-  background-color: white;
-  padding: var(--padding-small);
-  border-radius: 8px;
 }
 
 #PostgreSQL {
@@ -109,7 +110,12 @@
   padding: 0.25rem;
   border-radius: 8px;
 }
-                 
+
+#TailwindCSS, #Bootstrap {
+  padding: var(--padding-small);
+  transform: scale(1.56);
+}
+
 #profile {
   width: 175px !important;
   border: 3.5px ridge var(--primary-color); 
@@ -177,7 +183,7 @@ p.p {
 
 #Redux {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   height: 55px;
   width: auto;
 }
@@ -185,6 +191,11 @@ p.p {
 #ExpressJS, #NodeJS, #Python-Django {
   height: 60px !important;
   width: auto !important;
+}
+
+#toggleIcon {
+  transform: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 #experience.headings, #tech.headings {
@@ -269,17 +280,6 @@ p.p {
     right: 0 !important;
     margin: 0.5rem;
     z-index: 1100;
-    /* Remove transform and transition */
-  }
-
-  #toggleIcon:hover {
-    background-color: var(--secondary-color) !important;
-    opacity: 0.8;
-  }
-
-  #toggleIcon:active {
-    background-color: var(--primary-color) !important;
-    opacity: 1.0;
   }
 
   .nav-items  {
@@ -299,7 +299,6 @@ p.p {
     text-shadow: #000000 2px 2px 2px !important;
   } 
 
-
   .listItem > a {
     width: 100% !important;
     padding: var(--padding-small) !important;
@@ -314,7 +313,7 @@ p.p {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .logos > * {
     transform: scale(0.75) !important; /* Scales down by 25% */
     transform-origin: center; /* Ensures scaling happens from the center */

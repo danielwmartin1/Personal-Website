@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
 import "../styles/Header.css";
@@ -44,6 +44,8 @@ const NavItems = ({ closeMenu }) => {
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
+  const [rotation, setRotation] = useState(0);
+  const toggleIconRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -76,25 +78,32 @@ const NavBar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
+  useEffect(() => {
+    setRotation(isOpen ? -90 : 0); // Set rotation directly based on isOpen state
+  }, [isOpen]);
+
+
+
   return (
     <nav className="navbar">
       {isMobile ? (
         <div className={`menu-container ${isOpen ? 'open' : ''}`}>
           <img 
             id="toggleIcon"
+            ref={toggleIconRef}
             src={toggleIcon} 
             alt="Toggle Icon" 
             onClick={toggleMenu} 
             className="menu-button" 
             style={{ 
               cursor: 'pointer', 
-              width: '45px', 
-              height: '45px', 
-              margin: "var(--margin-small)", 
+              width: '50px', 
+              height: '50px', 
+              margin: "0.5rem", 
               padding: "0.25rem", 
               backgroundColor: 'rgba(97, 218, 251, 0.8)', 
               borderRadius: "6px", 
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+              transform: `rotate(${rotation}deg)`, // Apply rotation
             }} 
           />
           {isOpen && (
@@ -108,5 +117,15 @@ const NavBar = () => {
   );
 };
 
+// Add hover and click effects for nav-items in the CSS file (header.css or App.css)
+// Example:
+// .nav-items .listItem:hover {
+//   transform: scale(1.1);
+//   transition: transform 0.3s ease;
+// }
+// .nav-items .listItem:active {
+//   transform: scale(0.95);
+//   transition: transform 0.1s ease;
+// }
 
 export default NavBar;
