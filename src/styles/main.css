@@ -269,17 +269,17 @@ p.p {
     right: 0 !important;
     margin: 0.5rem;
     z-index: 1100;
+    /* Remove transform and transition */
   }
 
   #toggleIcon:hover {
-    background-color: var(--secondary-color) !important; /* Change background on hover */
-    opacity: 0.8; /* Slightly transparent on hover */
-    transform: scale(1.1) !important; /* Slightly increase size on hover */
+    background-color: var(--secondary-color) !important;
+    opacity: 0.8;
   }
+
   #toggleIcon:active {
-    background-color: var(--primary-color) !important; /* Change background on active */
+    background-color: var(--primary-color) !important;
     opacity: 1.0;
-    transform: scale(1.0) !important; /* Slightly decrease size on active */
   }
 
   .nav-items  {

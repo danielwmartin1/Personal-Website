@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
 import "../styles/Header.css";
@@ -44,8 +44,6 @@ const NavItems = ({ closeMenu }) => {
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
-  const [rotation, setRotation] = useState(0);
-  const toggleIconRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -78,19 +76,12 @@ const NavBar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
 
-  useEffect(() => {
-    setRotation(isOpen ? -90 : 0); // Set rotation directly based on isOpen state
-  }, [isOpen]);
-
-
-
   return (
     <nav className="navbar">
       {isMobile ? (
         <div className={`menu-container ${isOpen ? 'open' : ''}`}>
           <img 
             id="toggleIcon"
-            ref={toggleIconRef}
             src={toggleIcon} 
             alt="Toggle Icon" 
             onClick={toggleMenu} 
@@ -103,8 +94,6 @@ const NavBar = () => {
               padding: "0.25rem", 
               backgroundColor: 'rgba(97, 218, 251, 0.8)', 
               borderRadius: "6px", 
-              transform: `rotate(${rotation}deg)`, // Apply rotation
-              transition: 'transform 0.3s ease', // Smooth transition for rotation
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
             }} 
           />
