@@ -61,6 +61,10 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    const toggleIcon = document.getElementById('toggleIcon');
+    if (toggleIcon) {
+      toggleIcon.classList.toggle('menu-open', !isOpen); // Add or remove the 'menu-open' class
+    }
   };
 
   const closeMenu = () => {

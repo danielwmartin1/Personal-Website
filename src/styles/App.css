@@ -138,10 +138,6 @@ p.contact {
   margin: 2rem;
 }
 
-
-
-
-
 #W3Schools {
   border-radius: 0px !important;
 }
@@ -189,7 +185,6 @@ p.contact {
   background-color: white;
   padding: 1rem;
 }
-
 
 #StackOverFlow {
   height: 60px !important; /* Increased by 33% from 60px */
@@ -242,7 +237,6 @@ p.contact {
   text-align: left;
 }
 
-
 .leetCode, #LeetCode {
   border-radius: 14px !important;
 }
@@ -275,6 +269,28 @@ p.contact {
   height: auto;
   border-radius: 8px;
   background-color: white;
+}
+
+/* Default state for the toggle icon */
+#toggleIcon {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for rotation and background color */
+  transform: rotate(0deg); /* Default position */
+  background-color: rgba(97, 218, 251, 0.8) !important; /* Default background color with !important */
+}
+
+/* Hover state */
+#toggleIcon:hover {
+  background-color: rgba(0, 123, 255, 0.8) !important; /* Force change to a darker blue on hover */
+}
+
+/* Active (click) state */
+#toggleIcon:active {
+  background-color: rgba(0, 86, 179, 0.8) !important; /* Force change to an even darker blue on click */
+}
+
+/* Rotated state when the menu is open */
+#toggleIcon.menu-open {
+  transform: rotate(-90deg); /* Rotate 90 degrees counter-clockwise */
 }
 
 @media (max-width: 768px) {
@@ -329,7 +345,6 @@ p.contact {
   .about_main div{
     margin: 2rem;
   }
-
 
   .social-icons img.Discord {
     height: 60px !important;
