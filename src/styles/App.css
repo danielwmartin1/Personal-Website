@@ -293,6 +293,12 @@ p.contact {
   width: auto !important;
 }
 
+.Discord {
+  padding: 0 !important;
+  box-shadow: none !important; /* Remove shadow for Discord logo */
+  height: 120px !important;
+}
+
 .Stack {
   width: 75px !important;
   height: auto;

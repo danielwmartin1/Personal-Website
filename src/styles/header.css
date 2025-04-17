@@ -1,30 +1,33 @@
 @import url('./variables.css');
 
+/* Header Styles */
 header {
-    position: relative; /* Ensure header can be adjusted */
-    z-index: 1000; /* Place header above the body */
-    top: 0; /* Keep it at the top */
-    border-bottom: 5px ridge var(--primary-color); /* Updated border thickness */
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    border-bottom: 5px ridge var(--primary-color);
     display: flex;
-    flex-direction: row; /* Force row layout */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    text-align: center; /* Center text */
-    padding: 0.5rem 0; /* Adjust padding */
-    background-color: var(--background-color); /* Ensure background color */
-    overflow-x: hidden; /* Prevent vertical scrolling */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
+/* Footer Styles */
 footer {
     background-color: var(--background-color);
-    border-top: 3px ridge var(--primary-color); /* Changed to ridge */
+    border-top: 3px ridge var(--primary-color);
     margin-top: auto;
     text-align: center;
 }
 
+/* List Item Links */
 .listItem > a {
     align-items: center;
-    background-color: rgba(0 0 0 0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -36,6 +39,7 @@ footer {
     padding: 0;
 }
 
+/* Menu Container */
 .menu-container {
     align-items: center;
     background-color: var(--background-color);
@@ -44,6 +48,7 @@ footer {
     justify-content: center;
 }
 
+/* Menu Button */
 .menu-button {
     background-color: var(--background-color);
     border: none;
@@ -58,32 +63,32 @@ footer {
 }
 
 .menu-button:hover {
-    background-color: var(--secondary-color); /* Change background on hover */
+    background-color: var(--secondary-color);
 }
 
-/* Make .nav-container background transparent */
+/* Navigation Container */
 .nav-container {
     align-items: center;
-    background-color: transparent !important; /* Set background to transparent */
-    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
+    background-color: transparent !important;
+    border-bottom: 3px ridge var(--primary-color);
     display: flex;
     justify-content: center;
 }
 
-/* Make .nav-items background transparent */
+/* Navigation Items */
 .nav-items {
     align-items: center;
-    background-color: transparent !important; /* Set background to transparent */
+    background-color: transparent !important;
     display: flex;
-    flex: 1; /* Added missing semicolon */
+    flex: 1;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important; /* Prevent horizontal scroll */
-    overflow-y: hidden !important; /* Prevent vertical scroll */
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 .nav-items a {
@@ -101,7 +106,6 @@ footer {
 .nav-items a:hover {
     color: var(--secondary-color);
     transform: scale(1.1);
-    overflow-y: hidden; /* Ensure no vertical scroll on hover */
 }
 
 .nav-items a:active {
@@ -110,122 +114,67 @@ footer {
     padding: 0 0.5rem;
 }
 
-.nav-items .listItem:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
+.nav-items a.active {
+    color: var(--primary-color);
+    font-size: 2.5rem !important;
+    transform: scale(1.1) !important;
+    border: 2.5px ridge var(--primary-color) !important;
+    padding: 0 0.5rem !important;
+    border-radius: 6px !important;
+    background-color: rgba(0, 0, 136, 0.75) !important;
 }
 
-.nav-items .listItem:active {
-  transform: scale(0.95);
-  transition: transform 0.2s ease;
-}
-
-.nav-link {
-    margin: 1.5rem !important;
-}
-
-.nav-link.active {
-  color: var(--primary-color);
-  font-size: 2.5rem !important;
-  transform: scale(1.1) !important;
-  border: 2.5px ridge var(--primary-color) !important; /* Changed to ridge */
-  padding: 0 0.5rem !important;
-  border-radius: 6px !important;
-  background-color:rgba(0, 0, 136, 0.75) !important;
-}
-
-
+/* Toggle Icon */
 #toggleIcon {
-  position: absolute; /* Position it relative to the header */
-  top: 1rem; /* Adjust the distance from the top of the header */
-  right: 1rem; /* Adjust the distance from the right of the header */
-  z-index: 1000; /* Ensure it stays above other elements */
-  cursor: pointer;
-  width: 50px; /* Adjust size as needed */
-  height: 50px;
-  background-color: rgba(97, 218, 251, 0.8) !important; /* Optional: Background color */
-  border-radius: 6px; /* Optional: Rounded corners */
-  padding: 0.25rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(97, 218, 251, 0.8) !important;
+    border-radius: 6px;
+    padding: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-/* Universal style for all headings */
+#toggleIcon:hover {
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+}
+
+#toggleIcon:active {
+    transform: scale(0.9);
+    background-color: var(--primary-color);
+}
+
+/* Universal Heading Styles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial Black', Gadget, sans-serif; /* Set a consistent font-family for all headings */
+    font-family: 'Arial Black', Gadget, sans-serif;
 }
 
+/* Anchor Styles */
 #anchor {
-    border: 3px ridge var(--primary-color); /* Changed to ridge */
+    border: 3px ridge var(--primary-color);
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {
-        font-size: 1.3rem!important;
+        font-size: 1.3rem !important;
     }
     .nav-link.active {
         font-size: 1.5rem !important;
-        transform: scale(1.1) !important;
-        border: 2.5px solid var(--primary-color) !important;
-        padding: 0 0.5rem !important;
-        border-radius: 6px !important;
-        background-color: rgba(0, 0, 136, 0.75) !important;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 768px), (max-width: 576px) {
     header {
-        flex-direction: column; /* Switch to column layout for smaller screens */
-        justify-content: center; /* Center items */
-        align-items: center; /* Center items vertically */
-        text-align: center; /* Center text */
-    }
-    .nav-link.active {
-        font-size: 1.5rem !important;
-        transform: scale(1.1) !important;
-        border: 2.5px solid var(--primary-color) !important;
-        padding: 0 0.5rem !important;
-        border-radius: 6px !important;
-        background-color: rgba(0, 0, 136, 0.75) !important;
-    }   
-    .nav-items a {
-        font-size: 1.5rem!important;
-    }
-}
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Switch to column layout for smaller screens */
-        justify-content: center; /* Center items */
-        align-items: center; /* Center items vertically */
-        text-align: center; /* Center text */
-    }
-    .nav-link.active {
-        font-size: 1.5rem !important;
-        transform: scale(1.1) !important;
-        border: 2.5px solid var(--primary-color) !important;
-        padding: 0 0.5rem !important;
-        border-radius: 6px !important;
-        background-color: rgba(0, 0, 136, 0.75) !important;
-    }   
-    .nav-items a {
-        font-size: 1.5rem!important;
-    }
-}
-@media (max-width: 576px) {
-    header {
-        flex-direction: column; /* Switch to column layout for smaller screens */
-        justify-content: center; /* Center items */
-        align-items: center; /* Center items vertically */
-        text-align: center; /* Center text */
-    }
-    .nav-link.active {
-        font-size: 1.5rem !important;
-        transform: scale(1.1) !important;
-        border: 2.5px solid var(--primary-color) !important;
-        padding: 0 0.5rem !important;
-        border-radius: 6px !important;
-        background-color: rgba(0, 0, 136, 0.75) !important;
-    }   
-    .nav-items a {
-        font-size: 1.5rem!important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
