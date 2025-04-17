@@ -160,6 +160,18 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px ridge var(--primary-color);
 }
 
+/* Social Icons */
+.social-icons img.Discord {
+    height: 65px !important; /* Adjust height to 80px */
+    width: auto !important; /* Maintain aspect ratio */
+}
+
+.Discord {
+    padding: 0 !important;
+    box-shadow: none !important; /* Remove shadow for Discord logo */
+    height: 150px !important; /* Adjust height to 150px */
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {

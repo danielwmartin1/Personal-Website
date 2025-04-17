@@ -288,17 +288,6 @@ p.contact {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Reset shadow on click */
 }
 
-.social-icons img.Discord {
-  height: 80px !important;
-  width: auto !important;
-}
-
-.Discord {
-  padding: 0 !important;
-  box-shadow: none !important; /* Remove shadow for Discord logo */
-  height: 120px !important;
-}
-
 .Stack {
   width: 75px !important;
   height: auto;
