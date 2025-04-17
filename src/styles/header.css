@@ -116,7 +116,7 @@ footer {
 
 .nav-items a.active {
     color: var(--primary-color);
-    font-size: 2.5rem !important;
+    font-size: 1.5rem !important;
     transform: scale(1.1) !important;
     border: 2.5px ridge var(--primary-color) !important;
     padding: 0 0.5rem !important;
