@@ -251,37 +251,6 @@ p.p {
     border: none;
   }
 
-  .container {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .menu-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%; /* Increased height by 50% */
-    z-index: 1000;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-container.open {
-    display: flex !important;
-    background-color: rgba(0, 12, 73, 0.5);
-  }
-
-  #toggleIcon {
-    position: fixed;
-    display: flex;  
-    justify-self: flex-end;
-    align-self: center;
-    top: 0 !important;
-    right: 0 !important;
-    margin: 0.5rem;
-    z-index: 1100;
-  }
-
   .nav-items  {
     display: flex !important;
     flex-direction: column !important;

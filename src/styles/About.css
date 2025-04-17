@@ -13,16 +13,32 @@
   height: 60px !important;
   width: auto !important;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-  margin: var(--small-margin)
+  transition: transform 0.2s ease;
+  margin: var(--margin-small);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
 }
 
 .logos.study img:hover {
   transform: scale(1.1); /* Slight zoom on hover */
 }
 
+#W3Schools {
+  background-color: rgb(0, 46, 113);
+  padding: var(--margin-small);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+}
+
+
 @media (max-width: 768px) {
   .logos.study img {
     height: 50px !important; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logos.study img {
+    height: 45px !important; /* Adjust size for smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
   }
 }

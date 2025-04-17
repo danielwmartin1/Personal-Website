@@ -4,15 +4,15 @@ header {
     position: relative; /* Ensure header can be adjusted */
     z-index: 1000; /* Place header above the body */
     top: 0; /* Keep it at the top */
-    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
+    border-bottom: 5px ridge var(--primary-color); /* Updated border thickness */
     display: flex;
     flex-direction: row; /* Force row layout */
-    justify-content: space-between; /* Space between items */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     text-align: center; /* Center text */
-    padding: 0.5rem 1rem; /* Add some padding */
+    padding: 0.5rem 0; /* Adjust padding */
     background-color: var(--background-color); /* Ensure background color */
-    overflow-y: hidden; /* Prevent vertical scrolling */
+    overflow-x: hidden; /* Prevent vertical scrolling */
 }
 
 footer {
@@ -55,14 +55,6 @@ footer {
     right: 0 !important;
     padding: 0.5rem 1rem;
     transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
-}
-
-.header {
-    background-color: var(--background-color);
-    border-bottom: 5px ridge var(--primary-color);
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem 0;
 }
 
 .menu-button:hover {

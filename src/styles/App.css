@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: transform 0.2s ease !important; /* Apply globally with priority */
 }
 
 body, html {
@@ -137,14 +138,39 @@ p.contact {
   font-size: 1.125rem; /* 16px */
   margin: 2rem;
 }
-
-#W3Schools {
-  border-radius: 0px !important;
-}
-
 .indented-list {
   margin-left: 2rem;
   font-size: 1rem; /* 16px */
+}
+.container {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%; /* Increased height by 50% */
+  z-index: 1000;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-container.open {
+  display: flex !important;
+  background-color: rgba(0, 12, 73, 0.5);
+}
+
+#toggleIcon {
+  position: fixed;
+  display: flex;  
+  justify-self: flex-end;
+  align-self: center;
+  top: 0 !important;
+  right: 0 !important;
+  margin: 0.5rem;
+  z-index: 1100;
 }
 
 /* IDs */
@@ -244,19 +270,22 @@ p.contact {
 .study-img, .social-icons img {
   height: 70px !important;
   width: auto !important;
-  margin: 1rem;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow */;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
 }
 
 .study-img:hover, .social-icons img:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7); /* Increased shadow on hover */
 }
 
 .study-img:active, .social-icons img:active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Reset shadow on click */
 }
 
 .social-icons img.Discord {
@@ -305,29 +334,20 @@ p.contact {
   background-color: rgba(0, 86, 179, 0.8) !important; /* Change to an even darker blue on click */
 }
 
-@media (max-width: 768px) {
-.section {
-    padding: 0!important;
-    font-size: 1.125rem; /* 18px */
-  }
-
-  .center-text {
-    font-size: 1.5rem; /* 24px */
-  }
-
-  #profile {
-    width: 140px !important;
-  }
-
-  p.p {
-    font-size: 1rem!important; /* 16px */
-  }
-
-  .study-img, .social-icons img {
-    height: 50px !important;
-    width: auto !important;
-  }
+/* Add box-shadow styling to the specified logos */
+#Netlify, #CSS, #Bootstrap, #JavaScript, #TypeScript, #React, #REST, #Flask, #DotNet, #MySQL, #PostgreSQL {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow */;
+  border-radius: 8px; /* Optional: Add rounded corners */
 }
+
+#Bootstrap {
+  padding: 0!important;
+  margin: 1rem;
+  height: 43.5px;
+  width: auto;
+}
+
+
 
 @media (max-width: 1024px) {
   .about_main, .section {
@@ -350,20 +370,34 @@ p.contact {
 
 @media (max-width: 768px) {
   .about_main, .section {
-    padding: 0.5rem;
-    font-size: 0.875rem; /* 14px */
+    padding: 0!important; /* Updated padding */
+    font-size: 1.125rem; /* 18px */
   }
 
-  .about_main div{
+  .center-text {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  #profile {
+    width: 140px !important; /* Updated width */
+  }
+
+  p.p {
+    font-size: 1rem!important; /* 16px */
+  }
+
+  .about_main div {
     margin: 2rem;
   }
 
   .social-icons img.Discord {
-    height: 60px !important;
+    height: 50px !important; /* Updated height */
     width: auto !important;
   }
 
   .study-img, .social-icons img {
+    height: 50px !important; /* Updated height */
+    width: auto !important;
     margin: 0.5rem;
   }
 
@@ -373,14 +407,6 @@ p.contact {
 
   img {
     width: 50px;
-  }
-
-  #profile {
-    width: 120px !important;
-  }
-
-  p.p {
-    font-size: 1rem!important; /* 16px */
   }
 
   #footer {
