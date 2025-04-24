@@ -64,6 +64,8 @@ footer {
 
 .menu-button:hover {
     background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: scale(1.1) !important;
 }
 
 /* Navigation Container */
@@ -109,7 +111,7 @@ footer {
 
 .nav-items a:active {
     transform: scale(0.95);
-    border-radius: 6px;
+    border-radius: 6px!important;
     padding: 0 0.5rem;
 }
 
@@ -129,8 +131,8 @@ footer {
     right: 1rem;
     z-index: 1000;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-color: rgba(97, 218, 251, 0.8) !important;
     border-radius: 6px;
     padding: 0.25rem;
@@ -139,7 +141,7 @@ footer {
 }
 
 #toggleIcon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1)!important;
     background-color: var(--secondary-color);
 }
 
