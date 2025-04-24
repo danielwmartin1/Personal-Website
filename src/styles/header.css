@@ -222,23 +222,19 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem!important;
     }
 
+
     ul.nav-items {
         flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
         justify-content: center; /* Center items vertically */
         margin: 0; /* Remove margin */
         padding: 1rem; /* Remove padding */
         background-color: rgba(3, 50, 104, 0.638)!important;
         border-left: 3.5px ridge rgba(0, 255, 255, 0.653); /* Changed to ridge */
+        text-align: left; /* Align text to the left */
     }
 }
 @media (max-width: 576px) {
-    header {
-        flex-direction: column; /* Switch to column layout for smaller screens */
-        justify-content: center; /* Center items */
-        align-items: center; /* Center items vertically */
-        text-align: center; /* Center text */
-    }
+
     .nav-link.active {
         font-size: 1.5rem !important;
         transform: scale(1.1) !important;
