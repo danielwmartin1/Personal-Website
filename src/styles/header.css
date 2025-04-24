@@ -16,6 +16,13 @@ header {
     overflow-x: hidden;
 }
 
+/* Footer Styles */
+footer {
+    background-color: var(--background-color);
+    border-top: 3px ridge var(--primary-color);
+    margin-top: auto;
+    text-align: center;
+}
 
 /* List Item Links */
 .listItem > a {
@@ -123,7 +130,6 @@ header {
     font-size: 2.75rem !important;
 }
 
-
 /* Toggle Icon */
 #toggleIcon {
     position: absolute;
@@ -192,8 +198,4 @@ h1, h2, h3, h4, h5, h6 {
     .nav-items a {
         font-size: 1.5rem !important;
     }
-    .nav-link {
-        font-size: 2.5rem !important;
-    }
-        
 }
