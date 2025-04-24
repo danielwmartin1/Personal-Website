@@ -295,40 +295,6 @@ p.contact {
   background-color: white;
 }
 
-/* Default state for the toggle icon */
-#toggleIcon {
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out !important; /* Smooth transition for rotation, scaling, and background color */
-  transform: rotate(0deg) scale(1) !important; /* Default position and size */
-  background-color: rgba(97, 218, 251, 0.8) !important; /* Default background color */
-}
-
-/* Hover state */
-#toggleIcon:hover {
-  transform: rotate(0deg) scale(1.1) !important; /* Slightly increase size on hover */
-  background-color: rgba(0, 123, 255, 0.8) !important; /* Change to a darker blue on hover */
-}
-
-/* Active (click) state */
-#toggleIcon:active {
-  transform: rotate(0deg) scale(0.9) !important; /* Slightly decrease size on click */
-  background-color: rgba(0, 86, 179, 0.8) !important; /* Change to an even darker blue on click */
-}
-
-/* Rotated state when the menu is open */
-#toggleIcon.menu-open {
-  transform: rotate(-90deg) !important; /* Rotate 90 degrees counter-clockwise, keep default size */
-}
-
-#toggleIcon.menu-open:hover {
-  transform: rotate(-90deg) scale(1.1) !important; /* Slightly increase size on hover */
-  background-color: rgba(0, 86, 179, 0.8) !important; /* Change to an even darker blue on hover */
-}
-
-#toggleIcon.menu-open:active {
-  transform: rotate(-90deg) scale(0.9) !important; /* Slightly decrease size on click */
-  background-color: rgba(0, 86, 179, 0.8) !important; /* Change to an even darker blue on click */
-}
-
 /* Add box-shadow styling to the specified logos */
 #Netlify, #CSS, #Bootstrap, #JavaScript, #TypeScript, #React, #REST, #Flask, #DotNet, #MySQL, #PostgreSQL {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow */;
