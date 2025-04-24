@@ -130,7 +130,7 @@ footer {
     font-size: 2.75rem !important;
 }
 
-/* Toggle Icon */
+/* Default state for the toggle icon */
 #toggleIcon {
     position: absolute;
     top: 1rem;
@@ -144,15 +144,36 @@ footer {
     padding: 0.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transform: rotate(0deg)!important scale(1) !important; /* Default position */
 }
 
+/* Hover state */
 #toggleIcon:hover {
-    transform: scale(1.1)!important;
+    transform: scale(1.1) !important; /* Slightly increase size on hover */
     background-color: var(--secondary-color);
 }
 
+/* Active (click) state */
 #toggleIcon:active {
-    transform: scale(0.9);
+    transform: scale(0.9) !important; /* Slightly decrease size on click */
+    background-color: var(--primary-color);
+}
+
+/* Menu open state */
+#toggleIcon.menu-open {
+    transform: rotate(-90deg) !important; /* Rotate 90 degrees counter-clockwise */
+    background-color: rgba(0, 86, 179, 0.8) !important; /* Change background color */
+}
+
+/* Menu open hover state */
+#toggleIcon.menu-open:hover {
+    transform: rotate(-90deg) scale(1.1) !important; /* Slightly increase size on hover */
+    background-color: rgba(0, 86, 179, 0.8) !important; /* Keep the same background color */
+}
+
+/* Menu open active (click) state */
+#toggleIcon.menu-open:active {
+    transform: scale(0.9) !important; /* Slightly decrease size on click */
     background-color: var(--primary-color);
 }
 

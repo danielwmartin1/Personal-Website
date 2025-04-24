@@ -25,33 +25,17 @@ const NavItems = ({ closeMenu }) => {
   );
 };
 
-/**
- * NavBar component that renders a navigation bar with responsive behavior.
-
- * 
- * @description
- * - Uses `useState` to manage the state of whether the view is mobile (`isMobile`) and whether the menu is open (`isOpen`).
- * - Uses `useEffect` to add event listeners for window resize and mouse click outside the menu.
- * - Renders a button to toggle the menu on mobile view and the navigation items.
- * 
- * @notes
- * - `isMobile` state is initially set based on the window width.
- * - `handleResize` updates `isMobile` state on window resize.
- * - `toggleMenu` toggles the `isOpen` state.
- * - `closeMenu` sets `isOpen` to false.
- * - `handleClickOutside` closes the menu if a click is detected outside the menu container and button.
- */
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
   const [rotation, setRotation] = useState(0);
-  const toggleIconRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
         setIsOpen(false);
+        setRotation(0); // Reset rotation when switching to desktop view
       }
     };
 
@@ -60,21 +44,18 @@ const NavBar = () => {
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    const toggleIcon = document.getElementById('toggleIcon');
-    if (toggleIcon) {
-      toggleIcon.classList.toggle('menu-open', !isOpen); // Add or remove the 'menu-open' class
-    }
+    setIsOpen(!isOpen); // Toggle the menu state
   };
 
   const closeMenu = () => {
-    setIsOpen(false);
+    setIsOpen(false); // Close the menu
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.menu-container') && !event.target.closest('#toggleIcon')) {
-        setIsOpen(false);
+      const header = document.querySelector('header'); // Select the header element
+      if (isOpen && header && !header.contains(event.target)) {
+        closeMenu(); // Close the menu if the click is outside the header
       }
     };
 
@@ -83,10 +64,8 @@ const NavBar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    setRotation(isOpen ? -90 : 0); // Set rotation directly based on isOpen state
+    setRotation(isOpen ? -90 : 0); // Rotate to -90 when open, reset to 0 when closed
   }, [isOpen]);
-
-
 
   return (
     <nav className="navbar">
@@ -94,7 +73,6 @@ const NavBar = () => {
         <div className={`menu-container ${isOpen ? 'open' : ''}`}>
           <img 
             id="toggleIcon"
-            ref={toggleIconRef}
             src={toggleIcon} 
             alt="Toggle Icon" 
             onClick={toggleMenu} 
@@ -108,6 +86,7 @@ const NavBar = () => {
               backgroundColor: 'rgba(97, 218, 251, 0.8)', 
               borderRadius: "6px", 
               transform: `rotate(${rotation}deg)`, // Apply rotation
+              transition: 'transform 0.2s ease-in-out', // Smooth rotation transition
             }} 
           />
           {isOpen && (
@@ -120,16 +99,5 @@ const NavBar = () => {
     </nav>
   );
 };
-
-// Add hover and click effects for nav-items in the CSS file (header.css or App.css)
-// Example:
-// .nav-items .listItem:hover {
-//   transform: scale(1.1);
-//   transition: transform 0.3s ease;
-// }
-// .nav-items .listItem:active {
-//   transform: scale(0.95);
-//   transition: transform 0.1s ease;
-// }
 
 export default NavBar;
