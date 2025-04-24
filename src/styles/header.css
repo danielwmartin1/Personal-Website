@@ -12,17 +12,10 @@ header {
     align-items: center;
     text-align: center;
     padding: 0.5rem 0;
-    background-color: var(--background-color);
+    background-color: var(--background-color); /* Default background color */
     overflow-x: hidden;
 }
 
-/* Footer Styles */
-footer {
-    background-color: var(--background-color);
-    border-top: 3px ridge var(--primary-color);
-    margin-top: auto;
-    text-align: center;
-}
 
 /* List Item Links */
 .listItem > a {
@@ -42,7 +35,7 @@ footer {
 /* Menu Container */
 .menu-container {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.85); /* Default background color */
+    background-color: var(--background-color); /* Default background color */
     display: flex;
     flex-direction: column !important;
     justify-content: center;
@@ -148,12 +141,13 @@ footer {
 
 #toggleIcon:hover {
     transform: scale(1.1)!important;
-    background-color: var(--secondary-color);
+    background-color: rgba(0, 119, 237, 0.863) !important;
 }
 
 #toggleIcon:active {
     transform: scale(0.9);
-    background-color: var(--primary-color);
+    background-color: rgba(0, 144, 172, 0.863) !important;
+
 }
 
 /* Universal Heading Styles */
