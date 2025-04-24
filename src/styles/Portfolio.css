@@ -57,7 +57,7 @@
   border: 3.5px ridge var(--primary-color) !important; /* Changed to ridge */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .portfolio-container {
     padding: 1rem 5rem;
   }
@@ -70,6 +70,23 @@
   .project-link {
     padding-left: 0.5rem !important;
     grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .portfolio {
+    font-size: 1.25rem;
+    margin: 1.5rem;
+  }
+
+  .project-link {
+    padding-left: 0.5rem !important;
+    grid-template-columns: auto;
   }
 }
 
