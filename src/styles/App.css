@@ -114,7 +114,7 @@ img {
   border-radius: 6px;
   width: 90%;
   border: 3.5px ridge var(--primary-color);
-  background-color: rgba(0, 0, 59, 0.6);
+  background-color: var(--background-color);
 }
 
 .center-text {
