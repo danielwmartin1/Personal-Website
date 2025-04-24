@@ -105,8 +105,7 @@ footer {
 
 .nav-items a:hover {
     color: var(--secondary-color);
-    transform: scale(1.1);
-}
+    transform: scale(1.15);}
 
 .nav-items a:active {
     transform: scale(0.95);
@@ -116,12 +115,11 @@ footer {
 
 .nav-items a.active {
     color: var(--primary-color);
-    font-size: 1.5rem !important;
-    transform: scale(1.1) !important;
     border: 2.5px ridge var(--primary-color) !important;
     padding: 0 0.5rem !important;
     border-radius: 6px !important;
     background-color: rgba(0, 0, 136, 0.75) !important;
+    font-size: 2.75rem !important;
 }
 
 /* Toggle Icon */
@@ -175,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {
-        font-size: 1.3rem !important;
+        font-size: 1.75rem !important;
     }
     .nav-link.active {
         font-size: 1.5rem !important;
