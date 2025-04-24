@@ -42,10 +42,16 @@ footer {
 /* Menu Container */
 .menu-container {
     align-items: center;
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.85); /* Default background color */
     display: flex;
     flex-direction: column !important;
     justify-content: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.menu-container.open {
+    background-color: rgba(3, 9, 48, 0.75);
+    border-left: 3.5px ridge rgba(0, 255, 255, 0.50) /* More transparent when open */
 }
 
 /* Menu Button */
