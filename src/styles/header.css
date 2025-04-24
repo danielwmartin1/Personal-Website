@@ -177,8 +177,8 @@ h1, h2, h3, h4, h5, h6 {
     .nav-items a {
         font-size: 1.75rem !important;
     }
-    .nav-link.active {
-        font-size: 1.5rem !important;
+    .nav-items a.active {
+        font-size: 1.65rem !important;
     }
 }
 
@@ -188,5 +188,8 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    .nav-items a {
+        font-size: 1.5rem !important;
     }
 }
