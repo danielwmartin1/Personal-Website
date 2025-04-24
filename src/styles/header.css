@@ -92,6 +92,7 @@ footer {
     padding: 0;
     overflow-x: hidden !important; /* Prevent horizontal scroll */
     overflow-y: hidden !important; /* Prevent vertical scroll */
+    border-left: 3
 }
 
 .nav-items a {
@@ -186,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center; /* Center items */
         align-items: center; /* Center items vertically */
         text-align: center; /* Center text */
+        overflow: hidden!important;
     }
     .nav-link.active {
         font-size: 1.5rem !important;
@@ -205,6 +207,7 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center; /* Center items */
         align-items: center; /* Center items vertically */
         text-align: center; /* Center text */
+
     }
     .nav-link.active {
         font-size: 1.5rem !important;
