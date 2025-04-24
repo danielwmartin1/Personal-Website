@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2.5px solid var(--primary-color) !important;
         padding: 0 0.5rem !important;
         border-radius: 6px !important;
-        background-color: rgba(0, 0, 136, 0.75) !important;
+        background-color: rgba(0, 0, 149, 0.75) !important;
     }   
     .nav-items a {
         font-size: 1.5rem!important;
@@ -228,9 +228,8 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center; /* Center items vertically */
         margin: 0; /* Remove margin */
         padding: 0; /* Remove padding */
-        background-color: var(--background-color)!important;
-        opacity: 0.6; /* Optional: Add some transparency */
-        border-left: 5px ridge var(--primary-color); /* Changed to ridge */
+        background-color: rgba(0, 54, 115, 0.677)!important;
+        border-left: 5px ridge var(--primary-color-light); /* Changed to ridge */
     }
 }
 @media (max-width: 576px) {

@@ -1,8 +1,10 @@
 :root {
   --primary-color: #61dafb;
+  --primary-color-light: #61dafbb4;
   --secondary-color: #0fa9c1;
   --tertiary-color: #124047;
   --background-color: #183250da;
+  --background-color-light: #0070bab3;
   --text-color: #ffffff;
   --button-background-color: #214296;
   --button-hover-color: #0fa9c1;
