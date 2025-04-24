@@ -1,27 +1,25 @@
-/* Imports */
 @import url('./global.css');
-@import url('./Header.css'); /* Changed from 'header.css' to 'Header.css' */
-@import url('./buttons.css'); /* Changed 'Buttons.css' to 'buttons.css' to match the correct case */
+@import url('./Header.css');
+@import url('./buttons.css');
 @import url('./Main.css');
 @import url('./About.css');
 @import url('./index.css');
 @import url('./variables.css');
-@import url('./Portfolio.css'); /* Added import for Portfolio.css */
+@import url('./Portfolio.css');
 @import url('./Contact.css');
 @import url('./Form.css');
-@import url('./Footer.css'); /* Changed 'Footer.css' to 'footer.css' to match the correct case */
+@import url('./Footer.css');
 
-/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: transform 0.2s ease !important; /* Apply globally with priority */
+  transition: transform 0.2s ease !important;
 }
 
 body, html {
   font-family: var(--font-family);
-  font-size: 16px; /* Base font size */
+  font-size: 16px;
   background-image: url('../images/bluegradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,22 +49,20 @@ a:hover {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   color: var(--text-color);
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
 }
 
 p {
   text-indent: 1.5rem;
   text-align: left !important;
-  font-size: 1.1rem!important; /* 16px */
+  font-size: 1.1rem!important;
 }
 
-/* Global img styles */
 img {
   width: 60px;
   margin: var(--margin);
 }
 
-/* Classes */
 .App {
   display: flex;
   flex-direction: column;
@@ -82,7 +78,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -93,7 +89,7 @@ img {
   flex-direction: row !important;
   justify-content: center;
   align-items: center;
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   margin: 1rem !important;
   padding: 1rem;
   width: auto !important;
@@ -105,7 +101,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem; /* 16px */
+  font-size: 1.5rem;
   margin: 0.5rem;
 }
 
@@ -123,7 +119,7 @@ img {
 
 .center-text {
   text-align: center;
-  font-size: 1.75rem; /* 16px */
+  font-size: 1.75rem;
   font-family: var(--font-family);
   color: var(--primary-color);
   font-weight: 600;
@@ -135,13 +131,15 @@ p.contact {
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
-  font-size: 1.125rem; /* 16px */
+  font-size: 1.125rem;
   margin: 2rem;
 }
+
 .indented-list {
   margin-left: 2rem;
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
 }
+
 .container {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -151,7 +149,7 @@ p.contact {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100%; /* Increased height by 50% */
+  height: 100%;
   z-index: 1000;
   flex-direction: column;
   align-items: flex-end;
@@ -173,18 +171,17 @@ p.contact {
   z-index: 1100;
 }
 
-/* IDs */
 #githubRepo {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1.25rem; /* 16px */
+  font-size: 1.25rem;
   text-align: center;
   text-indent: 0 !important;
 }
 
 .GitHub {
-  width: 60px !important; /* Increased by 33% from 45px */
+  width: 60px !important;
   height: auto;
   border-radius: 10px !important;
   background-color: white;
@@ -194,7 +191,7 @@ p.contact {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   text-align: center;
   background-color: var(--background-color);
   border-radius: 6px;
@@ -213,27 +210,26 @@ p.contact {
 }
 
 #StackOverFlow {
-  height: 60px !important; /* Increased by 33% from 60px */
+  height: 60px !important;
   width: auto;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
 }
 
 #MDN {
-  height: 60px !important; /* Increased by 33% from 60px */
+  height: 60px !important;
   width: auto !important;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.734);
 }
 
-/* Classes with multiple selectors */
 .about-me-email,
 .anchor,
 #anchor {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
   text-align: center;
   padding: 0.5rem;
 }
@@ -272,20 +268,20 @@ p.contact {
   width: auto !important;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow */;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .study-img:hover, .social-icons img:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7); /* Increased shadow on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
 }
 
 .study-img:active, .social-icons img:active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Reset shadow on click */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .Stack {
@@ -295,10 +291,9 @@ p.contact {
   background-color: white;
 }
 
-/* Add box-shadow styling to the specified logos */
 #Netlify, #CSS, #Bootstrap, #JavaScript, #TypeScript, #React, #REST, #Flask, #DotNet, #MySQL, #PostgreSQL {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow */;
-  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
 }
 
 #Bootstrap {
@@ -308,16 +303,14 @@ p.contact {
   width: auto;
 }
 
-
-
 @media (max-width: 1024px) {
   .about_main, .section {
     padding: 0.5rem;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
   }
 
   .center-text {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
   }
 
   #profile {
@@ -325,26 +318,26 @@ p.contact {
   }
 
   p.p {
-    font-size: 1rem!important; /* 16px */
+    font-size: 1rem!important;
   }
 }
 
 @media (max-width: 768px) {
   .about_main, .section {
-    padding: 0!important; /* Updated padding */
-    font-size: 1.125rem; /* 18px */
+    padding: 0!important;
+    font-size: 1.125rem;
   }
 
   .center-text {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
   }
 
   #profile {
-    width: 140px !important; /* Updated width */
+    width: 140px !important;
   }
 
   p.p {
-    font-size: 1rem!important; /* 16px */
+    font-size: 1rem!important;
   }
 
   .about_main div {
@@ -352,18 +345,18 @@ p.contact {
   }
 
   .social-icons img.Discord {
-    height: 50px !important; /* Updated height */
+    height: 50px !important;
     width: auto !important;
   }
 
   .study-img, .social-icons img {
-    height: 50px !important; /* Updated height */
+    height: 50px !important;
     width: auto !important;
     margin: 0.5rem;
   }
 
   .center-text {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
   }
 
   img {
@@ -378,11 +371,11 @@ p.contact {
 @media (max-width: 480px) {
   .about_main {
     padding: 0.5rem;
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.75rem;
   }
 
   .center-text {
-    font-size: 1.25rem; /* 16px */
+    font-size: 1.25rem;
   }
 
   #profile {
@@ -390,7 +383,7 @@ p.contact {
   }
 
   p.p {
-    font-size: 0.9rem!important; /* 14px */
+    font-size: 0.9rem!important;
   }
 
   .about_main div {
