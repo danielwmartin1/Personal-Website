@@ -29,13 +29,13 @@ const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isOpen, setIsOpen] = useState(false);
   const [rotation, setRotation] = useState(0);
+  const toggleIconRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
         setIsOpen(false);
-        setRotation(0); // Reset rotation when switching to desktop view
       }
     };
 
@@ -44,18 +44,21 @@ const NavBar = () => {
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu state
+    setIsOpen(!isOpen);
+    const toggleIcon = document.getElementById('toggleIcon');
+    if (toggleIcon) {
+      toggleIcon.classList.toggle('menu-open', !isOpen); // Add or remove the 'menu-open' class
+    }
   };
 
   const closeMenu = () => {
-    setIsOpen(false); // Close the menu
+    setIsOpen(false);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const header = document.querySelector('header'); // Select the header element
-      if (isOpen && header && !header.contains(event.target)) {
-        closeMenu(); // Close the menu if the click is outside the header
+      if (isOpen && !event.target.closest('.menu-container') && !event.target.closest('#toggleIcon')) {
+        setIsOpen(false);
       }
     };
 
@@ -64,7 +67,7 @@ const NavBar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    setRotation(isOpen ? -90 : 0); // Rotate to -90 when open, reset to 0 when closed
+    setRotation(isOpen ? -90 : 0); // Set rotation directly based on isOpen state
   }, [isOpen]);
 
   return (
@@ -73,6 +76,7 @@ const NavBar = () => {
         <div className={`menu-container ${isOpen ? 'open' : ''}`}>
           <img 
             id="toggleIcon"
+            ref={toggleIconRef}
             src={toggleIcon} 
             alt="Toggle Icon" 
             onClick={toggleMenu} 
@@ -86,7 +90,6 @@ const NavBar = () => {
               backgroundColor: 'rgba(97, 218, 251, 0.8)', 
               borderRadius: "6px", 
               transform: `rotate(${rotation}deg)`, // Apply rotation
-              transition: 'transform 0.2s ease-in-out', // Smooth rotation transition
             }} 
           />
           {isOpen && (
@@ -99,5 +102,4 @@ const NavBar = () => {
     </nav>
   );
 };
-
 export default NavBar;

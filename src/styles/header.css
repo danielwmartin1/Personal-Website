@@ -1,33 +1,30 @@
 @import url('./variables.css');
 
-/* Header Styles */
 header {
-    position: relative;
-    z-index: 1000;
-    top: 0;
-    border-bottom: 5px ridge var(--primary-color);
+    position: relative; /* Ensure header can be adjusted */
+    z-index: 1000; /* Place header above the body */
+    top: 0; /* Keep it at the top */
+    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem 0;
-    background-color: var(--background-color);
-    overflow-x: hidden;
+    flex-direction: row; /* Force row layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    padding: 0.5rem 1rem; /* Add some padding */
+    background-color: var(--background-color); /* Ensure background color */
+    overflow-y: hidden; /* Prevent vertical scrolling */
 }
 
-/* Footer Styles */
 footer {
     background-color: var(--background-color);
-    border-top: 3px ridge var(--primary-color);
+    border-top: 3px ridge var(--primary-color); /* Changed to ridge */
     margin-top: auto;
     text-align: center;
 }
 
-/* List Item Links */
 .listItem > a {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(0 0 0 0) !important;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -39,22 +36,14 @@ footer {
     padding: 0;
 }
 
-/* Menu Container */
 .menu-container {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.85); /* Default background color */
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column !important;
     justify-content: center;
-    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.menu-container.open {
-    background-color: rgba(3, 9, 48, 0.75);
-    border-left: 3.5px ridge rgba(0, 255, 255, 0.50) /* More transparent when open */
-}
-
-/* Menu Button */
 .menu-button {
     background-color: var(--background-color);
     border: none;
@@ -68,35 +57,41 @@ footer {
     transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
 }
 
-.menu-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    transform: scale(1.1) !important;
+.header {
+    background-color: var(--background-color);
+    border-bottom: 5px ridge var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
 }
 
-/* Navigation Container */
+.menu-button:hover {
+    background-color: var(--secondary-color); /* Change background on hover */
+}
+
+/* Make .nav-container background transparent */
 .nav-container {
     align-items: center;
-    background-color: transparent !important;
-    border-bottom: 3px ridge var(--primary-color);
+    background-color: transparent !important; /* Set background to transparent */
+    border-bottom: 3px ridge var(--primary-color); /* Changed to ridge */
     display: flex;
     justify-content: center;
 }
 
-/* Navigation Items */
+/* Make .nav-items background transparent */
 .nav-items {
     align-items: center;
-    background-color: transparent !important;
+    background-color: transparent !important; /* Set background to transparent */
     display: flex;
-    flex: 1;
+    flex: 1; /* Added missing semicolon */
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    overflow-x: hidden !important; /* Prevent horizontal scroll */
+    overflow-y: hidden !important; /* Prevent vertical scroll */
 }
 
 .nav-items a {
@@ -113,110 +108,132 @@ footer {
 
 .nav-items a:hover {
     color: var(--secondary-color);
-    transform: scale(1.15);}
+    transform: scale(1.1);
+    overflow-y: hidden; /* Ensure no vertical scroll on hover */
+}
 
 .nav-items a:active {
     transform: scale(0.95);
-    border-radius: 6px!important;
+    border-radius: 6px;
     padding: 0 0.5rem;
 }
 
-.nav-items a.active {
-    color: var(--primary-color);
-    border: 2.5px ridge var(--primary-color) !important;
-    padding: 0 0.5rem !important;
-    border-radius: 6px !important;
-    background-color: rgba(0, 0, 136, 0.75) !important;
-    font-size: 2.75rem !important;
+.nav-items .listItem:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
-/* Default state for the toggle icon */
+.nav-items .listItem:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+.nav-link {
+    margin: 1.5rem !important;
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-size: 2.5rem !important;
+  transform: scale(1.1) !important;
+  border: 2.5px ridge var(--primary-color) !important; /* Changed to ridge */
+  padding: 0 0.5rem !important;
+  border-radius: 6px !important;
+  background-color:rgba(0, 0, 136, 0.75) !important;
+}
+
+
 #toggleIcon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(97, 218, 251, 0.8) !important;
-    border-radius: 6px;
-    padding: 0.25rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    transform: rotate(0deg)!important scale(1) !important; /* Default position */
+  position: absolute; /* Position it relative to the header */
+  top: 1rem; /* Adjust the distance from the top of the header */
+  right: 1rem; /* Adjust the distance from the right of the header */
+  z-index: 1000; /* Ensure it stays above other elements */
+  cursor: pointer;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  background-color: rgba(97, 218, 251, 0.8) !important; /* Optional: Background color */
+  border-radius: 6px; /* Optional: Rounded corners */
+  padding: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
 
-/* Hover state */
-#toggleIcon:hover {
-    transform: scale(1.1) !important; /* Slightly increase size on hover */
-    background-color: var(--secondary-color);
-}
-
-/* Active (click) state */
-#toggleIcon:active {
-    transform: scale(0.9) !important; /* Slightly decrease size on click */
-    background-color: var(--primary-color);
-}
-
-/* Menu open state */
-#toggleIcon.menu-open {
-    transform: rotate(-90deg) !important; /* Rotate 90 degrees counter-clockwise */
-    background-color: rgba(0, 86, 179, 0.8) !important; /* Change background color */
-}
-
-/* Menu open hover state */
-#toggleIcon.menu-open:hover {
-    transform: rotate(-90deg) scale(1.1) !important; /* Slightly increase size on hover */
-    background-color: rgba(0, 86, 179, 0.8) !important; /* Keep the same background color */
-}
-
-/* Menu open active (click) state */
-#toggleIcon.menu-open:active {
-    transform: scale(0.9) !important; /* Slightly decrease size on click */
-    background-color: var(--primary-color);
-}
-
-/* Universal Heading Styles */
+/* Universal style for all headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial Black', Gadget, sans-serif;
+    font-family: 'Arial Black', Gadget, sans-serif; /* Set a consistent font-family for all headings */
 }
 
-/* Anchor Styles */
 #anchor {
-    border: 3px ridge var(--primary-color);
+    border: 3px ridge var(--primary-color); /* Changed to ridge */
 }
 
-/* Social Icons */
-.social-icons img.Discord {
-    height: 90px !important; /* Adjust height to 80px */
-    width: auto !important; /* Maintain aspect ratio */
-}
-
-.Discord {
-    padding: 0 !important;
-    box-shadow: none !important; /* Remove shadow for Discord logo */
-    height: 150px !important; /* Adjust height to 150px */
-}
-
-/* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {
-        font-size: 1.75rem !important;
+        font-size: 1.3rem!important;
     }
-    .nav-items a.active {
-        font-size: 1.65rem !important;
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
     }
 }
 
-@media (max-width: 900px), (max-width: 768px), (max-width: 576px) {
+@media (max-width: 900px) {
     header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
     }
-    .nav-items a {
+    .nav-link.active {
         font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text */
+    }
+    .nav-link.active {
+        font-size: 1.5rem !important;
+        transform: scale(1.1) !important;
+        border: 2.5px solid var(--primary-color) !important;
+        padding: 0 0.5rem !important;
+        border-radius: 6px !important;
+        background-color: rgba(0, 0, 136, 0.75) !important;
+    }   
+    .nav-items a {
+        font-size: 1.5rem!important;
     }
 }
