@@ -8,14 +8,15 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
-    "vercel": "^41.5.0",
+    "vercel": "^41.7.0",
     "web-vitals": "^3.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "vercel"
   },
   "eslintConfig": {
     "extends": [
