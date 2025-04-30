@@ -80,14 +80,19 @@
   }
 
   .portfolio {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin: 1.5rem;
   }
 
   .project-link {
-    padding-left: 0.5rem !important;
+    padding-left: 2.5rem !important;
     grid-template-columns: auto;
   }
+
+  .divProject {
+    font-size: 1.5rem; /* 24px */
+    padding: 1.5rem;
+  } 
 }
 
 @media (max-width: 480px) {
