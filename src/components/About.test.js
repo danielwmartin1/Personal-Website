@@ -6,7 +6,7 @@ import About from './About';
 describe('About Component', () => {
     test('renders Introduction section', () => {
         render(<About />);
-        expect(screen.getByText('Introduction')).toBeInTheDocument();
+        expect(screen.getByText('About')).toBeInTheDocument();
         expect(screen.getByText(/Welcome to my personal project!/i)).toBeInTheDocument();
     });
 
