@@ -127,7 +127,7 @@ footer {
     padding: 0 0.5rem !important;
     border-radius: 6px !important;
     background-color: rgba(0, 0, 136, 0.75) !important;
-    font-size: 3.25rem !important;
+    font-size: 2.75rem !important;
 }
 
 /* Toggle Icon */
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.75rem !important;
     }
     .nav-items a.active {
-        font-size: 2.25rem !important;
+        font-size: 1.65rem !important;
     }
 }
 
@@ -197,9 +197,5 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-items a {
         font-size: 1.5rem !important;
-    }
-
-    .nav-items a.active {
-        font-size: 2rem !important;
     }
 }
