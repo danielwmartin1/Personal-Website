@@ -8,20 +8,36 @@ const NavItems = ({ closeMenu }) => {
   const location = useLocation();
 
   return (
-    <ul className="nav-items" style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'space-around' }}>
-      <li className="listItem" onClick={closeMenu}>
-        <Link to="/" className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>Home</Link>
-      </li>
-      <li className="listItem" onClick={closeMenu}>
-        <Link to="/about" className={location.pathname === '/about' ? 'nav-link active' : 'nav-link'}>About</Link>
-      </li>
-      <li className="listItem" onClick={closeMenu}>
-        <Link to="/projects" className={location.pathname === '/projects' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
-      </li>
-      <li className="listItem" onClick={closeMenu}>
-        <Link to="/contact" className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
-      </li>
-    </ul>
+    <div className="nav-items" style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <Link 
+        to="/" 
+        className={location.pathname === '/' ? 'nav-link active' : 'nav-link'} 
+        onClick={closeMenu}
+      >
+        Home
+      </Link>
+      <Link 
+        to="/about" 
+        className={location.pathname === '/about' ? 'nav-link active' : 'nav-link'} 
+        onClick={closeMenu}
+      >
+        About
+      </Link>
+      <Link 
+        to="/projects" 
+        className={location.pathname === '/projects' ? 'nav-link active' : 'nav-link'} 
+        onClick={closeMenu}
+      >
+        Portfolio
+      </Link>
+      <Link 
+        to="/contact" 
+        className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'} 
+        onClick={closeMenu}
+      >
+        Contact
+      </Link>
+    </div>
   );
 };
 
