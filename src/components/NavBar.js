@@ -90,23 +90,23 @@ const NavBar = () => {
     <nav className="navbar">
       {isMobile ? (
         <div className={`menu-container ${isOpen ? 'open' : ''}`}>
-          <img 
+          <img
             id="toggleIcon"
             ref={toggleIconRef}
-            src={toggleIcon} 
-            alt="Toggle Icon" 
-            onClick={toggleMenu} 
-            className="menu-button" 
-            style={{ 
-              cursor: 'pointer', 
-              width: '50px', 
-              height: '50px', 
-              margin: "0.5rem", 
-              padding: "0.25rem", 
-              backgroundColor: 'rgba(97, 218, 251, 0.8)', 
-              borderRadius: "6px", 
+            src={toggleIcon}
+            alt="Toggle Icon"
+            onClick={toggleMenu}
+            style={{
+              cursor: 'pointer',
+              width: '50px',
+              height: '50px',
+              margin: '0.5rem',
+              padding: '0.25rem',
+              backgroundColor: 'rgba(97, 218, 251, 0.8)',
+              borderRadius: '6px',
               transform: `rotate(${rotation}deg)`, // Apply rotation
-            }} 
+              transition: 'transform 0.3s ease-in-out, background-color 0.2s ease-in-out', // Smooth rotation
+            }}
           />
           {isOpen && (
             <NavItems closeMenu={closeMenu} />

@@ -109,17 +109,15 @@ footer {
     padding: 0.5rem 2.5rem;
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
-    font-size: 2.2rem; /* Increased font size */
 }
 
 .nav-items a:hover {
     color: var(--secondary-color);
-    transform: scale(1.15);
-}
+    transform: scale(1.15)!important;}
 
 .nav-items a:active {
     transform: scale(0.95);
-    border-radius: 6px !important;
+    border-radius: 6px!important;
     padding: 0 0.5rem;
 }
 
@@ -129,7 +127,7 @@ footer {
     padding: 0 0.5rem !important;
     border-radius: 6px !important;
     background-color: rgba(0, 0, 136, 0.75) !important;
-    font-size: 3rem; /* Increased font size for active links */
+    font-size: 2.75rem !important;
 }
 
 /* Toggle Icon */
@@ -154,7 +152,7 @@ footer {
 }
 
 #toggleIcon:active {
-    transform: scale(0.9);
+    transform: scale(0.95)!important;
     background-color: var(--primary-color);
 }
 
