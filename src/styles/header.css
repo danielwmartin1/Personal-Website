@@ -109,7 +109,7 @@ footer {
     padding: 0.5rem 2.5rem;
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
-    font-size: 2.25rem !important;
+    font-size: 2rem !important;
 }
 
 .nav-items a:hover {
