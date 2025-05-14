@@ -181,6 +181,13 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.2) !important;
 }
 
+.GitHub {
+    padding: 0 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    border-radius: 12px !important;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {
