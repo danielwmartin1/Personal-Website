@@ -9,7 +9,7 @@ import freecodecampLogo from '../images/freeCodeCamp.png';
 import W3SchoolsLogo from '../images/W3Schools.svg';
 import colorCodeLogo from '../images/colorcode.jpg';
 import leetCodeLogo from '../images/leetCode.png';
-import ztmLogo from '../images/ZTM.png';
+import ztmLogo from '../images/ztm.jpg';
 import reactLogo from '../images/React.png';
 import stackOverFlowLogo from '../images/stackOverFlow.png';
 import MDNLogo from '../images/MDN.png';
