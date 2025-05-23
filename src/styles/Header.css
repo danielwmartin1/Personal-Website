@@ -109,6 +109,7 @@ footer {
     padding: 0.5rem 2.5rem;
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
+    font-size: 2rem !important;
 }
 
 .nav-items a:hover {
@@ -147,12 +148,12 @@ footer {
 }
 
 #toggleIcon:hover {
-    transform: scale(1.1)!important;
+    transform: scale(1.1);
     background-color: var(--secondary-color);
 }
 
 #toggleIcon:active {
-    transform: scale(0.9);
+    transform: scale(0.9)!important;
     background-color: var(--primary-color);
 }
 
@@ -166,25 +167,34 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px ridge var(--primary-color);
 }
 
-/* Social Icons */
-.social-icons img.Discord {
-    height: 90px !important; /* Adjust height to 80px */
-    width: auto !important; /* Maintain aspect ratio */
-}
-
 .Discord {
     padding: 0 !important;
     box-shadow: none !important; /* Remove shadow for Discord logo */
-    height: 150px !important; /* Adjust height to 150px */
+    transform: scale(1.25) !important;
+}
+
+.Discord:hover {
+    transform: scale(1.4) !important;
+}
+
+.Discord:active {
+    transform: scale(1.2) !important;
+}
+
+.GitHub {
+    padding: 0 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    border-radius: 12px !important;
 }
 
 /* Media Queries */
 @media (max-width: 1024px) {
     .nav-items a {
-        font-size: 1.75rem !important;
+        font-size: 1.85rem !important;
     }
     .nav-items a.active {
-        font-size: 1.65rem !important;
+        font-size: 2.25rem !important;
     }
 }
 
